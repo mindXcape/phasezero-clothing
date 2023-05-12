@@ -10,7 +10,7 @@ const Count: React.FC = () => {
 
   return (
     <>
-      <p data-testid='count'>{count}</p>
+      <p data-testid="count">{count}</p>
       <button onClick={addHandler}>Add</button>
     </>
   );
