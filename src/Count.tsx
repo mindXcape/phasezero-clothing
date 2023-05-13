@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Count: React.FC = () => {
+function Count() {
   const [count, setCount] = useState<number>(0);
 
   const addHandler = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -11,9 +11,11 @@ const Count: React.FC = () => {
   return (
     <>
       <p data-testid="count">{count}</p>
-      <button onClick={addHandler}>Add</button>
+      <button type="button" onClick={addHandler}>
+        Add
+      </button>
     </>
   );
-};
+}
 
 export default Count;
