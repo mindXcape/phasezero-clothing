@@ -14,7 +14,6 @@ export function App() {
 }
 
 export function WrappedApp() {
-  console.log('.env : ', import.meta.env.VITE_API_URL);
   return (
     <HashRouter>
       <App />

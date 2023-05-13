@@ -1,9 +1,12 @@
 import React from 'react';
 
-type Props = {};
+type Props = {
+  title: string;
+};
 
 function Modal(props: Props) {
-  return <div>Modal</div>;
+  const { title } = props;
+  return <div>{title}</div>;
 }
 
 export default Modal;

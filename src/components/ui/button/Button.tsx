@@ -1,9 +1,12 @@
 import React from 'react';
 
-type Props = {};
+type Props = {
+  title: string;
+};
 
 function Button(props: Props) {
-  return <div>Button</div>;
+  const { title } = props;
+  return <div>{title}</div>;
 }
 
 export default Button;
