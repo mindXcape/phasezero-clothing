@@ -1,31 +1,14 @@
 import { describe, it } from 'vitest';
-import { render, screen } from '@testing-library/react';
-import { MemoryRouter } from 'react-router-dom';
+import { render, screen, fireEvent } from '@testing-library/react';
 
-import { WrappedApp, App } from './App';
+import Count from './Count';
 
-describe('App', () => {
-  it('Renders hello world', () => {
-    // ARRANGE
-    render(<WrappedApp />);
-    // ACT
-    // EXPECT
-    expect(
-      screen.getByRole('heading', {
-        level: 1,
-      })
-    ).toHaveTextContent('Hello World');
-  });
-  it('Renders not found if invalid path', () => {
-    render(
-      <MemoryRouter initialEntries={['/this-route-does-not-exist']}>
-        <App />
-      </MemoryRouter>
-    );
-    expect(
-      screen.getByRole('heading', {
-        level: 1,
-      })
-    ).toHaveTextContent('Not Found');
+describe('Count', () => {
+  it('Should render the page correctly', () => {
+    render(<Count />);
+    const addButton = screen.getByText('Add');
+    fireEvent.click(addButton);
+    const countElement = screen.getByTestId('count');
+    expect(countElement.textContent).toBe('1');
   });
 });
