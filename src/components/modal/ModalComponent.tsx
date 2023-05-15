@@ -77,7 +77,7 @@ function ModalComponent({ description }: Props) {
     const fetchLocation = async () => {
       setLoading(true);
       try {
-        const response = await fetch('https://ipapi.co/json/');
+        const response = await fetch(import.meta.env.VITE_LOCATION_API);
         if (!response.ok) {
           throw new Error('Unable to fetch location');
         }
@@ -125,8 +125,8 @@ function ModalComponent({ description }: Props) {
           <Box sx={style} className="modal_box">
             <div className="box">
               <div className="modal_item_top">
-                <IconButton>
-                  <CloseIcon onClick={closeModal} />
+                <IconButton onClick={closeModal}>
+                  <CloseIcon />
                 </IconButton>
               </div>
               <div className="modal_container">
