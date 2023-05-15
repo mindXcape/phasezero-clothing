@@ -34,7 +34,7 @@ function ModalComponent({ description }: Props) {
     region: '',
     country: '',
   });
-  const [selectedCurrency, setSelectedCurrency] = useState<string>('USD'); // Defaulting to USD
+  const [selectedCurrency, setSelectedCurrency] = useState<string>('');
 
   const style = {
     position: 'absolute',
@@ -168,7 +168,6 @@ function ModalComponent({ description }: Props) {
                         onChange={(e) => setSelectedCurrency(e.target.value)}
                       >
                         {currencyOptions}
-                        {/* Add more options as per your requirements */}
                       </select>
                     </div>
                   </>
