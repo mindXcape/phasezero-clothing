@@ -10,6 +10,7 @@ interface Props
   type: string;
   name: string;
   placeholder: string;
+  disabled?: boolean;
 }
 
 export default function InputRhude({
@@ -17,6 +18,7 @@ export default function InputRhude({
   type,
   name,
   placeholder,
+  disabled = false,
 }: Props) {
   return (
     <input
@@ -24,6 +26,7 @@ export default function InputRhude({
       type={type}
       name={name}
       placeholder={placeholder}
+      disabled={disabled}
     />
   );
 }
