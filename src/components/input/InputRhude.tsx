@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../scss/main.scss';
+/* eslint-disable react/require-default-props */
 
 interface Props
   extends React.DetailedHTMLProps<
