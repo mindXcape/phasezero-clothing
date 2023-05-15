@@ -9,6 +9,7 @@ function Count() {
     setCount(count + 1);
   };
 
+  const desc = `Phasezero now offers you the convenience of being able to purchase items in your preferred currency. At checkout, all import duties and taxes will be applied to the final price.`;
   return (
     <>
       <p data-testid="count">{count}</p>
