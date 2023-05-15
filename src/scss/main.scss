@@ -8,19 +8,19 @@ body {
 }
 
 // import for abstract scss file
-@import '../abstracts/_abstracts-dir';
+@import './abstracts/_abstracts-dir';
 
 // import for base
-@import '../scss/base/_base-dir';
+@import './base/_base-dir';
 
 // import for resuable components
-@import '../scss/components/_components-dir';
+@import './components/_components-dir';
 
 // import for layouts
-@import '../scss/layouts/_layouts-dir';
+@import './layouts/_layouts-dir';
 
 // import for page
-@import '../scss/pages/_pages-dir';
+@import './pages/_pages-dir';
 
 // import for vendor in layman's term (imports for css framework such as MUI, Bootstrap Chakra UI etc.)
-@import '../scss/vendor/_vendor-dir';
+@import './vendor/_vendor-dir';
