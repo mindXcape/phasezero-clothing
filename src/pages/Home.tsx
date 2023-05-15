@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Button from '../components/button/button';
+import Button from '../components/button/Button';
 
 function Home() {
   const [count, setCount] = useState<number>(0);
@@ -15,7 +15,7 @@ function Home() {
     <>
       <div>
         <Button
-          className="btn_one"
+          className="represent__btn"
           title="Add"
           eventHandler={addHandler}
           disabled={false}
@@ -23,18 +23,15 @@ function Home() {
       </div>
       <div>
         <Button
-          className="btn_one"
+          className="represent__btn"
           title="Edit"
           eventHandler={subHandler}
-          disabled={isDisabled}
+          disabled
         />
       </div>
       <div>
         <p>{count}</p>
       </div>
-      <button type="button" disabled>
-        Send
-      </button>
     </>
   );
 }
