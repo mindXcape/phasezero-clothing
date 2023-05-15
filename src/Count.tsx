@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import ModalComponent from './components/modal/ModalComponent';
+import React, { useState, ChangeEvent } from 'react';
+import InputRhude from './components/input/InputRhude';
 
 function Count() {
   const [count, setCount] = useState<number>(0);
@@ -16,7 +16,18 @@ function Count() {
       <button type="button" onClick={addHandler}>
         Add
       </button>
-      <ModalComponent description={desc} />
+      <InputRhude
+        className="test"
+        type="text"
+        name="test"
+        placeholder="Enter here"
+      />
+      <InputRhude
+        className="app"
+        type="password"
+        name="pass"
+        placeholder="Enter here"
+      />
     </>
   );
 }
