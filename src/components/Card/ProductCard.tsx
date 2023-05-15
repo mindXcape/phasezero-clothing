@@ -7,22 +7,18 @@ const Product = function Product() {
   const [togglerState, setTogglerState] = useState<boolean>(false);
 
   // function to onMouseEnter in card
-  const togglerHandlerEnter = (
-    e: React.MouseEvent<HTMLDivElement, MouseEvent>
-  ) => {
+  const togglerHandlerEnter: React.MouseEventHandler<HTMLDivElement> = (e) => {
     e.preventDefault();
     setTogglerState(true);
   };
 
   // function to onMouseLeave in card
-  const togglerHandlerLeave = (
-    e: React.MouseEvent<HTMLDivElement, MouseEvent>
-  ) => {
+  const togglerHandlerLeave: React.MouseEventHandler<HTMLDivElement> = (e) => {
     e.preventDefault();
     setTogglerState(false);
   };
 
-  const navigateHandler = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+  const navigateHandler: React.MouseEventHandler<HTMLDivElement> = (e) => {
     e.preventDefault();
   };
 
