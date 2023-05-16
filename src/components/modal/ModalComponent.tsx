@@ -74,52 +74,51 @@ function ModalComponent({ description }: Props) {
     }
 
     // fetching end user's location using api
-    let isCancelled = false; // Declare isCancelled here
-
     const fetchLocation = async () => {
       setLoading(true);
+      const abortController = new AbortController();
 
       try {
-        const response = await fetch(import.meta.env.VITE_LOCATION_API);
+        const response = await fetch(import.meta.env.VITE_LOCATION_API, {
+          signal: abortController.signal,
+        });
+
         if (!response.ok) {
           throw new Error('Unable to fetch location');
         }
+
         const data = await response.json();
 
-        if (!isCancelled) {
-          setInitialLocation({
-            city: data.city,
-            region: data.region,
-            country: data.country_name,
-          });
-          setSelectedLocation({
-            city: data.city,
-            region: data.region,
-            country: data.country_name,
-          });
-        }
+        setInitialLocation({
+          city: data.city,
+          region: data.region,
+          country: data.country_name,
+        });
+        setSelectedLocation({
+          city: data.city,
+          region: data.region,
+          country: data.country_name,
+        });
 
         // Update currency based on the location if needed
       } catch (e) {
-        if (!isCancelled) {
-          if (e instanceof Error) {
-            setError(e.message);
-          } else {
-            setError('An error occurred');
-          }
+        if (e instanceof Error) {
+          setError(e.message);
+        } else {
+          setError('An error occurred');
         }
       } finally {
-        if (!isCancelled) {
-          setLoading(false);
-        }
+        setLoading(false);
       }
     };
+
+    const abortController = new AbortController();
     fetchLocation();
 
-    // Here is the cleanup function
+    // Cleanup function
     return () => {
-      // Set the flag to true when the component unmounts
-      isCancelled = true;
+      // Abort the fetch request when the component unmounts
+      abortController.abort();
     };
   }, []);
 
