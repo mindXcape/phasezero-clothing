@@ -6,7 +6,7 @@ interface MessageProps {
   showErrorMessage: (message: string) => SnackbarKey;
 }
 
-// Message component definitiongit 
+// Message component definition
 const Message = (): MessageProps => {
   // Access the enqueueSnackbar function from the useSnackbar hook
   const { enqueueSnackbar } = useSnackbar();
