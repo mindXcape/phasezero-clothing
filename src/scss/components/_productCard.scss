@@ -1,13 +1,13 @@
 @import '../abstracts/mixins';
 
-.card_container {
+.card__container {
   position: relative;
   cursor: pointer;
   margin-bottom: 20px;
   @include lg{
     margin-bottom: 36px;
   }
-  .card_img {
+  .card__img {
     img {
       transition: 0.3s opacity ease;
       width: 100%;
@@ -19,27 +19,27 @@
       }
     }
   }
-  .card_content {
+  .card__content {
     height: 20px;
     line-height: 1.4;
     margin-top: 10px;
-    .card_description {
+    .card__description {
       margin-bottom: 0px;
       @include sm{
         font-size: 10px;
       }
     }
-    .card_price {
+    .card__price {
       margin-bottom: 0px;
       @include sm{
         font-size: 10px;
       }
     }
   }
-  .card_btn_container {
+  .card__btn__container {
     margin-top: 10px;
     height: 20px;
-    .card_btn {
+    .card__btn {
       button {
         background-color: #f7f7f7;
         border: 1px solid #e5e5e5;
@@ -54,7 +54,7 @@
       }
     }
   }
-  .card_icon {
+  .card__icon {
     position: absolute;
     top: 2%;
     font-size: 16px;
