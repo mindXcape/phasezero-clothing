@@ -3,13 +3,11 @@ import Button from '../components/button/Button';
 
 function Home() {
   const [count, setCount] = useState<number>(0);
-  const [isDisabled, setIsDisabled] = useState<boolean>(false);
   const addHandler = () => {
     setCount(count + 1);
   };
   const subHandler = () => {
     setCount(count - 1);
-    setIsDisabled(!isDisabled);
   };
   return (
     <>

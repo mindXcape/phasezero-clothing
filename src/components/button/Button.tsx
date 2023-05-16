@@ -1,11 +1,7 @@
 import React from 'react';
-import '../../scss/components/_button.scss';
+import '../../scss/main.scss';
 
-interface Props
-  extends React.DetailedHTMLProps<
-    React.ButtonHTMLAttributes<HTMLButtonElement>,
-    HTMLButtonElement
-  > {
+interface ButtonProps {
   className: string;
   title: string;
   disabled: boolean;
@@ -17,7 +13,7 @@ const Button = function Button({
   title,
   disabled,
   eventHandler,
-}: Props) {
+}: ButtonProps) {
   return (
     <button
       type="button"
