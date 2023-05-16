@@ -74,37 +74,53 @@ function ModalComponent({ description }: Props) {
     }
 
     // fetching end user's location using api
+    let isCancelled = false; // Declare isCancelled here
+
     const fetchLocation = async () => {
       setLoading(true);
+
       try {
         const response = await fetch(import.meta.env.VITE_LOCATION_API);
         if (!response.ok) {
           throw new Error('Unable to fetch location');
         }
         const data = await response.json();
-        setInitialLocation({
-          city: data.city,
-          region: data.region,
-          country: data.country_name,
-        });
-        setSelectedLocation({
-          city: data.city,
-          region: data.region,
-          country: data.country_name,
-        });
+
+        if (!isCancelled) {
+          setInitialLocation({
+            city: data.city,
+            region: data.region,
+            country: data.country_name,
+          });
+          setSelectedLocation({
+            city: data.city,
+            region: data.region,
+            country: data.country_name,
+          });
+        }
 
         // Update currency based on the location if needed
       } catch (e) {
-        if (e instanceof Error) {
-          setError(e.message);
-        } else {
-          setError('An error occurred');
+        if (!isCancelled) {
+          if (e instanceof Error) {
+            setError(e.message);
+          } else {
+            setError('An error occurred');
+          }
         }
       } finally {
-        setLoading(false);
+        if (!isCancelled) {
+          setLoading(false);
+        }
       }
     };
     fetchLocation();
+
+    // Here is the cleanup function
+    return () => {
+      // Set the flag to true when the component unmounts
+      isCancelled = true;
+    };
   }, []);
 
   // closing the modal logic
