@@ -1,0 +1,14 @@
+.represent__btn {
+  background-color: black;
+  color: white;
+  padding: 6px 26px;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: all 0.25s ease-in-out;
+  border: 1px solid black;
+  &:hover{
+    background-color: white !important ;
+    color: black !important;
+    border: 1px solid black !important;
+  }
+}

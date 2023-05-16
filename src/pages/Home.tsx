@@ -1,19 +1,37 @@
-import React from 'react';
-import Message from '../Provider/Message';
+import React, { useState } from 'react';
+import Button from '../components/button/Button';
 
-const Home: React.FC = function Home() {
-  // destructuring success message and error message of message provider
-  const { showSuccessMessage, showErrorMessage } = Message();
-  const messageHandler: React.MouseEventHandler<HTMLButtonElement> = (e) => {
-    e.preventDefault();
-    // handling message
-    showErrorMessage('Error message');
+function Home() {
+  const [count, setCount] = useState<number>(0);
+  const addHandler = () => {
+    setCount(count + 1);
+  };
+  const subHandler = () => {
+    setCount(count - 1);
   };
   return (
-    <button type="button" onClick={(e) => messageHandler(e)}>
-      Hello World
-    </button>
+    <>
+      <div>
+        <Button
+          className="represent__btn"
+          title="Add"
+          eventHandler={addHandler}
+          disabled={false}
+        />
+      </div>
+      <div>
+        <Button
+          className="represent__btn"
+          title="Edit"
+          eventHandler={subHandler}
+          disabled
+        />
+      </div>
+      <div>
+        <p>{count}</p>
+      </div>
+    </>
   );
-};
+}
 
 export default Home;
