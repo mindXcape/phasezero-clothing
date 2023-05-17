@@ -115,7 +115,6 @@ function ModalComponent({ description }: Props) {
 
     const abortController = new AbortController();
     fetchLocation();
-    
     // Cleanup function
     return () => {
       // Abort the fetch request when the component unmounts
