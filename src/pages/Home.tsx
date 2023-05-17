@@ -28,7 +28,7 @@ function Home() {
           disabled
         />
       </div>
-      <BasicPagination count={10} />
+      <BasicPagination totalPage={10} />
       <div>
         <p>{count}</p>
       </div>
