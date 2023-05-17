@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Button from '../components/button/Button';
+import BasicPagination from '../Provider/Pagination';
 
 function Home() {
   const [count, setCount] = useState<number>(0);
@@ -27,6 +28,7 @@ function Home() {
           disabled
         />
       </div>
+      <BasicPagination count={10} />
       <div>
         <p>{count}</p>
       </div>
