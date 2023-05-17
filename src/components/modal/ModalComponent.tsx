@@ -5,6 +5,7 @@ import Modal from '@mui/material/Modal';
 import CloseIcon from '@mui/icons-material/Close';
 import { IconButton } from '@mui/material';
 import { CountryType, countries } from '../../data/country';
+import Message from '../../Provider/Message';
 
 // defining props
 type Props = {
@@ -76,12 +77,19 @@ function ModalComponent({ description }: Props) {
     // fetching end user's location using api
     const fetchLocation = async () => {
       setLoading(true);
+      const abortController = new AbortController();
+
       try {
-        const response = await fetch(import.meta.env.VITE_LOCATION_API);
+        const response = await fetch(import.meta.env.VITE_LOCATION_API, {
+          signal: abortController.signal,
+        });
+
         if (!response.ok) {
-          throw new Error('Unable to fetch location');
+          Message().showErrorMessage('Unable to fetch location');
         }
+
         const data = await response.json();
+
         setInitialLocation({
           city: data.city,
           region: data.region,
@@ -96,15 +104,22 @@ function ModalComponent({ description }: Props) {
         // Update currency based on the location if needed
       } catch (e) {
         if (e instanceof Error) {
-          setError(e.message);
+          Message().showErrorMessage(e.message);
         } else {
-          setError('An error occurred');
+          Message().showErrorMessage('An error occurred');
         }
       } finally {
         setLoading(false);
       }
     };
+
+    const abortController = new AbortController();
     fetchLocation();
+    // Cleanup function
+    return () => {
+      // Abort the fetch request when the component unmounts
+      abortController.abort();
+    };
   }, []);
 
   // closing the modal logic
