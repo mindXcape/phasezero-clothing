@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../scss/main.scss';
-import InputRhude from '../input/InputRhude';
+import InputRhude from '../ui/input/InputRhude';
 
 function ShippingForm() {
   return (

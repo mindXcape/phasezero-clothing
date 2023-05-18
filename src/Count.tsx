@@ -1,5 +1,5 @@
 import React, { useState, ChangeEvent } from 'react';
-import InputRhude from './components/input/InputRhude';
+import InputRhude from './components/ui/input/InputRhude';
 
 function Count() {
   const [count, setCount] = useState<number>(0);
