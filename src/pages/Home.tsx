@@ -1,5 +1,39 @@
+import React, { useState } from 'react';
+import Button from '../components/button/Button';
+import ProductCardSkeleton from '../Provider/Skeleton/ProductCardSkeleton';
+
 function Home() {
-  return <h1>Hello World</h1>;
+  const [count, setCount] = useState<number>(0);
+  const addHandler = () => {
+    setCount(count + 1);
+  };
+  const subHandler = () => {
+    setCount(count - 1);
+  };
+  return (
+    <>
+      <div>
+        <Button
+          className="represent__btn"
+          title="Add"
+          eventHandler={addHandler}
+          disabled={false}
+        />
+      </div>
+      <div>
+        <Button
+          className="represent__btn"
+          title="Edit"
+          eventHandler={subHandler}
+          disabled
+        />
+      </div>
+      <div>
+        <p>{count}</p>
+      </div>
+      <ProductCardSkeleton />
+    </>
+  );
 }
 
 export default Home;
