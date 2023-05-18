@@ -28,7 +28,6 @@ export default function PaymentInfo() {
           <PaymentComponent />
         </div>
       )}
-
     </div>
   );
 }

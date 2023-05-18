@@ -10,13 +10,13 @@ import '../../scss/main.scss';
 
 export default function CheckoutAccordion() {
   return (
-    <div className='accordion__wrapper'>
+    <div className="accordion__wrapper">
       <Accordion
         sx={{
           border: 'none',
           outline: 'none',
           bgcolor: '#f5f5f5',
-          outlineColor: 'none'
+          outlineColor: 'none',
         }}
       >
         <AccordionSummary

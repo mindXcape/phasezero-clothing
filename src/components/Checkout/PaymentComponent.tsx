@@ -1,11 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-type Props = {}
-
-function PaymentComponent({ }: Props) {
-  return (
-    <div>PaymentComponent</div>
-  )
+function PaymentComponent() {
+  return <div>PaymentComponent</div>;
 }
 
-export default PaymentComponent
+export default PaymentComponent;
