@@ -7,8 +7,12 @@ import MenuIcon from '@mui/icons-material/Menu';
 import '../../scss/main.scss';
 
 type Anchor = 'left';
+type RightDrawersProps = {
+  menuItems: { text: string }[];
+};
 
-export default function TemporaryDrawer() {
+export default function Rightdrawers(props: RightDrawersProps) {
+  const { menuItems } = props;
   const [state, setState] = React.useState({
     left: false,
   });
@@ -34,10 +38,13 @@ export default function TemporaryDrawer() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <div className="right__drawer__items">
-        <p>Shop by category</p>
-        <ChevronRightIcon className="icon" />
-      </div>
+      {menuItems.map((item, index) => (
+        // eslint-disable-next-line react/no-array-index-key
+        <div key={index} className="right__drawer__items">
+          <p>{item.text}</p>
+          <ChevronRightIcon className="icon" />
+        </div>
+      ))}
     </Box>
   );
 

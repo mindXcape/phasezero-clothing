@@ -6,6 +6,8 @@ import { NavLink } from 'react-router-dom';
 import { logo } from '../../assets';
 import Rightdrawers from '../../components/drawers/Rightdrawers';
 
+const menuItems = [{ text: 'Item 1' }, { text: 'Item 2' }, { text: 'Item 3' }];
+
 function Navbar() {
   return (
     <div className="header__wrapper">
@@ -25,7 +27,7 @@ function Navbar() {
           <LocalMallIcon />
         </div>
         <div className="right__drawer__wrapper">
-          <Rightdrawers />
+          <Rightdrawers menuItems={menuItems} />
         </div>
       </div>
     </div>
