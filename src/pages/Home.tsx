@@ -1,39 +1,12 @@
-import React, { useState } from 'react';
-import Button from '../components/button/Button';
+import React from 'react';
 import BasicPagination from '../Provider/Pagination';
-import ProductCardSkeleton from '../Provider/Skeleton/ProductCardSkeleton';
+import NewArrival from '../Layouts/NewArrival/NewArrival';
 
 function Home() {
-  const [count, setCount] = useState<number>(0);
-  const addHandler = () => {
-    setCount(count + 1);
-  };
-  const subHandler = () => {
-    setCount(count - 1);
-  };
   return (
     <>
-      <div>
-        <Button
-          className="represent__btn"
-          title="Add"
-          eventHandler={addHandler}
-          disabled={false}
-        />
-      </div>
-      <div>
-        <Button
-          className="represent__btn"
-          title="Edit"
-          eventHandler={subHandler}
-          disabled
-        />
-      </div>
       <BasicPagination totalPage={10} />
-      <div>
-        <p>{count}</p>
-      </div>
-      <ProductCardSkeleton />
+      <NewArrival />
     </>
   );
 }
