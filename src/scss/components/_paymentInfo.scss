@@ -1,0 +1,30 @@
+@import '../abstracts/mixins';
+
+.main__payment__wrapper {
+  height: 100%;
+  width: 45%;
+  outline: none;
+  border: 1px solid black;
+  padding: 70px 66px 0px 70px;
+  background-color: #f5f5f5;
+
+  @include sm {
+    height: auto;
+    width: 100%;
+    padding: 0 14px;
+  }
+  @include md {
+    height: auto;
+    width: 100%;
+    padding: 0 100px;
+  }
+
+  @include lg {
+    width: 100%;
+    padding: 0px 190px;
+    height: auto;
+  }
+  .payment__wrapper {
+    height: 100%;
+  }
+}
