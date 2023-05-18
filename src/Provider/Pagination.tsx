@@ -22,7 +22,6 @@ export default function BasicPagination(props: PaginationProps) {
     <Stack spacing={2}>
       <Pagination
         count={totalPage} // Total number of pages
-        color="primary"
         page={currentPage} // Current active page
         onChange={handlePageChange} // Event handler for page change
       />
