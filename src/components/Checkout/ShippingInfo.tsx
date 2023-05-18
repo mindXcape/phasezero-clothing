@@ -4,7 +4,7 @@ import { Breadcrumbs } from '@mui/material';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import { Link } from 'react-router-dom';
-import InputRhude from '../input/InputRhude';
+import InputRhude from '../ui/input/InputRhude';
 import ShippingForm from '../form/ShippingForm';
 import Button from '../button/Button';
 
@@ -92,9 +92,15 @@ function ShippingInfo() {
         </div>
         <nav className="checkout__navigation">
           <div className="navigtion__items">
-            <Link className="checkout__navigation__link" to="/">Refund Policy</Link>
-            <Link className="checkout__navigation__link" to="/">Terms of Service</Link>
-            <Link className="checkout__navigation__link" to="/contact">Contact Information</Link>
+            <Link className="checkout__navigation__link" to="/">
+              Refund Policy
+            </Link>
+            <Link className="checkout__navigation__link" to="/">
+              Terms of Service
+            </Link>
+            <Link className="checkout__navigation__link" to="/contact">
+              Contact Information
+            </Link>
           </div>
         </nav>
       </div>
