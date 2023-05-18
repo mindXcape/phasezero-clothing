@@ -1,13 +1,15 @@
 import '../../scss/main.scss';
 import React, { useState } from 'react';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import ProductCardSkeleton from '../../Provider/Skeleton/ProductCardSkeleton';
 
-// defining proptypes for product
+// defining prop types for product
 interface ProductProps {
   imageFront: string;
   imageBack: string;
   title: string;
   price: number;
+  loading: boolean;
 }
 
 const Product = function Product({
@@ -15,6 +17,7 @@ const Product = function Product({
   imageBack,
   title,
   price,
+  loading,
 }: ProductProps) {
   // state to handle the hover effect
   const [togglerState, setTogglerState] = useState<boolean>(false);
@@ -36,48 +39,54 @@ const Product = function Product({
   };
 
   return (
-    <div
-      className="card__container"
-      onMouseEnter={(e) => togglerHandlerEnter(e)}
-      onMouseLeave={(e) => togglerHandlerLeave(e)}
-      onClick={(e) => navigateHandler(e)}
-      aria-hidden="true"
-    >
-      <div className="card__img">
-        {togglerState ? (
-          <img src={imageBack} alt="end" />
-        ) : (
-          <img src={imageFront} alt="front" />
-        )}
-      </div>
-
-      {togglerState ? (
-        <div className="card__btn__container">
-          <div className="d-flex gap-2">
-            <div className="card__btn">
-              <button type="button">S</button>
-            </div>
-            <div className="card__btn">
-              <button type="button">X</button>
-            </div>
-            <div className="card__btn">
-              <button type="button">L</button>
-            </div>
-            <div className="card__btn">
-              <button type="button">XL</button>
-            </div>
-          </div>
-        </div>
+    <div>
+      {loading ? (
+        <ProductCardSkeleton />
       ) : (
-        <div className="card__content">
-          <p className="card__description">{title}</p>
-          <p className="card__price">NPR {price}/-</p>
+        <div
+          className="card__container"
+          onMouseEnter={(e) => togglerHandlerEnter(e)}
+          onMouseLeave={(e) => togglerHandlerLeave(e)}
+          onClick={(e) => navigateHandler(e)}
+          aria-hidden="true"
+        >
+          <div className="card__img">
+            {togglerState ? (
+              <img src={imageBack} alt="end" />
+            ) : (
+              <img src={imageFront} alt="front" />
+            )}
+          </div>
+
+          {togglerState ? (
+            <div className="card__btn__container">
+              <div className="d-flex gap-2">
+                <div className="card__btn">
+                  <button type="button">S</button>
+                </div>
+                <div className="card__btn">
+                  <button type="button">X</button>
+                </div>
+                <div className="card__btn">
+                  <button type="button">L</button>
+                </div>
+                <div className="card__btn">
+                  <button type="button">XL</button>
+                </div>
+              </div>
+            </div>
+          ) : (
+            <div className="card__content">
+              <p className="card__description">{title}</p>
+              <p className="card__price">NPR {price}/-</p>
+            </div>
+          )}
+
+          <p className="card__icon">
+            <FavoriteBorderIcon />
+          </p>
         </div>
       )}
-
-      <p className="card__icon">
-        <FavoriteBorderIcon />
-      </p>
     </div>
   );
 };

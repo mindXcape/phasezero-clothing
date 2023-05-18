@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Button from '../components/button/Button';
 import BasicPagination from '../Provider/Pagination';
+import ProductCardSkeleton from '../Provider/Skeleton/ProductCardSkeleton';
 
 function Home() {
   const [count, setCount] = useState<number>(0);
@@ -32,6 +33,7 @@ function Home() {
       <div>
         <p>{count}</p>
       </div>
+      <ProductCardSkeleton />
     </>
   );
 }
