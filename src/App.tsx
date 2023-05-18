@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import Count from './Count';
+import Checkout from './pages/Checkout';
 import Contact from './pages/Contact';
 
 export function App() {
@@ -11,6 +12,7 @@ export function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/count" element={<Count />} />
+      <Route path="/checkout" element={<Checkout />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="*" element={<NotFound />} />
     </Routes>

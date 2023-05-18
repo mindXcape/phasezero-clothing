@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Button from '../components/button/Button';
+import BasicPagination from '../Provider/Pagination';
 import ProductCardSkeleton from '../Provider/Skeleton/ProductCardSkeleton';
 
 function Home() {
@@ -28,6 +29,7 @@ function Home() {
           disabled
         />
       </div>
+      <BasicPagination totalPage={10} />
       <div>
         <p>{count}</p>
       </div>
