@@ -9,11 +9,11 @@ import NotFound from '../pages/NotFound';
 const HomeRoutes = function HomeRoutes() {
   return (
     <Routes>
-      {/* <Route path="/" element={<Home />} />
+      <Route path="/" element={<Home />} />
       <Route path="/count" element={<Count />} />
       <Route path="/checkout" element={<Checkout />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="*" element={<NotFound />} /> */}
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 };
