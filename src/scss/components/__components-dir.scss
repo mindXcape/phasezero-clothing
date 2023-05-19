@@ -8,7 +8,9 @@ Files inside this folder should contain all styles relating to a reusable compon
 @import './link';
 @import './modal';
 @import './productCard';
-@import './shippingInfo';
-@import './paymentInfo.scss';
-@import './shippingForm';
-@import './checkoutAccordion';
+@import './checkout/checkoutAccordion';
+@import './checkout/paymentComponent';
+@import './checkout/checkoutItems';
+@import './checkout/paymentInfo';
+@import './checkout/shippingForm';
+@import './checkout/shippingInfo';

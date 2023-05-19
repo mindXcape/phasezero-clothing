@@ -5,16 +5,23 @@ import InputRhude from '../ui/input/InputRhude';
 function ShippingForm() {
   return (
     <div className="form__Wrapper">
+      {/* form for shipping information */}
       <form action="">
         <h3>Shipping Address</h3>
         <div className="form__main">
-          <select id="countries" name="countries">
+          {/* select to choose country */}
+          <select
+            className="select__country__wrapper"
+            id="countries"
+            name="countries"
+          >
             <option value="">Select a country</option>
             <option value="USA">USA</option>
             <option value="Australia">Australia</option>
             <option value="India">India</option>
             <option value="Nepal">Nepal</option>
           </select>
+          {/* first and last name input */}
           <div className="form-group">
             <InputRhude
               className="form__input__column"
@@ -33,6 +40,7 @@ function ShippingForm() {
               required
             />
           </div>
+          {/* address input */}
           <InputRhude
             className="form__input__column"
             type="text"
@@ -41,6 +49,7 @@ function ShippingForm() {
             placeholder="Address"
             required
           />
+          {/* Apartment input */}
           <InputRhude
             className="form__input__column"
             type="text"
@@ -48,6 +57,7 @@ function ShippingForm() {
             name=""
             placeholder="Apartment, suite, etc. (optional)"
           />
+          {/* city and postal code */}
           <div className="form-group">
             <InputRhude
               className="form__input__column"
@@ -65,6 +75,7 @@ function ShippingForm() {
               placeholder="Postal code (optional)"
             />
           </div>
+          {/* checkbox input */}
           <div className="checkbox__wrapper__form">
             <label htmlFor="checkboxFormInput">
               <input
