@@ -1,12 +1,12 @@
-@import '../abstracts/mixins';
+@import '../../abstracts/mixins';
 
 .main__payment__wrapper {
   height: 100%;
   width: 45%;
   outline: none;
-  border: 1px solid black;
-  padding: 70px 66px 0px 70px;
-  background-color: #f5f5f5;
+  padding: 70px 170px 0px 56px;
+  background-color: $color-checkout-accordion;
+  border: none;
 
   @include sm {
     height: auto;
@@ -16,7 +16,7 @@
   @include md {
     height: auto;
     width: 100%;
-    padding: 0 100px;
+    padding: 0px 100px;
   }
 
   @include lg {
@@ -25,7 +25,6 @@
     height: auto;
   }
   .payment__wrapper {
-    border: 1px solid black;
     height: 100%;
     width: 100%;
   }
