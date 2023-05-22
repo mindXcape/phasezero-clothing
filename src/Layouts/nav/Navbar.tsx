@@ -14,7 +14,9 @@ function Navbar() {
       {/* Left side items */}
       <div className="left__items">
         <p>Shop</p>
-        <p>Collection</p>
+        <p>
+          <NavLink to="/collections">Collection</NavLink>
+        </p>
         <p>Community</p>
       </div>
       {/* Logo Image. Middle section of navbar */}
@@ -27,7 +29,9 @@ function Navbar() {
           <p>Account</p>
           <SearchIcon />
           <FavoriteBorderIcon />
-          <LocalMallIcon />
+          <NavLink to="/cart">
+            <LocalMallIcon />
+          </NavLink>
         </div>
         {/* This section gets enable in mobile view */}
         <div className="right__drawer__wrapper">
