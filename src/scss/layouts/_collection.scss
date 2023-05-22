@@ -1,0 +1,19 @@
+@import '../abstracts/mixins';
+.collection__container {
+  .collection__image {
+    img {
+      height: 500px;
+      width: 100%;
+      object-fit: cover;
+      margin-bottom: 26px;
+      @include sm {
+        object-fit: contain;
+        height: 370px;
+      }
+      @include md {
+        object-fit: contain;
+        height: 370px;
+      }
+    }
+  }
+}
