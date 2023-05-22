@@ -11,11 +11,11 @@ interface CartProps {
 function CartTable({ image, product_title, quantity, price }: CartProps) {
   return (
     <div className="cart__table__container">
-      <div className="cart_table_image_wrapper">
+      <div className="cart__table__image__wrapper">
         <img src={image} alt="" />
       </div>
       <div className="cart__table__content">
-        <p>{product_title}</p>
+        <p className="cart__table__product__title">{product_title}</p>
         <div className="cart__table__quantity">
           <button type="button">-</button>
           <p>{quantity}</p>
@@ -23,10 +23,10 @@ function CartTable({ image, product_title, quantity, price }: CartProps) {
         </div>
       </div>
       <div className="cart__table__last">
-        <p>
+        <p className="cart__table__close">
           <CloseIcon />
         </p>
-        <p>Rs {price} /-</p>
+        <p className="cart__table__price">Rs {price} /-</p>
       </div>
     </div>
   );
