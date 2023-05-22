@@ -3,6 +3,7 @@ import BasicPagination from '../Provider/Pagination';
 import NewArrival from '../Layouts/NewArrival/NewArrival';
 import AddBanner from '../Layouts/Addbanners/Addbanner';
 import Collection from '../Layouts/Collection/Collection';
+import Athleisure from '../Layouts/Athleisure/Athleisure';
 
 function Home() {
   const adTexts: string[] = [
@@ -15,7 +16,6 @@ function Home() {
       <AddBanner adTexts={adTexts} />
       <BasicPagination totalPage={10} />
       <NewArrival />
-      <Collection />
     </>
   );
 }

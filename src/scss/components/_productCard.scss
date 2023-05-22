@@ -7,6 +7,12 @@
   @include lg{
     margin-bottom: 36px;
   }
+  // @include sm{
+  //   margin-bottom: 36px;
+  // }
+  @include md{
+    margin: 18px 0px 36px;
+  }
   .card__img { 
     img {
       transition: 0.3s opacity ease;
