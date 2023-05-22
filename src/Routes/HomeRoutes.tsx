@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Home from '../pages/Home';
+import Home from '../pages/Home';HO
 import Count from '../Count';
 import Checkout from '../pages/Checkout';
 import Contact from '../pages/Contact';
