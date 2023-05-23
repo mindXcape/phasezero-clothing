@@ -1,0 +1,46 @@
+.floating-label-selectbox {
+  position: relative;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+.floating-label-selectbox select {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #999;
+  transition: all 0.2s ease;
+  padding: 25px 12px 11px 12px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 16px;
+  outline: none;
+}
+
+.floating-label-selectbox select::placeholder {
+  color: #999;
+}
+
+.floating-label-selectbox label {
+  position: absolute;
+  left: 12px;
+  top: 2px; /* Adjust this to align label correctly */
+  height: 58px; /* New height value */
+  line-height: 56px; /* Line-height equals height to center text */
+  pointer-events: none;
+  color: #666666;
+  transition: all 0.2s ease;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+}
+
+.floating-label-selectbox.filled label {
+  transform: translateY(-22px);
+  text-align: left;
+  font-size: 12px;
+}
+
+.floating-label-selectbox__select .floating-label-selectbox__option {
+  font-size: 14px; /* adjust this value for your preferred font size */
+}
