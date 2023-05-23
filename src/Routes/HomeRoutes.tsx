@@ -6,6 +6,7 @@ import Checkout from '../pages/Checkout';
 import Contact from '../pages/Contact';
 import NotFound from '../pages/NotFound';
 import Register from '../Layouts/Register/Register';
+import CollectionPage from '../pages/CollectionPage';
 
 const HomeRoutes = function HomeRoutes() {
   return (
@@ -15,6 +16,7 @@ const HomeRoutes = function HomeRoutes() {
       <Route path="/checkout" element={<Checkout />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/register" element={<Register />} />
+      <Route path="/collections" element={<CollectionPage />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
