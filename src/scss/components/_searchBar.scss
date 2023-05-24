@@ -1,0 +1,23 @@
+.search-bar {
+  position: fixed;
+  top: -100px;
+  left: 0;
+  right: 0;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  transition: top 0.5s;
+  z-index: 100; // this is to ensure search bar is above other components
+
+  &.active {
+    top: 0;
+  }
+
+  input {
+    width: 80%;
+    padding: 10px;
+    font-size: 18px;
+  }
+}
