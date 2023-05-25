@@ -14,7 +14,10 @@ function Navbar() {
   const [isSearchActive, setIsSearchActive] = useState(false);
   return (
     <>
-      <SearchBar isActive={isSearchActive} />
+      <SearchBar
+        isActive={isSearchActive}
+        onClose={() => setIsSearchActive(false)}
+      />
       <div className="header__wrapper">
         {/* Left side items */}
         <div className="left__items">
