@@ -9,7 +9,6 @@ function FloatingLabelSelectBox() {
       <label htmlFor="mySelect">{value ? 'Select Option' : ''}</label>
       <select
         id="mySelect"
-        className="select__register"
         value={value}
         onChange={(e) => setValue(e.target.value)}
       >
