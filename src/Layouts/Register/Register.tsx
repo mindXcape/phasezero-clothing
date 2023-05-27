@@ -70,7 +70,7 @@ function Register() {
           />
         ) : (
           <Button
-            className="create__btn__regsiter"
+            className="create__btn__register"
             disabled={false}
             eventHandler={handleContinueClick}
             title="Create My Profile"
