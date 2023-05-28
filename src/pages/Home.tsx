@@ -14,8 +14,9 @@ function Home() {
   return (
     <>
       <AddBanner adTexts={adTexts} />
-      <BasicPagination totalPage={10} />
       <NewArrival />
+      <Athleisure />
+      <Collection />
     </>
   );
 }

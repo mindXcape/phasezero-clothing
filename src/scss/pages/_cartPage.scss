@@ -1,0 +1,44 @@
+@import '../abstracts/mixins';
+
+.cart__page__shopping__cart {
+  margin-bottom: 0px;
+}
+.cart__page__cart__totals{
+    @include sm{
+        margin-top:32px;
+    }
+    @include md{
+        margin-top:32px
+    }
+}
+.cart__page__table__wrapper {
+}
+.cart__page__total__wrapper {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  .cart__page__total__bar {
+    display: flex;
+    padding: 12px;
+    border: 1px solid #efefef;
+    .cart__page__totals {
+        font-size: 14px;
+        opacity: 50%;
+        margin-bottom: 0px;
+    }
+    .cart__page__totals__price {
+      margin-left: auto;
+      font-size: 14px;
+      margin-bottom: 0px;
+      color: #d54c42;
+    }
+  }
+  .cart__page__checkout{
+    margin: 32px 0px;
+    .cart__page__checkout__btn{
+        background-color: black;
+        color: white;
+        width: 100%;
+        padding: 8px 0px;
+    }
+  }
+}
