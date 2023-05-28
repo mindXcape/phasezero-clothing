@@ -2,6 +2,12 @@
 @import '../abstracts/mixins';
 @import '../abstracts/variables';
 
+a{
+  color: black;
+  :hover{
+    color: black;
+  }
+}
 .header__wrapper {
   display: flex;
   align-items: center;

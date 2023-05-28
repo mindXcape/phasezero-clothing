@@ -16,7 +16,6 @@ function useOnClickOutside(ref: RefObject<HTMLElement>, handler: () => void) {
 
     // Attach the listener to the document
     document.addEventListener('mousedown', listener);
-    
     // Return a cleanup function that removes the listener when the component unmounts
     return () => {
       document.removeEventListener('mousedown', listener);
