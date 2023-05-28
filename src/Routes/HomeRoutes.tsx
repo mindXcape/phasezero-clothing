@@ -17,10 +17,10 @@ const HomeRoutes = function HomeRoutes() {
       <Route path="/count" element={<Count />} />
       <Route path="/checkout" element={<Checkout />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="/register" element={<Register />} />
-      <Route path="/cart" element={<CartPage />} />
       <Route path="/collections" element={<CollectionPage />} />
       <Route path="/shop" element={<ShopAll />} />
+      <Route path="/cart" element={<CartPage />} />
+      <Route path="/register" element={<Register />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
