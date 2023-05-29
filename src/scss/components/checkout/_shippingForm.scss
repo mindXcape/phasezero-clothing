@@ -1,0 +1,73 @@
+@import '../../abstracts//mixins';
+@import '../../abstracts/variables';
+
+.form__Wrapper {
+  width: 100%;
+  padding-top: 55px;
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .form__main {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      select {
+        width: 100%;
+        padding: 11px 13px;
+        border-radius: 5px;
+        border-color: $color-shipping-border;
+      }
+
+      .form-group {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 12px;
+
+        @include sm {
+          flex-direction: column;
+        }
+
+        @include md {
+          flex-direction: column;
+        }
+        .form__input__column {
+          width: 49%;
+
+          @include sm {
+            width: 100%;
+          }
+          @include md {
+            width: 100%;
+          }
+        }
+      }
+      .checkbox__wrapper__form {
+        display: flex;
+        align-items: center;
+        height: 30%;
+
+        label {
+          input[type='checkbox'] {
+            accent-color: black;
+            height: 16px;
+            width: 16px;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+          span {
+            margin-left: 5px;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}

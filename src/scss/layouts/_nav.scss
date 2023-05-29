@@ -1,1 +1,114 @@
 // scss for nav will be here
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+
+a{
+  color: black;
+  :hover{
+    color: black;
+  }
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 11vh;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: $color-secondary;
+  @include sm {
+    justify-content: space-between;
+  }
+  @include md {
+    justify-content: space-between;
+  }
+
+  .left__items {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    font-size: 13px;
+    padding-left: 50px;
+    @include sm {
+      padding-left: 0px;
+    }
+    @include md {
+      padding-left: 0px;
+    }
+
+    p {
+      cursor: pointer;
+      font-size: 16px;
+      transition: all 0.5s ease;
+      margin: 0 !important;
+      @include sm {
+        display: none;
+      }
+      @include md {
+        display: none;
+      }
+    }
+    p:hover {
+      color: $color-primary;
+      border-bottom: 3px solid $color-primary;
+      transform: scale(1.2);
+    }
+  }
+  .logo {
+    height: 150px;
+    width: 120px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.2);
+    }
+    @include sm {
+      height: 120px;
+      width: 120px;
+      margin-right: 150px;
+      transform: scale(1.1);
+    }
+    @include md {
+      margin-right: 300px;
+      transform: scale(1.1);
+    }
+  }
+  .right__section {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    font-size: 13px;
+    .big__screen__item {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      justify-content: center;
+      margin-right: 20px;
+      font-size: 13px;
+      @include sm {
+        display: none !important;
+      }
+      @include md {
+        display: none !important;
+      }
+      p {
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 16px;
+      }
+    }
+    .right__drawer__wrapper {
+      cursor: pointer;
+      display: none;
+      @include sm {
+        display: block;
+      }
+      @include md {
+        display: block;
+      }
+    }
+  }
+}

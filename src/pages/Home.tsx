@@ -1,39 +1,22 @@
-import React, { useState } from 'react';
-import Button from '../components/button/Button';
+import React from 'react';
 import BasicPagination from '../Provider/Pagination';
-import ProductCardSkeleton from '../Provider/Skeleton/ProductCardSkeleton';
+import NewArrival from '../Layouts/NewArrival/NewArrival';
+import AddBanner from '../Layouts/Addbanners/Addbanner';
+import Collection from '../Layouts/Collection/Collection';
+import Athleisure from '../Layouts/Athleisure/Athleisure';
 
 function Home() {
-  const [count, setCount] = useState<number>(0);
-  const addHandler = () => {
-    setCount(count + 1);
-  };
-  const subHandler = () => {
-    setCount(count - 1);
-  };
+  const adTexts: string[] = [
+    'Buy our new product!',
+    'Limited time offer! Get 10% off our new product!',
+    'Our product is the best in the market!',
+  ];
   return (
     <>
-      <div>
-        <Button
-          className="represent__btn"
-          title="Add"
-          eventHandler={addHandler}
-          disabled={false}
-        />
-      </div>
-      <div>
-        <Button
-          className="represent__btn"
-          title="Edit"
-          eventHandler={subHandler}
-          disabled
-        />
-      </div>
-      <BasicPagination totalPage={10} />
-      <div>
-        <p>{count}</p>
-      </div>
-      <ProductCardSkeleton />
+      <AddBanner adTexts={adTexts} />
+      <NewArrival />
+      <Athleisure />
+      <Collection />
     </>
   );
 }

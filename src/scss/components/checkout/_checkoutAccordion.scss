@@ -1,0 +1,48 @@
+@import '../../abstracts/mixins';
+@import '../../abstracts/variables';
+
+.accordion__wrapper {
+  height: 100%;
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: #fafafa !important;
+
+  @include lg {
+  }
+}
+
+.accordion-button {
+  background-color: $color-checkout-accordion;
+  border: none;
+  border-color: $color-checkout-accordion;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: $color-checkout-accordion;
+  border: none;
+  color: black;
+  border-color: $color-checkout-accordion;
+}
+
+.accordion-button collapsed {
+  background-color: $color-checkout-accordion;
+  border: none;
+  outline: none;
+  border-color: $color-checkout-accordion;
+}
+.accordion-item {
+  background-color: $color-checkout-accordion;
+  border: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion__top__wrapper {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -1,0 +1,24 @@
+@import '../abstracts/mixins';
+.title__container{
+    text-align: center;
+    margin: 36px 0px;
+    @include sm{
+        margin: 16px 0px;
+    }
+    @include md{
+        margin: 16px 0px;
+    }
+    h3{
+        font-size: 32px;
+        @include sm{
+            font-size: 18px;
+        }
+        @include md{
+            font-size: 22px;
+        }
+    }
+}
+.collection_title_container{
+    text-align: center;
+    margin: 36px 0px;
+}

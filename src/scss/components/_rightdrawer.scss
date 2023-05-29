@@ -1,0 +1,16 @@
+.right__drawer__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  p {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  .icon {
+    cursor: pointer;
+  }
+}

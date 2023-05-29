@@ -5,6 +5,7 @@ import PaymentInfo from '../components/Checkout/PaymentInfo';
 
 function Checkout() {
   return (
+    // the main div is given with specific height and 100% width
     <div className="checkout__wrapper">
       <ShippingInfo />
       <PaymentInfo />
