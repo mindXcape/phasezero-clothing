@@ -5,11 +5,11 @@ import Navbar from './Layouts/nav/Navbar';
 import Footer from './Layouts/footer/Footer';
 
 export default function App() {
-  return (
-    <>
-      <Navbar />
-      <HomeRoutes />
-      <Footer />
-    </>
-  );
+  // return (
+  //   <>
+  //     {/* <Navbar />
+  //     <HomeRoutes />
+  //     <Footer /> */}
+  //   </>
+  // );
 }
