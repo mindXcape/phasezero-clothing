@@ -89,7 +89,7 @@ function RegisterForm() {
         <Link to="/policies" className="privacy__policy__register">
           privacy policy
         </Link>{' '}
-        you confirm that you want to create your GUCCI profile.
+        you confirm that you want to create your <b>PHASE</b> profile.
       </span>
     </div>
   );

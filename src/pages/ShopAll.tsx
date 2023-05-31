@@ -1,11 +1,12 @@
 import React from 'react';
 import Product from '../components/Card/ProductCard';
 import Title from '../components/Title/Title';
+import CollectionTitle from '../components/Title/Collection_TItle';
 
 function ShopAll() {
   return (
     <>
-      <Title title="SHOP" />
+      <CollectionTitle season="" title_name="SHOP" />
       <div className="new__arrival__container">
         <div className="mx-4">
           <div className="row">
