@@ -20,5 +20,12 @@
 }
 .collection_title_container{
     text-align: center;
-    margin: 36px 0px;
+    background-color: black;
+    color: white;
+    padding: 12px 0px;
+    margin-bottom: 36px;
+    .collection_title{
+        margin: 0px;
+        font-size: 14px;
+    }
 }

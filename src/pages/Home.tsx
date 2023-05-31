@@ -4,6 +4,8 @@ import NewArrival from '../Layouts/NewArrival/NewArrival';
 import AddBanner from '../Layouts/Addbanners/Addbanner';
 import Collection from '../Layouts/Collection/Collection';
 import Athleisure from '../Layouts/Athleisure/Athleisure';
+import Masterbanner from '../components/banner/Masterbanner';
+import { displaypic } from '../assets';
 
 function Home() {
   const adTexts: string[] = [
@@ -14,6 +16,7 @@ function Home() {
   return (
     <>
       <AddBanner adTexts={adTexts} />
+      <Masterbanner src={displaypic} />
       <NewArrival />
       <Athleisure />
       <Collection />
