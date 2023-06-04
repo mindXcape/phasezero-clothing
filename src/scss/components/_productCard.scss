@@ -4,22 +4,22 @@
   position: relative;
   cursor: pointer;
   margin-bottom: 20px;
-  @include lg{
+  @include lg {
     margin-bottom: 36px;
   }
   // @include sm{
   //   margin-bottom: 36px;
   // }
-  @include md{
+  @include md {
     margin: 18px 0px 36px;
   }
-  .card__img { 
+  .card__img {
     img {
       transition: 0.3s opacity ease;
       width: 100%;
       height: 400px;
       object-fit: cover;
-      @include sm{
+      @include sm {
         object-fit: cover;
         height: 200px;
       }
@@ -31,13 +31,13 @@
     margin-top: 10px;
     .card__description {
       margin-bottom: 0px;
-      @include sm{
+      @include sm {
         font-size: 10px;
       }
     }
     .card__price {
       margin-bottom: 0px;
-      @include sm{
+      @include sm {
         font-size: 10px;
       }
     }
@@ -54,10 +54,10 @@
         line-height: 30px;
         text-align: center;
         margin-right: 10px;
-        &:hover{
-            border: 1px solid black;
-            background-color: black;
-            color: white;
+        &:hover {
+          border: 1px solid black;
+          background-color: black;
+          color: white;
         }
       }
     }
@@ -68,9 +68,54 @@
     font-size: 16px;
     left: 88%;
     opacity: 70%;
-    @include sm{
-        font-size: 8px;
-        left: 80%;
+    @include sm {
+      font-size: 8px;
+      left: 80%;
+    }
+  }
+}
+.cart__drawer__wrapper {
+  padding: 0px 20px 20px;
+  width: 400px;
+  .cart__drawer__content {
+    height: 70.2vh;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      width: 6px; /* Width of the scrollbar for Chrome, Safari, and Opera */
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: none; /* Color of the scrollbar thumb for Chrome, Safari, and Opera */
+      border-radius: 3px; /* Rounded corners of the scrollbar thumb */
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: none; /* Color of the scrollbar track for Chrome, Safari, and Opera */
+    }
+  }
+  .cart__drawer__btn{
+    .drawer__price{
+      color: red;
+    }
+    button{
+      width: 100%;
+      margin: 0px 0px 12px;
+      padding: 12px 0px;
+      border: none;
+    }
+    .view__cart__btn{
+      border: none;
+      &:hover{
+        background-color: black;
+        color: white;
+      }
+    }
+    .checkout__btn{
+      background-color: black;
+      color: white;
+      &:hover{
+        background-color: red;
+      }
     }
   }
 }
