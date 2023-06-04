@@ -94,13 +94,19 @@ const Product = function Product({
                   </button>
                 </div>
                 <div className="card__btn">
-                  <button type="button">X</button>
+                  <button type="button" onClick={toggleDrawer('right', true)}>
+                    X
+                  </button>
                 </div>
                 <div className="card__btn">
-                  <button type="button">L</button>
+                  <button type="button" onClick={toggleDrawer('right', true)}>
+                    L
+                  </button>
                 </div>
                 <div className="card__btn">
-                  <button type="button">XL</button>
+                  <button type="button" onClick={toggleDrawer('right', true)}>
+                    XL
+                  </button>
                 </div>
               </div>
             </div>
