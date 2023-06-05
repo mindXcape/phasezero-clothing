@@ -2,6 +2,12 @@
 @import '../abstracts/variables';
 .product__detail__gallery {
   flex: 0.8;
+  @include sm {
+    display: none;
+  }
+  @include md {
+    display: none;
+  }
   .gallery__image {
     .images {
       height: 400px;
@@ -27,5 +33,14 @@
       align-items: center;
       justify-content: center;
     }
+  }
+}
+.gallery__mobile__view {
+  display: none;
+  @include sm {
+    display: block;
+  }
+  @include md {
+    display: block;
   }
 }
