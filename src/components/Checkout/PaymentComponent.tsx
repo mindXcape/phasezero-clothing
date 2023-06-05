@@ -16,7 +16,6 @@ function PaymentComponent() {
         <CheckoutItems />
         <CheckoutItems />
         <CheckoutItems />
-        <CheckoutItems />
       </div>
 
       {/* Section for entering gift or discount codes */}
