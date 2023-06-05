@@ -1,0 +1,31 @@
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+.product__detail__gallery {
+  flex: 0.8;
+  .gallery__image {
+    .images {
+      height: 400px;
+      width: 350px;
+      object-fit: contain;
+      padding: 10px 0;
+      @include sm {
+        height: 250px;
+        width: 250px;
+      }
+      @include md {
+        height: 300px;
+        width: 300px;
+      }
+    }
+    @include sm {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    @include md {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

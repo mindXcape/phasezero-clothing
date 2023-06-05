@@ -1,0 +1,22 @@
+@use '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.product__detail__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+  gap: 20px;
+  @include sm {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @include md {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @include lg {
+  }
+}

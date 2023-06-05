@@ -1,0 +1,32 @@
+.size__chart__modal {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
+
+.size__tshirt__image {
+  height: 200px;
+}
+
+.btn-close {
+  background-color: #fefefe !important;
+}
+
+.offcanvas__wrapper {
+  height: 100% !important;
+  border-radius: 5px !important;
+  margin: 0 63% !important;
+  width: 37% !important;
+  background-color: #141414 !important;
+
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    margin: 0px !important;
+    width: 100% !important;
+  }
+
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    margin: 0px !important;
+    width: 100% !important;
+  }
+}

@@ -8,7 +8,6 @@ import './scss/main.scss';
 
 export default function App() {
   const [bgState, setBgState] = useState<boolean>(false);
-  console.log(bgState);
   return (
     <>
       <Navbar backgroundState={setBgState} />
