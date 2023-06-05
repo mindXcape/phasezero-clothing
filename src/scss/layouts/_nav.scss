@@ -2,9 +2,9 @@
 @import '../abstracts/mixins';
 @import '../abstracts/variables';
 
-a{
+a {
   color: black;
-  :hover{
+  :hover {
     color: black;
   }
 }
@@ -51,8 +51,8 @@ a{
     }
     p:hover {
       color: $color-primary;
-      border-bottom: 3px solid $color-primary;
-      transform: scale(1.2);
+      // border-bottom: 3px solid $color-primary;
+      // transform: scale(1.2);
     }
   }
   .logo {

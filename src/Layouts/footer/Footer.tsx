@@ -18,18 +18,18 @@ function Footer() {
           <Link to="/shipping_returns" className="footer__nav__link">
             SHIPPING & RETURNS
           </Link>
-          <Link to="accessibility" className="footer__nav__link">
+          <Link to="/social" className="footer__nav__link">
+            SOCIAL
+          </Link>
+          {/* <Link to="accessibility" className="footer__nav__link">
             ACCESSIBILITY
           </Link>
           <Link to="/stockists" className="footer__nav__link">
             STOCKISTS
           </Link>
-          <Link to="/social" className="footer__nav__link">
-            SOCIAL
-          </Link>
           <Link to="/ccpa" className="footer__nav__link">
             CCPA
-          </Link>
+          </Link> */}
         </div>
       </nav>
       <p className="footer__text">EXPERIENCE WITH US</p>
