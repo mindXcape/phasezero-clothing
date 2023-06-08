@@ -3,23 +3,29 @@
   .athleisure__video {
     margin-bottom: 20px;
     img {
-      height: 700px;
+      height: 600px;
       width: 100%;
       object-fit: cover;
+      @include md{
+        height: 400px;
+      }
+      @include sm{
+        height: 400px;
+      }
     }
   }
   .athleisure__image__container {
     .athleisure__image {
       img {
-        height: 340px;
+        height: 292px;
         width: 100%;
         object-fit: cover;
         @include sm {
-          object-fit: contain;
-          height: 370px;
+          object-fit: cover;
+          height: 250px;
         }
         @include md {
-          object-fit: contain;
+          object-fit: cover;
         }
       }
     }
