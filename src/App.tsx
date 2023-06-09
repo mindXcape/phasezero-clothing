@@ -8,12 +8,12 @@ import './scss/main.scss';
 
 export default function App() {
   const [bgState, setBgState] = useState<boolean>(false);
-  console.log(bgState);
   return (
     <>
       <Navbar backgroundState={setBgState} />
       {bgState ? (
         <div className="background__blur">
+          <div className="background__status" />
           <HomeRoutes />
         </div>
       ) : (
