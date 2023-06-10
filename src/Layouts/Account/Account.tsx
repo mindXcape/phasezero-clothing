@@ -46,7 +46,9 @@ function Account() {
         </div>
         <div className="register__texts__wrapper">
           <span>OR</span>
-          <span>Continue with your email address</span>
+          <span className="continueWithEmail__text">
+            Continue with your email address
+          </span>
           <span>
             Sign in with your Phasezero email and password or create a profile
             you are new
@@ -58,7 +60,7 @@ function Account() {
             isRequired
           />
         </div>
-        {showForm && <LoginForm />}
+        {showForm && <RegisterForm />}
         {!showForm ? (
           <Button
             className="continue__btn__register"
