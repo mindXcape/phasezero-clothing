@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../../../scss/main.scss';
 
-function FloatingLabelSelectBox() {
+function FloatingLabelSelect() {
   const [value, setValue] = useState('');
 
   return (
@@ -21,4 +21,4 @@ function FloatingLabelSelectBox() {
   );
 }
 
-export default FloatingLabelSelectBox;
+export default FloatingLabelSelect;
