@@ -23,8 +23,10 @@ const ProviderBtn = function ProviderBtn({
       onClick={eventHandler}
       disabled={disabled}
     >
-      {providerIcon}
-      <div className="btn__provider__title">{title}</div>
+      <div className="provider__wrapper">
+        {providerIcon}
+        <div className="btn__provider__title">{title}</div>
+      </div>
     </button>
   );
 };

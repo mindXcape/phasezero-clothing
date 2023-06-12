@@ -5,7 +5,7 @@ import Count from '../Count';
 import Contact from '../pages/Contact';
 import NotFound from '../pages/NotFound';
 import CartPage from '../pages/Cartpage';
-import Register from '../Layouts/Register/Register';
+import Account from '../Layouts/Account/Account';
 import CollectionPage from '../pages/CollectionPage';
 import ShopAll from '../pages/ShopAll';
 import Wishlist from '../pages/Wishlist';
@@ -21,7 +21,7 @@ const HomeRoutes = function HomeRoutes() {
       <Route path="/shop" element={<ShopAll />} />
       <Route path="/cart" element={<CartPage />} />
       <Route path="/wishlist" element={<Wishlist />} />
-      <Route path="/register" element={<Register />} />
+      <Route path="/register" element={<Account />} />
       <Route path="*" element={<NotFound />} />
       <Route path="/checkout" element={<Checkout />} />
     </Routes>
