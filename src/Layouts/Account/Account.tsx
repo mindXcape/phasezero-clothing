@@ -1,22 +1,28 @@
 import { useState } from 'react';
-import AppleIcon from '@mui/icons-material/Apple';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import GoogleIcon from '@mui/icons-material/Google';
-import ProviderBtn from '../../components/button/ProviderBtn';
-import FloatingLabelInput from '../../components/ui/input/FloatingInputLabel';
-import RegisterForm from '../../components/form/RegisterForm';
-import Button from '../../components/button/Button';
-import LoginForm from '../../components/form/LoginForm';
+import {
+  AppleIcon,
+  FacebookIcon,
+  GoogleIcon,
+} from '../../assets/ProviderLogo/index';
+import {
+  ProviderBtn,
+  FloatingLabelInput,
+  RegisterForm,
+  Button,
+  LoginForm,
+} from '../../components/index';
 
 function Account() {
-  const [showForm, setShowForm] = useState(false);
-  const handleClick = () => {
+  const [showForm, setShowForm] = useState<boolean>(false);
+
+  const handleClick: MouseEventHandler<HTMLButtonElement | HTMLDivElement> = (event) => {
     // your click handler logic
   };
-  const handleContinueClick = (e: { preventDefault: () => void }) => {
+  const handleContinueClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     setShowForm(true);
   };
+
   return (
     <div className="account__main__wrapper">
       <div className="account__sub__wrapper">
@@ -46,7 +52,7 @@ function Account() {
         </div>
         <div className="register__texts__wrapper">
           <span>OR</span>
-          <span className="continueWithEmail__text">
+          <span className="continue__email__text">
             Continue with your email address
           </span>
           <span>
@@ -60,7 +66,6 @@ function Account() {
             isRequired
           />
         </div>
-        {showForm && <RegisterForm />}
         {!showForm ? (
           <Button
             className="continue__btn__register"
@@ -69,12 +74,15 @@ function Account() {
             title="Continue"
           />
         ) : (
-          <Button
-            className="create__btn__register"
-            disabled={false}
-            eventHandler={handleContinueClick}
-            title="Create My Profile"
-          />
+          <>
+            <RegisterForm />
+            <Button
+              className="create__btn__register"
+              disabled={false}
+              eventHandler={handleContinueClick}
+              title="Create My Profile"
+            />
+          </>
         )}
       </div>
     </div>
