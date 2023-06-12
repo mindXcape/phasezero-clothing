@@ -7,20 +7,8 @@ function ShippingForm() {
     <div className="form__Wrapper">
       {/* form for shipping information */}
       <form action="">
-        <h3>Shipping Address</h3>
+        <h3>Information</h3>
         <div className="form__main">
-          {/* select to choose country */}
-          <select
-            className="select__country__wrapper"
-            id="countries"
-            name="countries"
-          >
-            <option value="">Select a country</option>
-            <option value="USA">USA</option>
-            <option value="Australia">Australia</option>
-            <option value="India">India</option>
-            <option value="Nepal">Nepal</option>
-          </select>
           {/* first and last name input */}
           <div className="form-group">
             <InputRhude
@@ -53,9 +41,9 @@ function ShippingForm() {
           <InputRhude
             className="form__input__column"
             type="text"
-            id="firstname"
-            name=""
-            placeholder="Apartment, suite, etc. (optional)"
+            id="landmark"
+            name="landmark"
+            placeholder="Landmark (School, Hospital etc)"
           />
           {/* city and postal code */}
           <div className="form-group">
@@ -69,10 +57,12 @@ function ShippingForm() {
             />
             <InputRhude
               className="form__input__column"
-              type="text"
-              id="lastname"
-              name="lastname"
-              placeholder="Postal code (optional)"
+              type="tel"
+              id="number"
+              name="number"
+              placeholder="Contact Number"
+              pattern="\+977-98\d{8}"
+              required
             />
           </div>
           {/* checkbox input */}

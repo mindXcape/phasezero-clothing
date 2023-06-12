@@ -25,6 +25,6 @@ body {
 // import for vendor in layman's term (imports for css framework such as MUI, Bootstrap Chakra UI etc.)
 @import './vendor/_vendor-dir';
 .background__blur {
-  filter: grayscale(20);/* Apply the blur effect */
+  filter: grayscale(20); /* Apply the blur effect */
   background-color: rgba(0, 0, 0, 0.2);
 }

@@ -3,7 +3,7 @@ import '../../scss/main.scss';
 import PaymentComponent from './PaymentComponent';
 import CheckoutAccordion from '../accordion/CheckoutAccordion';
 
-export default function PaymentInfo() {
+export default function CheckoutPayment() {
   // use state to toggle mobile and desktop view
   const [isMobile, setIsMobile] = useState(false);
 
