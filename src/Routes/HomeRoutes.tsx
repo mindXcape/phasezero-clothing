@@ -10,6 +10,8 @@ import CollectionPage from '../pages/CollectionPage';
 import ShopAll from '../pages/ShopAll';
 import Wishlist from '../pages/Wishlist';
 import Checkout from '../pages/Checkout';
+import { CheckoutInformation } from '../components';
+import CheckoutPaymentMethod from '../components/Checkout/CheckoutPaymentMethod';
 
 const HomeRoutes = function HomeRoutes() {
   return (
@@ -22,8 +24,13 @@ const HomeRoutes = function HomeRoutes() {
       <Route path="/cart" element={<CartPage />} />
       <Route path="/wishlist" element={<Wishlist />} />
       <Route path="/register" element={<Account />} />
+      <Route path="/checkout" element={<Checkout />}>
+        <Route path="" element={<CheckoutInformation />} />
+        {/* dont remove the below commented out line maybe required later */}
+        {/* <Route path="shipping" element={<CheckoutShipping />} /> */}
+        <Route path="payment-method" element={<CheckoutPaymentMethod />} />
+      </Route>
       <Route path="*" element={<NotFound />} />
-      <Route path="/checkout" element={<Checkout />} />
     </Routes>
   );
 };

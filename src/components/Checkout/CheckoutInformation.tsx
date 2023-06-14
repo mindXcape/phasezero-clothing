@@ -8,7 +8,7 @@ import InputRhude from '../ui/input/InputRhude';
 import ShippingForm from '../form/ShippingForm';
 import Button from '../button/Button';
 
-function CheckoutShipping() {
+function CheckoutInformation() {
   // code for breadcrumbs
   const breadcrumbs = [
     <Link className="links" key={1} to="/">
@@ -52,4 +52,4 @@ function CheckoutShipping() {
   );
 }
 
-export default CheckoutShipping;
+export default CheckoutInformation;
