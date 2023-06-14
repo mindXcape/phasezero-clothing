@@ -1,0 +1,119 @@
+@import '../../abstracts/mixins';
+.count__down__wrapper {
+  padding: 0px 20px;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  @include sm {
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+  }
+  @include md {
+    gap: 8px;
+  }
+  .count__down__card__wrapper {
+    text-align: center;
+    width: 201px;
+    @include sm {
+      width: 81px;
+    }
+    @include lg {
+      width: 161px;
+    }
+    .count__down__card__content {
+      display: flex;
+      gap: 1px;
+      .count__down__card__left {
+        position: relative;
+        .count__down__card__top {
+          background-color: #000;
+          height: 100px;
+          width: 100px;
+          margin-bottom: 1px;
+          @include sm {
+            width: 40px;
+            height: 40px;
+          }
+          @include lg {
+            width: 80px;
+            height: 80px;
+          }
+        }
+        .count__down__card__bottom {
+          background-color: #000;
+          height: 100px;
+          width: 100px;
+          @include sm {
+            width: 40px;
+            height: 40px;
+          }
+          @include lg {
+            width: 80px;
+            height: 80px;
+          }
+        }
+        h3 {
+          font-size: 200px;
+          position: absolute;
+          top: -4%;
+          left: 8%;
+          z-index: 9999;
+          color: white;
+          @include sm {
+            font-size: 80px;
+          }
+          @include lg {
+            font-size: 158px;
+          }
+        }
+      }
+      .count__down__card__right {
+        position: relative;
+        .count__down__card__top {
+          background-color: #000;
+          height: 100px;
+          width: 100px;
+          margin-bottom: 1px;
+          @include sm {
+            width: 40px;
+            height: 40px;
+          }
+          @include lg {
+            width: 80px;
+            height: 80px;
+          }
+        }
+        .count__down__card__bottom {
+          background-color: #000;
+          height: 100px;
+          width: 100px;
+          @include sm {
+            width: 40px;
+            height: 40px;
+          }
+          @include lg {
+            width: 80px;
+            height: 80px;
+          }
+        }
+        h3 {
+          font-size: 200px;
+          position: absolute;
+          top: -4%;
+          left: 8%;
+          z-index: 9999;
+          color: white;
+          @include sm {
+            font-size: 80px;
+          }
+          @include lg {
+            font-size: 158px;
+          }
+        }
+      }
+    }
+  }
+}

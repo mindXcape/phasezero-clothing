@@ -10,6 +10,7 @@ import Register from '../Layouts/Register/Register';
 import CollectionPage from '../pages/CollectionPage';
 import ShopAll from '../pages/ShopAll';
 import Wishlist from '../pages/Wishlist';
+import UnderConstructionPage from '../pages/UnderConstruction/UnderConstructionPage';
 
 const HomeRoutes = function HomeRoutes() {
   return (
@@ -23,6 +24,7 @@ const HomeRoutes = function HomeRoutes() {
       <Route path="/cart" element={<CartPage />} />
       <Route path="/wishlist" element={<Wishlist />} />
       <Route path="/register" element={<Register />} />
+      <Route path="/under_construction" element={<UnderConstructionPage />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
