@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import ArrowDropDownCircleIcon from '@mui/icons-material/ArrowDropDownCircle';
 import CountDownCard from './CountDownCard';
 
 interface CountdownProps {
@@ -124,6 +125,10 @@ function Countdown({
           </div>
         </div>
         <h2>Seconds</h2>
+      </div>
+      <div className="count__down__cursor">
+        <ArrowDropDownCircleIcon className="animated__icon" />
+        <div className="sparkle" />
       </div>
     </div>
   );
