@@ -1,16 +1,15 @@
 import React from 'react';
 import CommunityGrid from '../Layouts/Community/CommunityGrid';
+import Title from '../components/Title/Title';
 
-type Props = {}
-
-function Community({ }: Props) {
+function Community() {
   return (
     <div className="community__wrapper">
-      <h1>Community Posts</h1>
+      <Title title="Community Post" />
       <CommunityGrid />
       <CommunityGrid />
     </div>
-  )
+  );
 }
 
 export default Community;

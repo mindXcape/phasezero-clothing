@@ -3,16 +3,16 @@
 .community__grid__wrapper {
   display: grid;
   gap: 2px;
-  grid-auto-columns: 25%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
   grid-template-areas:
     'one one'
     'two three'
     'four four'
     'five six';
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
 
   @include xlg {
+    grid-auto-columns: 1fr;
     grid-template-areas:
       'one one two three'
       'five four four six';
@@ -23,7 +23,6 @@
     align-items: center;
     justify-items: center;
   }
-
   .grid__post__item:nth-child(1) {
     grid-area: one;
   }
