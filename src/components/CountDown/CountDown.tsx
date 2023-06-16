@@ -127,8 +127,10 @@ function Countdown({
         <h2>Seconds</h2>
       </div>
       <div className="count__down__cursor">
-        <ArrowDropDownCircleIcon className="animated__icon" />
-        <div className="sparkle" />
+        <a href="#phases_of_phase_zero">
+          {' '}
+          <ArrowDropDownCircleIcon className="animated__icon" />
+        </a>
       </div>
     </div>
   );

@@ -24,7 +24,7 @@ function UnderConstructionPage() {
       />
       <div className="under__construction__images__main">
         <div className="under__construction__title">
-          <h2>PHASES OF PHASE ZERO</h2>
+          <h2 id="phases_of_phase_zero">PHASES OF PHASE ZERO</h2>
         </div>
         <div className="under__construction__images__wrapper">
           <div className="container">
@@ -50,6 +50,26 @@ function UnderConstructionPage() {
                     imageTop={seventh}
                     imageBottom={eighth}
                   />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="under__construction__wardrobe">
+            <div className="container">
+              <div className="row">
+                <div className="col-12 col-md-12 col-lg-6 col-sm-12">
+                  <div className="mindxcape">
+                    <p>By MindXcape</p>
+                  </div>
+                </div>
+                <div className="col-12 col-md-12 col-lg-6 col-sm-12">
+                  <div className="under__construction__wardrobe__content">
+                    <p>
+                      We are taking online deliveries all over Nepal from our
+                      instagram page @phasezero.clo
+                    </p>
+                    <button type="button">Explore Instagram Wardrobe</button>
+                  </div>
                 </div>
               </div>
             </div>
