@@ -5,45 +5,17 @@
   gap: 2px;
   grid-auto-columns: 25%;
   grid-template-areas:
-    'one'
-    'two'
-    'three'
-    'four'
-    'five'
-    'six';
+    'one one'
+    'two three'
+    'four four'
+    'five six';
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
 
   @include xlg {
     grid-template-areas:
       'one one two three'
       'five four four six';
-    grid-template-rows: auto;
-  }
-
-  @include lg {
-    grid-template-areas:
-      'one one'
-      'two three'
-      'four four'
-      'five six';
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-  }
-  @include md {
-    grid-template-areas:
-      'one one'
-      'two three'
-      'four four'
-      'five six';
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-  }
-  @include sm {
-    grid-template-areas:
-      'one one'
-      'two three'
-      'four four'
-      'five six';
-    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
   }
   .grid__post__item {
