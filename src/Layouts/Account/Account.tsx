@@ -75,7 +75,7 @@ function Account() {
           />
         ) : (
           <>
-            <RegisterForm />
+            <LoginForm />
             <Button
               className="create__btn__register"
               disabled={false}

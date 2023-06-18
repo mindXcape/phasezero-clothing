@@ -1,0 +1,60 @@
+.modal__right__items__wrapper {
+  width: 100%;
+  min-height: auto;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  .navigate__modal__item {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    width: 100%;
+
+    @include sm {
+      gap: 0px;
+    }
+  }
+
+  .modal__product__card__component {
+    display: flex;
+    flex-direction: row;
+
+    @include md {
+      justify-content: center;
+    }
+
+    @include lg {
+      justify-content: center;
+    }
+  }
+
+  .modal__image__description {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      line-height: 1.5em;
+      text-align: center;
+    }
+  }
+
+  .modal__image__source {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      line-height: 1.5em;
+      text-align: center;
+      word-spacing: 5px;
+    }
+  }
+  .modal__right__items__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
