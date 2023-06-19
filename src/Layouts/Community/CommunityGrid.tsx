@@ -48,7 +48,7 @@ function CommunityGrid() {
             <img
               className="community__grid__item__image"
               src={item.image}
-              alt="CommunityPost"
+              alt="Community Post"
             />
           </button>
         ))}
