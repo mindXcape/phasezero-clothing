@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { MouseEventHandler, useState } from 'react';
 import {
   AppleIcon,
   FacebookIcon,
@@ -15,7 +15,9 @@ import {
 function Account() {
   const [showForm, setShowForm] = useState<boolean>(false);
 
-  const handleClick: MouseEventHandler<HTMLButtonElement | HTMLDivElement> = (event) => {
+  const handleClick: MouseEventHandler<HTMLButtonElement | HTMLDivElement> = (
+    event
+  ) => {
     // your click handler logic
   };
   const handleContinueClick = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -75,7 +77,7 @@ function Account() {
           />
         ) : (
           <>
-            <RegisterForm />
+            <LoginForm />
             <Button
               className="create__btn__register"
               disabled={false}

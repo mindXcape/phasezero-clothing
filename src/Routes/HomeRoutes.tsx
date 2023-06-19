@@ -12,6 +12,7 @@ import Wishlist from '../pages/Wishlist';
 import Checkout from '../pages/Checkout';
 import { CheckoutInformation } from '../components';
 import CheckoutPaymentMethod from '../components/Checkout/CheckoutPaymentMethod';
+import Community from '../pages/Community';
 
 const HomeRoutes = function HomeRoutes() {
   return (
@@ -30,6 +31,7 @@ const HomeRoutes = function HomeRoutes() {
         {/* <Route path="shipping" element={<CheckoutShipping />} /> */}
         <Route path="payment-method" element={<CheckoutPaymentMethod />} />
       </Route>
+      <Route path="/community" element={<Community />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

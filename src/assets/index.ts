@@ -10,6 +10,7 @@ import pz_lifestyle1 from './pz_lifestye1.jpg';
 import pz_lifestyle2 from './pz_lifestyle2.jpg';
 import carouselfinal from './carouselfinal.jpg';
 import dummyQR from './qrcode.png';
+import pagenotfound from './pagenotfound.png';
 
 export {
   bigbannerimg,
@@ -24,4 +25,5 @@ export {
   pz_lifestyle2,
   phone_screen,
   dummyQR,
+  pagenotfound,
 };

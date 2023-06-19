@@ -1,7 +1,5 @@
 import '../../scss/main.scss';
 import React, { useState } from 'react';
-import Box from '@mui/material/Box';
-import List from '@mui/material/List';
 import Drawer from '@mui/material/Drawer';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import ProductCardSkeleton from '../../Provider/Skeleton/ProductCardSkeleton';

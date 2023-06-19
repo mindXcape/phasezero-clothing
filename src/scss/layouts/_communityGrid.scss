@@ -1,0 +1,71 @@
+@import '../abstracts/mixins';
+
+.community__grid__wrapper {
+  display: grid;
+  gap: 2px;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 400px;
+  grid-template-areas:
+    'one one'
+    'two three'
+    'four four'
+    'five six'
+    'seven seven'
+    'eight nine';
+
+  @include xlg {
+    grid-auto-columns: 1fr;
+    grid-template-areas:
+      'one one two three'
+      'four five five six'
+      'seven eight nine nine';
+    grid-auto-rows: 400px;
+  }
+  .grid__post__item {
+    padding: 2px;
+    align-items: center;
+    justify-items: center;
+    border: none;
+    outline: none;
+    background-color: #000;
+  }
+  .grid__post__item:nth-child(1) {
+    grid-area: one;
+  }
+  .grid__post__item:nth-child(2) {
+    grid-area: two;
+  }
+  .grid__post__item:nth-child(3) {
+    grid-area: three;
+  }
+  .grid__post__item:nth-child(4) {
+    grid-area: four;
+  }
+  .grid__post__item:nth-child(5) {
+    grid-area: five;
+  }
+  .grid__post__item:nth-child(6) {
+    grid-area: six;
+  }
+  .grid__post__item:nth-child(7) {
+    grid-area: seven;
+  }
+  .grid__post__item:nth-child(8) {
+    grid-area: eight;
+  }
+  .grid__post__item:nth-child(9) {
+    grid-area: nine;
+  }
+}
+
+.community__grid__item__image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: filter 0.5s ease;
+
+  &:hover {
+    filter: brightness(50%) blur(2px);
+  }
+}

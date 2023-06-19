@@ -15,10 +15,7 @@ function CheckoutInformation() {
       Information
     </Link>,
     <Link className="links" key={2} to="/">
-      Shipping
-    </Link>,
-    <Link className="links" key={3} to="/">
-      Checkout
+      Payment Method
     </Link>,
   ];
   return (
