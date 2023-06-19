@@ -9,7 +9,6 @@ import UnderConstructionPage from './pages/UnderConstruction/UnderConstructionPa
 
 export default function App() {
   const [bgState, setBgState] = useState<boolean>(false);
-  console.log(bgState);
   return (
     <UnderConstructionPage />
     // <>
