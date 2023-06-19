@@ -1,6 +1,7 @@
 .hover__image__container__wrapper__one {
   position: relative;
-  height: 300px;
+  height: 304px;
+  margin: 4px !important;
   &:hover {
     .hover__image__container__overlay__one {
       opacity: 1;
@@ -52,7 +53,8 @@
 }
 .hover__image__container__wrapper__two {
   position: relative;
-  height: 400px;
+  height: 404px;
+  margin: 4px !important;
   &:hover {
     .hover__image__container__overlay__two {
       opacity: 1;
