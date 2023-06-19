@@ -6,8 +6,8 @@ interface Props {
   selectedImage: string;
   isOpen: boolean;
   onClose: (e: MouseEvent<HTMLButtonElement>) => void;
-  goToNextImage: () => void;
-  goToPrevImage: () => void;
+  goToNextImage: (e: MouseEvent<HTMLButtonElement>) => void;
+  goToPrevImage: (e: MouseEvent<HTMLButtonElement>) => void;
 }
 
 export default function CommunityModal({

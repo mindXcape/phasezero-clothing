@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { MouseEvent } from 'react';
 import Button from '../button/Button';
 import { athleisurefront } from '../../assets/index';
 
-type Props = {};
-
-function ModalProductCard({ }: Props) {
-  const handleOnClick = (e) => { };
+function ModalProductCard() {
+  const handleOnClick = (e: MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+  };
 
   return (
     <div className="modal__product__wrapper">

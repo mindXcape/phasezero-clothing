@@ -11,8 +11,8 @@ import ModalProductCard from '../Card/ModalProductCard';
 
 interface Props {
   onClose: (e: MouseEvent<HTMLButtonElement>) => void;
-  goToNextImage: () => void;
-  goToPrevImage: () => void;
+  goToNextImage: (e: MouseEvent<HTMLButtonElement>) => void;
+  goToPrevImage: (e: MouseEvent<HTMLButtonElement>) => void;
 }
 
 function ModalRightItems({ goToNextImage, goToPrevImage, onClose }: Props) {

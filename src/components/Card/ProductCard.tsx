@@ -1,7 +1,5 @@
 import '../../scss/main.scss';
 import React, { useState } from 'react';
-import Box from '@mui/material/Box';
-import List from '@mui/material/List';
 import Drawer from '@mui/material/Drawer';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import ProductCardSkeleton from '../../Provider/Skeleton/ProductCardSkeleton';
@@ -33,18 +31,18 @@ const Product = function Product({
 
   const toggleDrawer =
     (anchor: Anchor, open: boolean) =>
-      (event: React.KeyboardEvent | React.MouseEvent) => {
-        if (
-          event &&
-          event.type === 'keydown' &&
-          ((event as React.KeyboardEvent).key === 'Tab' ||
-            (event as React.KeyboardEvent).key === 'Shift')
-        ) {
-          return;
-        }
+    (event: React.KeyboardEvent | React.MouseEvent) => {
+      if (
+        event &&
+        event.type === 'keydown' &&
+        ((event as React.KeyboardEvent).key === 'Tab' ||
+          (event as React.KeyboardEvent).key === 'Shift')
+      ) {
+        return;
+      }
 
-        setState({ ...state, [anchor]: open });
-      };
+      setState({ ...state, [anchor]: open });
+    };
 
   // state to handle the hover effect
   const [togglerState, setTogglerState] = useState<boolean>(false);

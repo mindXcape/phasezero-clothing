@@ -5,7 +5,7 @@ import { ImageType, images } from '../../data/images';
 import CommunityModal from '../../components/ui/modal/CommunityModal';
 
 function CommunityGrid() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(
     null
   );
@@ -21,13 +21,15 @@ function CommunityGrid() {
     setIsModalOpen(false);
   };
 
-  const goToNextImage = () => {
+  const goToNextImage = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
     if (selectedImageIndex !== null && selectedImageIndex < images.length - 1) {
       setSelectedImageIndex(selectedImageIndex + 1);
     }
   };
 
-  const goToPrevImage = () => {
+  const goToPrevImage = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
     if (selectedImageIndex !== null && selectedImageIndex > 0) {
       setSelectedImageIndex(selectedImageIndex - 1);
     }
@@ -46,7 +48,7 @@ function CommunityGrid() {
             <img
               className="community__grid__item__image"
               src={item.image}
-              alt=""
+              alt="CommunityPost"
             />
           </button>
         ))}
