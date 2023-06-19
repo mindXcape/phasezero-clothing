@@ -1,4 +1,5 @@
 import {
+  first,
   tenth,
   fourth,
   second,
@@ -9,6 +10,7 @@ import {
   eighth,
 } from '../../assets';
 import Countdown from '../../components/CountDown/CountDown';
+import HoverImageContainer from '../../components/HoverImageContainer/HoverImageContainer';
 import UnderConstructionLeft from './UnderConstructionLeft';
 import UnderConstructionRight from './UnderConstructionRight';
 
@@ -34,21 +36,24 @@ function UnderConstructionPage() {
                   <UnderConstructionLeft
                     imageTop={tenth}
                     imageBottom={second}
+                    storyTitleBottom="MADE IN MIND "
+                    storyDescriptionOneBottom="Wise enough to understand that a great empire can only be built on a strong foundation.  But easier said then done, laying a foundation is difficult. "
+                    storyDescriptionTwoBottom="A strong foundation required strong guidance , and strong guidance demanded tremendous knowledge, which is obtained through vision.  Visions begin to form in the mind, which is where it all originated. The true birthplace of the brand lies within the minds of its creators."
+                    storyTitleTop="TODDLERS"
+                    storyDescriptionOneTop="Phase Zero stands as a symbol of authenticity and originality. Never imagined how difficult it is to be original."
+                    storyDescriptionTwoTop="Arts are subjective. I discovered the hard way how tough it is to represent a vision on a canvas (here: fabric). In our desire of perfection, we kept chasing our thoughts in order to make them a reality. To be honest, it wasn't even close. Anyway, trusting the experience and enjoying seeing a toddler grow was what kept us going. "
                   />
                 </div>
                 <div className="col-12 col-md-12 col-lg-6 col-sm-12">
                   <UnderConstructionRight
                     imageTop={third}
                     imageBottom={fourth}
-                  />
-                </div>
-                <div className="col-12 col-md-12 col-lg-6 col-sm-12">
-                  <UnderConstructionLeft imageTop={fivth} imageBottom={sixth} />
-                </div>
-                <div className="col-12 col-md-12 col-lg-6 col-sm-12">
-                  <UnderConstructionRight
-                    imageTop={seventh}
-                    imageBottom={eighth}
+                    storyTitleTop="SEEDS"
+                    storyDescriptionOneTop="This is the story of how a mere comment about lacking vision set in motion a remarkable evolution, leading to the birth of Phase Zero."
+                    storyDescriptionTwoTop="Phase Zero, born out of an idea that should never have existed, Just an egoistic move. Exactly like a toddler pushing for something they have no knowledge about. what they would be entering. We started PZ with a leap of faith and some ignorance."
+                    storyTitleBottom="ART"
+                    storyDescriptionOneBottom="Phase Zero stands as a symbol of authenticity and originality. Never imagined how difficult it is to be original."
+                    storyDescriptionTwoBottom="Arts are subjective. I discovered the hard way how tough it is to represent a vision on a canvas (here: fabric). In our desire of perfection, we kept chasing our thoughts in order to make them a reality. To be honest, it wasn't even close. Anyway, trusting the experience and enjoying seeing a toddler grow was what kept us going. "
                   />
                 </div>
               </div>
