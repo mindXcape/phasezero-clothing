@@ -21,6 +21,7 @@ import ninth from './eightt.jpg';
 import tenth from './first (1).jpg';
 import artist from './aforartist.jpg';
 import lifestyle from './lifestyle.jpg';
+import dummyQR from './qrcode.png';
 import pagenotfound from './pagenotfound.png';
 
 export {
@@ -47,5 +48,6 @@ export {
   pz_lifestyle1,
   pz_lifestyle2,
   phone_screen,
+  dummyQR,
   pagenotfound,
 };

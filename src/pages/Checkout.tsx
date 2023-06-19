@@ -1,14 +1,17 @@
 import React from 'react';
+import CheckoutPayment from '../components/Checkout/CheckoutPayment';
 import '../scss/main.scss';
-import ShippingInfo from '../components/Checkout/ShippingInfo';
-import PaymentInfo from '../components/Checkout/PaymentInfo';
+import CheckoutLeftItem from '../components/Checkout/CheckoutLeftItem';
 
 function Checkout() {
   return (
-    // the main div is given with specific height and 100% width
     <div className="checkout__wrapper">
-      <ShippingInfo />
-      <PaymentInfo />
+      <div className="checkout__leftItem">
+        <CheckoutLeftItem />
+      </div>
+      <div className="checkout__rightItem">
+        <CheckoutPayment />
+      </div>
     </div>
   );
 }

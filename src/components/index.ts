@@ -8,8 +8,8 @@ import ProviderBtn from './button/ProviderBtn';
 // Checkout Imports
 import CheckoutItems from './Checkout/CheckoutItems';
 import PaymentComponent from './Checkout/PaymentComponent';
-import PaymentInfo from './Checkout/PaymentInfo';
-import ShippingInfo from './Checkout/ShippingInfo';
+import CheckoutPayment from './Checkout/CheckoutPayment';
+import CheckoutInformation from './Checkout/CheckoutInformation';
 
 import Rightdrawers from './drawers/Rightdrawers';
 import Form from './form/Form';
@@ -37,8 +37,8 @@ export {
   ProviderBtn,
   CheckoutItems,
   PaymentComponent,
-  PaymentInfo,
-  ShippingInfo,
+  CheckoutPayment,
+  CheckoutInformation,
   Rightdrawers,
   Form,
   LoginForm,
