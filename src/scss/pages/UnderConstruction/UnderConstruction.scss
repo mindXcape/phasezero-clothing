@@ -1,0 +1,48 @@
+@import '../../abstracts/mixins';
+@import '../../abstracts/variables';
+.under__construction__images__main {
+  background-color: black;
+  .under__construction__title {
+    text-align: center;
+    padding: 36px 0px;
+    h2 {
+      margin-bottom: 0px;
+      color: white;
+      font-size: 50px;
+    }
+  }
+  .under__construction__images__wrapper {
+    .under__construction__wardrobe {
+      margin-top: 15px;
+      .mindxcape {
+        padding-left: 15px;
+        display: flex;
+        flex-direction: column;
+        height: 115px;
+        color: white;
+        p {
+          margin-top: auto;
+        }
+      }
+      .under__construction__wardrobe__content {
+        height: 100px;
+        padding-left: 6px;
+        p {
+          color: white;
+        }
+        button {
+          width: 100%;
+          padding: 12px;
+          background-color: #333;
+          border: none;
+          font-size: 22px;
+          color: white;
+          &:hover {
+            background-color: white;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
