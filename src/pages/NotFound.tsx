@@ -1,11 +1,14 @@
-import { Link } from 'react-router-dom';
+import { pagenotfound } from '../assets';
+import { Title } from '../components';
 
 function NotFound() {
   return (
-    <>
-      <h1>Not Found</h1>
-      <Link to="/">GO HOME</Link>
-    </>
+    <div className="page__not__found__wrapper">
+      <div className="page__not__found__image__wrapper">
+        <Title title="Page not Found" />
+        <img src={pagenotfound} alt="" />
+      </div>
+    </div>
   );
 }
 
