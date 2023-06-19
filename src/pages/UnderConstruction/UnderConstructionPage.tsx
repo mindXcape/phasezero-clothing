@@ -13,7 +13,6 @@ import {
   lifestyle,
 } from '../../assets';
 import Countdown from '../../components/CountDown/CountDown';
-import HoverImageContainer from '../../components/HoverImageContainer/HoverImageContainer';
 import UnderConstructionLeft from './UnderConstructionLeft';
 import UnderConstructionRight from './UnderConstructionRight';
 
