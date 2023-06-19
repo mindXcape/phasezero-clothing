@@ -12,7 +12,13 @@ export default function App() {
     <>
       <Navbar backgroundState={setBgState} />
       {bgState ? (
-        <div className="background__blur">
+        <div
+          onClick={() => setBgState(false)}
+          onKeyDown={() => setBgState(false)}
+          role="button"
+          tabIndex={0}
+          className="background__blur"
+        >
           <div className="background__status" />
           <HomeRoutes />
         </div>
