@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable react/no-array-index-key */
 import React, { useState } from 'react';
 import { ImageType, images } from '../../data/images';
@@ -14,7 +15,8 @@ function CommunityGrid() {
     setIsModalOpen(true);
   };
 
-  const closeModal = () => {
+  const closeModal = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.stopPropagation();
     setSelectedImageIndex(null);
     setIsModalOpen(false);
   };

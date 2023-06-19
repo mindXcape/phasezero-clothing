@@ -5,7 +5,7 @@ import Title from '../components/Title/Title';
 function Community() {
   return (
     <div className="community__wrapper">
-      <Title title="Community Post" />
+      <h1 className="title__community">Community Post</h1>
       <CommunityGrid />
       <CommunityGrid />
     </div>

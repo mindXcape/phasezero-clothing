@@ -5,9 +5,6 @@ import {
   ArrowForwardIosIcon,
   CloseIcon,
   FacebookIcon,
-  EmailIcon,
-  TwitterIcon,
-  PinterestIcon,
   InstagramIcon,
 } from '../../assets/CommunityModalIcons/index';
 import ModalProductCard from '../Card/ModalProductCard';
@@ -24,16 +21,8 @@ function ModalRightItems({ goToNextImage, goToPrevImage, onClose }: Props) {
   return (
     <div className="modal__right__items__wrapper">
       <div className="navigate__modal__item">
-        <div className="navigate__left__right">
-          <IconButton onClick={goToPrevImage}>
-            <ArrowBackIosIcon sx={{ fontSize: 40 }} />
-          </IconButton>
-          <IconButton onClick={goToNextImage}>
-            <ArrowForwardIosIcon sx={{ fontSize: 40 }} />
-          </IconButton>
-        </div>
         <IconButton onClick={onClose}>
-          <CloseIcon sx={{ fontSize: 40 }} />
+          <CloseIcon sx={{ fontSize: 30 }} />
         </IconButton>
       </div>
       {shopItem && (
@@ -51,21 +40,20 @@ function ModalRightItems({ goToNextImage, goToPrevImage, onClose }: Props) {
       <div className="modal__image__source">
         <p>PHAZEZEROCLO // INSTAGRAM // 07 JUNE 2023</p>
       </div>
-      <div className="modal__right__items__footer">
+      <div className="modal__footer__left__item">
         <IconButton>
           <FacebookIcon fontSize="small" />
         </IconButton>
         <IconButton>
           <InstagramIcon fontSize="small" />
         </IconButton>
-        <IconButton>
-          <EmailIcon fontSize="small" />
+      </div>
+      <div className="navigate__left__right">
+        <IconButton onClick={goToPrevImage}>
+          <ArrowBackIosIcon sx={{ fontSize: 40 }} />
         </IconButton>
-        <IconButton>
-          <TwitterIcon fontSize="small" />
-        </IconButton>
-        <IconButton>
-          <PinterestIcon fontSize="small" />
+        <IconButton onClick={goToNextImage}>
+          <ArrowForwardIosIcon sx={{ fontSize: 40 }} />
         </IconButton>
       </div>
     </div>

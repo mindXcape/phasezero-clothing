@@ -5,7 +5,7 @@ import ModalRightItems from '../../CommunityModal/ModalRightItems';
 interface Props {
   selectedImage: string;
   isOpen: boolean;
-  onClose: (e?: MouseEvent<HTMLButtonElement>) => void;
+  onClose: (e: MouseEvent<HTMLButtonElement>) => void;
   goToNextImage: () => void;
   goToPrevImage: () => void;
 }

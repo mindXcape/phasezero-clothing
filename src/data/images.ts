@@ -1,11 +1,14 @@
 import {
-  bigbannerimg,
-  athleisurefront,
-  athleisureback,
-  windbreaker,
-  pz_lifestyle1,
-  phone_screen,
-} from '../assets/index';
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+  img8,
+  img9,
+} from '../assets/dummy/index';
 
 export interface ImageType {
   image: string;
@@ -13,30 +16,30 @@ export interface ImageType {
 
 export const images: ImageType[] = [
   {
-    image: bigbannerimg,
+    image: img1,
   },
   {
-    image: `${athleisurefront}`,
+    image: img2,
   },
   {
-    image: `${athleisureback}`,
+    image: img3,
   },
   {
-    image: `${athleisurefront}`,
+    image: img4,
   },
   {
-    image: `${windbreaker}`,
+    image: img5,
   },
   {
-    image: `${athleisureback}`,
+    image: img6,
   },
   {
-    image: `${athleisurefront}`,
+    image: img7,
   },
   {
-    image: `${athleisureback}`,
+    image: img8,
   },
   {
-    image: `${bigbannerimg}`,
+    image: img9,
   },
 ];

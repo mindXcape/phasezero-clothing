@@ -43,20 +43,18 @@
     align-items: center;
 
     @include sm {
-      width: auto;
-      height: auto;
-    }
-
-    @include sm {
       width: 100%;
+      padding: 0;
     }
 
     @include md {
       width: 100%;
+      padding: 0;
     }
 
     @include lg {
       width: 100%;
+      padding: 0;
     }
     img {
       object-fit: contain;
@@ -74,15 +72,18 @@
     @include sm {
       height: auto;
       width: 100%;
+      padding: 0px;
     }
 
     @include md {
       height: auto;
       width: 100%;
+      padding: 0px 0px 10px 0px;
     }
 
     @include lg {
       width: 100%;
+      padding: 0px 0px 10px 0px;
     }
   }
 }

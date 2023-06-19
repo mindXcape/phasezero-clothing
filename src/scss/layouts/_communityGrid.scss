@@ -4,7 +4,7 @@
   display: grid;
   gap: 2px;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
+  grid-auto-rows: 400px;
   grid-template-areas:
     'one one'
     'two three'
@@ -27,6 +27,7 @@
     justify-items: center;
     border: none;
     outline: none;
+    background-color: #000;
   }
   .grid__post__item:nth-child(1) {
     grid-area: one;
