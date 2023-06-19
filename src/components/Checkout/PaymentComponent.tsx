@@ -1,7 +1,7 @@
 // Import required modules
 import React from 'react';
 import '../../scss/main.scss'; // Main SCSS styles
-import CheckoutItems from './CheckoutItems'; // CheckoutItems component
+import CheckoutItems from './CheckoutItems';
 import InputRhude from '../ui/input/InputRhude'; // InputRhude component
 import Button from '../button/Button'; // Button component
 
@@ -13,6 +13,8 @@ function PaymentComponent() {
       {/* Section where the items added to the cart will be displayed */}
       <div className="checkoutItems__main__container">
         {/* Example checkout items. In a real app, this would likely be an array map */}
+        <CheckoutItems />
+        <CheckoutItems />
         <CheckoutItems />
         <CheckoutItems />
         <CheckoutItems />

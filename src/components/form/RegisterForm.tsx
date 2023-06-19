@@ -46,23 +46,23 @@ function RegisterForm() {
       <FloatingLabelInput
         id="number"
         hasType="password"
-        label="PHONE NUMBER *"
+        label="Phone Number *"
         isRequired
       />
       <FloatingLabelInput
         id="password"
         hasType="password"
-        label="FIRST NAME *"
+        label="First Name *"
         isRequired
       />
       <FloatingLabelInput
         id="password"
         hasType="password"
-        label="LAST NAME *"
+        label="Last Name *"
         isRequired
       />
       <div className="mainDOB__wrapper__register">
-        <p>DATE OF BIRTH *</p>
+        <p>Date of Birth *</p>
         <div className="dob__wrapper">
           <FloatingLabelInput
             id="password"

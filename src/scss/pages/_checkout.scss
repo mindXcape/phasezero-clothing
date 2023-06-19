@@ -1,10 +1,8 @@
-@import '../abstracts//mixins';
-
 .checkout__wrapper {
+  height: auto;
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  height: 1100px;
 
   @include sm {
     flex-direction: column-reverse;
@@ -14,5 +12,48 @@
   }
   @include lg {
     flex-direction: column-reverse;
+  }
+
+  .checkout__leftItem {
+    width: 50%;
+    padding: 30px 60px 30px 66px;
+    @include lg {
+      width: 100%;
+      padding: 20px 190px;
+      overflow-y: visible;
+    }
+    @include md {
+      width: 100%;
+      padding: 20px 100px;
+      overflow-y: visible;
+    }
+    @include sm {
+      width: 100%;
+      padding: 25px 14px;
+      overflow-y: visible;
+    }
+  }
+
+  .checkout__rightItem {
+    padding: 30px 160px 0px 60px;
+    width: 45%;
+    background-color: $color-checkout-accordion;
+    position: -webkit-sticky;
+    @include sm {
+      height: auto;
+      width: 100%;
+      padding: 0 14px;
+    }
+    @include md {
+      height: auto;
+      width: 100%;
+      padding: 0px 100px;
+    }
+
+    @include lg {
+      width: 100%;
+      padding: 0px 190px;
+      height: auto;
+    }
   }
 }
