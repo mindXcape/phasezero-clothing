@@ -1,32 +1,11 @@
 import React from 'react';
 import '../../scss/main.scss';
-import { Link } from 'react-router-dom';
-import { Breadcrumbs } from '@mui/material';
-import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import { dummyQR } from '../../assets/index';
+import Button from '../button/Button';
 
 function CheckoutPaymentMethod() {
-  const breadcrumbs = [
-    <Link className="links" key={1} to="/">
-      Information
-    </Link>,
-    <Link className="links" key={2} to="/">
-      Shipping
-    </Link>,
-    <Link className="links" key={3} to="/">
-      Checkout
-    </Link>,
-  ];
   return (
     <div className="payment__method__wrapper">
-      <div className="bread__Crumbs">
-        <Breadcrumbs
-          separator={<NavigateNextIcon fontSize="small" />}
-          aria-label="breadcrumb"
-        >
-          {breadcrumbs}
-        </Breadcrumbs>
-      </div>
       <div className="payment__method">
         <h3>Payment Method</h3>
       </div>
@@ -43,14 +22,12 @@ function CheckoutPaymentMethod() {
         <span className="or__content">OR</span>
       </div>
       <div className="cash__on__delivery">
-        <label htmlFor="checkboxFormInput">
-          <input
-            className="checkbox__input"
-            type="checkbox"
-            id="checkboxFormInput"
-          />
-          <span>Cash on Delivery</span>
-        </label>
+        <Button
+          className="cash__on__delivery__btn"
+          disabled={false}
+          eventHandler={(e) => e.preventDefault()}
+          title="Pay on Delivery"
+        />
       </div>
     </div>
   );

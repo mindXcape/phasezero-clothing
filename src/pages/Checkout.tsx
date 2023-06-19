@@ -1,14 +1,13 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
-import CheckoutShipping from '../components/Checkout/CheckoutInformation';
 import CheckoutPayment from '../components/Checkout/CheckoutPayment';
 import '../scss/main.scss';
+import CheckoutLeftItem from '../components/Checkout/CheckoutLeftItem';
 
 function Checkout() {
   return (
     <div className="checkout__wrapper">
       <div className="checkout__leftItem">
-        <Outlet />
+        <CheckoutLeftItem />
       </div>
       <div className="checkout__rightItem">
         <CheckoutPayment />

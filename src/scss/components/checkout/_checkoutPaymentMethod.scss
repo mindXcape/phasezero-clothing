@@ -77,13 +77,21 @@
     }
   }
   .cash__on__delivery {
-    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
-
-    span {
-      margin-left: 5px;
+    align-items: center;
+    .cash__on__delivery__btn {
+      width: 182px;
+      height: 60px;
+      background-color: #000;
+      color: #fff;
+      border-radius: 5px;
+      @include sm {
+        width: 100%;
+      }
+      @include md {
+        width: 100%;
+      }
     }
   }
 }
