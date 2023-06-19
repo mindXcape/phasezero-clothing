@@ -20,7 +20,7 @@ function UnderConstructionPage() {
   return (
     <>
       <Countdown
-        targetDate={new Date('2023-06-15T00:00:00')}
+        targetDate={new Date('2023-06-30T00:00:00')}
         initialDays={3}
         initialHours={6}
         initialMinutes={30}
