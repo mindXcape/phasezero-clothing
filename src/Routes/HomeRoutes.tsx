@@ -9,6 +9,7 @@ import Account from '../Layouts/Account/Account';
 import CollectionPage from '../pages/CollectionPage';
 import ShopAll from '../pages/ShopAll';
 import Wishlist from '../pages/Wishlist';
+import UnderConstructionPage from '../pages/UnderConstruction/UnderConstructionPage';
 import Checkout from '../pages/Checkout';
 import CheckoutPaymentMethod from '../components/Checkout/CheckoutPaymentMethod';
 import Community from '../pages/Community';
@@ -30,6 +31,7 @@ const HomeRoutes = function HomeRoutes() {
         <Route path="payment-method" element={<CheckoutPaymentMethod />} />
       </Route>
       <Route path="/community" element={<Community />} />
+      <Route path="/under_construction" element={<UnderConstructionPage />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
