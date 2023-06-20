@@ -65,72 +65,74 @@ function Countdown({
   }, [targetDate]);
 
   return (
-    <div className="count__down__wrapper">
-      <div className="count__down__card__wrapper">
-        <div className="count__down__card__content">
-          <div className="count__down__card__left">
-            <div className="count__down__card__top" />
-            <div className="count__down__card__bottom" />
-            <h3>{countdown.days.toString().charAt(0)}</h3>
+    <div className="background__video__wrapper">
+      <div className="count__down__wrapper">
+        <div className="count__down__card__wrapper">
+          <div className="count__down__card__content">
+            <div className="count__down__card__left">
+              <div className="count__down__card__top" />
+              <div className="count__down__card__bottom" />
+              <h3>{countdown.days.toString().charAt(0)}</h3>
+            </div>
+            <div className="count__down__card__right">
+              <div className="count__down__card__top" />
+              <div className="count__down__card__bottom" />
+              <h3>{countdown.days.toString().charAt(1)}</h3>
+            </div>
           </div>
-          <div className="count__down__card__right">
-            <div className="count__down__card__top" />
-            <div className="count__down__card__bottom" />
-            <h3>{countdown.days.toString().charAt(1)}</h3>
-          </div>
+          <h2>Days</h2>
         </div>
-        <h2>Days</h2>
-      </div>
-      <div className="count__down__card__wrapper">
-        <div className="count__down__card__content">
-          <div className="count__down__card__left">
-            <div className="count__down__card__top" />
-            <div className="count__down__card__bottom" />
-            <h3>{countdown.hours.toString().charAt(0)}</h3>
+        <div className="count__down__card__wrapper">
+          <div className="count__down__card__content">
+            <div className="count__down__card__left">
+              <div className="count__down__card__top" />
+              <div className="count__down__card__bottom" />
+              <h3>{countdown.hours.toString().charAt(0)}</h3>
+            </div>
+            <div className="count__down__card__right">
+              <div className="count__down__card__top" />
+              <div className="count__down__card__bottom" />
+              <h3>{countdown.hours.toString().charAt(1)}</h3>
+            </div>
           </div>
-          <div className="count__down__card__right">
-            <div className="count__down__card__top" />
-            <div className="count__down__card__bottom" />
-            <h3>{countdown.hours.toString().charAt(1)}</h3>
-          </div>
+          <h2>Hours</h2>
         </div>
-        <h2>Hours</h2>
-      </div>
-      <div className="count__down__card__wrapper">
-        <div className="count__down__card__content">
-          <div className="count__down__card__left">
-            <div className="count__down__card__top" />
-            <div className="count__down__card__bottom" />
-            <h3>{countdown.minutes.toString().charAt(0)}</h3>
+        <div className="count__down__card__wrapper">
+          <div className="count__down__card__content">
+            <div className="count__down__card__left">
+              <div className="count__down__card__top" />
+              <div className="count__down__card__bottom" />
+              <h3>{countdown.minutes.toString().charAt(0)}</h3>
+            </div>
+            <div className="count__down__card__right">
+              <div className="count__down__card__top" />
+              <div className="count__down__card__bottom" />
+              <h3>{countdown.minutes.toString().charAt(1)}</h3>
+            </div>
           </div>
-          <div className="count__down__card__right">
-            <div className="count__down__card__top" />
-            <div className="count__down__card__bottom" />
-            <h3>{countdown.minutes.toString().charAt(1)}</h3>
-          </div>
+          <h2>Minutes</h2>
         </div>
-        <h2>Minutes</h2>
-      </div>
-      <div className="count__down__card__wrapper">
-        <div className="count__down__card__content">
-          <div className="count__down__card__left">
-            <div className="count__down__card__top" />
-            <div className="count__down__card__bottom" />
-            <h3>{countdown.seconds.toString().charAt(0)}</h3>
+        <div className="count__down__card__wrapper">
+          <div className="count__down__card__content">
+            <div className="count__down__card__left">
+              <div className="count__down__card__top" />
+              <div className="count__down__card__bottom" />
+              <h3>{countdown.seconds.toString().charAt(0)}</h3>
+            </div>
+            <div className="count__down__card__right">
+              <div className="count__down__card__top" />
+              <div className="count__down__card__bottom" />
+              <h3>{countdown.seconds.toString().charAt(1)}</h3>
+            </div>
           </div>
-          <div className="count__down__card__right">
-            <div className="count__down__card__top" />
-            <div className="count__down__card__bottom" />
-            <h3>{countdown.seconds.toString().charAt(1)}</h3>
-          </div>
+          <h2>Seconds</h2>
         </div>
-        <h2>Seconds</h2>
-      </div>
-      <div className="count__down__cursor">
-        <a href="#phases_of_phase_zero">
-          {' '}
-          <ArrowDropDownCircleIcon className="animated__icon" />
-        </a>
+        <div className="count__down__cursor">
+          <a href="#phases_of_phase_zero">
+            {' '}
+            <ArrowDropDownCircleIcon className="animated__icon" />
+          </a>
+        </div>
       </div>
     </div>
   );
