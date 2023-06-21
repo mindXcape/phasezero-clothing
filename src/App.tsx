@@ -10,18 +10,18 @@ import UnderConstructionPage from './pages/UnderConstruction/UnderConstructionPa
 export default function App() {
   const [bgState, setBgState] = useState<boolean>(false);
   return (
-    <UnderConstructionPage />
-    // <>
-    //   <Navbar backgroundState={setBgState} />
-    //   {bgState ? (
-    //     <div className="background__blur">
-    //       <HomeRoutes />
-    //     </div>
-    //   ) : (
-    //     <HomeRoutes />
-    //   )}
+    // <UnderConstructionPage />
+    <>
+      <Navbar backgroundState={setBgState} />
+      {bgState ? (
+        <div className="background__blur">
+          <HomeRoutes />
+        </div>
+      ) : (
+        <HomeRoutes />
+      )}
 
-    //   <Footer />
-    // </>
+      <Footer />
+    </>
   );
 }
