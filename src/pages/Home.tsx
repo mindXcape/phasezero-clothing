@@ -3,7 +3,7 @@ import AddBanner from 'Layouts/Addbanners/Addbanner';
 import Collection from 'Layouts/Collection/Collection';
 import Athleisure from 'Layouts/Athleisure/Athleisure';
 import Masterbanner from 'components/banner/Masterbanner';
-import { carouselfinal } from 'assets/index';
+import { carouselfinal } from 'assets/Images';
 
 function Home() {
   const adTexts: string[] = [
