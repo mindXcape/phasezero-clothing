@@ -1,7 +1,6 @@
 import React from 'react';
-import CheckoutPayment from '../components/Checkout/CheckoutPayment';
-import '../scss/main.scss';
-import CheckoutLeftItem from '../components/Checkout/CheckoutLeftItem';
+import CheckoutLeftItem from 'components/Checkout/CheckoutLeftItem';
+import CheckoutPayment from 'components/Checkout/CheckoutPayment';
 
 function Checkout() {
   return (

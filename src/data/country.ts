@@ -4,7 +4,6 @@ export interface CountryType {
 }
 
 export const countries: CountryType[] = [
-  // your array of country objects
   {
     name: 'India',
     currency: 'Indian rupee',

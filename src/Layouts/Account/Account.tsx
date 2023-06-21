@@ -1,16 +1,12 @@
 import { MouseEventHandler, useState } from 'react';
-import {
-  AppleIcon,
-  FacebookIcon,
-  GoogleIcon,
-} from '../../assets/ProviderLogo/index';
+import { AppleIcon, FacebookIcon, GoogleIcon } from 'assets/ProviderLogo/index';
 import {
   ProviderBtn,
   FloatingLabelInput,
   RegisterForm,
   Button,
   LoginForm,
-} from '../../components/index';
+} from 'components/index';
 
 function Account() {
   const [showForm, setShowForm] = useState<boolean>(false);

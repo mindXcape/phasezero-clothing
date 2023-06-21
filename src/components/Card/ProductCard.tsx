@@ -2,8 +2,8 @@ import '../../scss/main.scss';
 import React, { useState } from 'react';
 import Drawer from '@mui/material/Drawer';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import ProductCardSkeleton from '../../Provider/Skeleton/ProductCardSkeleton';
-import CartTable from '../CartTable/CartTable';
+import ProductCardSkeleton from 'Provider/Skeleton/ProductCardSkeleton';
+import CartTable from 'components/CartTable/CartTable';
 
 type Anchor = 'top' | 'left' | 'bottom' | 'right';
 // defining prop types for product

@@ -1,9 +1,8 @@
 // Import required modules
 import React from 'react';
-import '../../scss/main.scss'; // Main SCSS styles
+import InputRhude from 'components/ui/input/InputRhude'; // InputRhude component
+import Button from 'components/button/Button'; // Button component
 import CheckoutItems from './CheckoutItems';
-import InputRhude from '../ui/input/InputRhude'; // InputRhude component
-import Button from '../button/Button'; // Button component
 
 // Define PaymentComponent function
 function PaymentComponent() {

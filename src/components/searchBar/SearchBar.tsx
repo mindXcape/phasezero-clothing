@@ -1,9 +1,8 @@
 import React, { useRef } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
-import '../../scss/main.scss';
 import { IconButton } from '@mui/material';
-import useOnClickOutside from '../../hooks/useOnClickOutside';
+import useOnClickOutside from 'hooks/useOnClickOutside';
 
 interface SearchBarProps {
   isActive: boolean; // A prop to determine whether the search bar is active

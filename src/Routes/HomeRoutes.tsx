@@ -1,19 +1,20 @@
+/* eslint-disable import/extensions */
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Home from '../pages/Home';
-import Count from '../Count';
-import Contact from '../pages/Contact';
-import NotFound from '../pages/NotFound';
-import CartPage from '../pages/Cartpage';
-import Account from '../Layouts/Account/Account';
-import CollectionPage from '../pages/CollectionPage';
-import ShopAll from '../pages/ShopAll';
-import Wishlist from '../pages/Wishlist';
-import UnderConstructionPage from '../pages/UnderConstruction/UnderConstructionPage';
-import Checkout from '../pages/Checkout';
-import CheckoutPaymentMethod from '../components/Checkout/CheckoutPaymentMethod';
-import Community from '../pages/Community';
-import { CheckoutInformation } from '../components';
+import Home from 'pages/Home';
+import Contact from 'pages/Contact';
+import NotFound from 'pages/NotFound';
+import CartPage from 'pages/Cartpage';
+import Account from 'Layouts/Account/Account';
+import CollectionPage from 'pages/CollectionPage';
+import ShopAll from 'pages/ShopAll';
+import Wishlist from 'pages/Wishlist';
+import UnderConstructionPage from 'pages/UnderConstruction/UnderConstructionPage';
+import Checkout from 'pages/Checkout';
+import CheckoutPaymentMethod from 'components/Checkout/CheckoutPaymentMethod';
+import Community from 'pages/Community';
+import CheckoutInformation from 'components/Checkout/CheckoutInformation';
+import Count from '@/Count';
 
 const HomeRoutes = function HomeRoutes() {
   return (
