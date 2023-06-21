@@ -1,6 +1,5 @@
 import React from 'react';
-import CommunityGrid from '../Layouts/Community/CommunityGrid';
-import Title from '../components/Title/Title';
+import CommunityGrid from 'Layouts/Community/CommunityGrid';
 
 function Community() {
   return (

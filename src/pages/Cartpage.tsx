@@ -1,7 +1,6 @@
 import React from 'react';
-import Title from '../components/Title/Title';
-import CartTable from '../components/CartTable/CartTable';
-import '../scss/main.scss';
+import Title from 'components/Title/Title';
+import CartTable from 'components/CartTable/CartTable';
 
 function CartPage() {
   return (

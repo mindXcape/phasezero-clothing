@@ -1,8 +1,7 @@
 import React from 'react';
-import '../../scss/main.scss';
+import Button from 'components/button/Button';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ShippingForm from '../form/ShippingForm';
-import Button from '../button/Button';
 
 function CheckoutInformation() {
   return (

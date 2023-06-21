@@ -1,7 +1,6 @@
 import React from 'react';
-import CollectionTitle from '../components/Title/Collection_TItle';
-import Product from '../components/Card/ProductCard';
-import '../scss/main.scss';
+import CollectionTitle from 'components/Title/Collection_TItle';
+import Product from 'components/Card/ProductCard';
 
 function CollectionPage() {
   return (

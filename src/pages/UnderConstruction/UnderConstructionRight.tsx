@@ -1,4 +1,4 @@
-import HoverImageContainer from '../../components/HoverImageContainer/HoverImageContainer';
+import HoverImageContainer from 'components/HoverImageContainer/HoverImageContainer';
 
 interface UnderConstructionRightProps {
   imageTop: string;

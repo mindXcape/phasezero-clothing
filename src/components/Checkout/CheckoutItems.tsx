@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../scss/main.scss';
 import { Badge } from '@mui/material';
 
 // type Props = {}

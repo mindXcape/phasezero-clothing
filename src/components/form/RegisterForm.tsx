@@ -3,8 +3,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
-import FloatingLabelInput from '../ui/input/FloatingInputLabel';
-import '../../scss/main.scss';
+import FloatingLabelInput from 'components/ui/input/FloatingInputLabel';
 
 function RegisterForm() {
   const [isPasswordVisible, setPasswordVisible] = useState(false);

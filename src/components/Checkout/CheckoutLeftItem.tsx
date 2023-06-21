@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../scss/main.scss';
 import { Breadcrumbs } from '@mui/material';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import { Link, Outlet } from 'react-router-dom';

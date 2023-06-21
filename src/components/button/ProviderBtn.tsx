@@ -1,5 +1,4 @@
 import React, { ReactNode } from 'react';
-import '../../scss/main.scss';
 
 interface ProviderBtnProps {
   className: string;

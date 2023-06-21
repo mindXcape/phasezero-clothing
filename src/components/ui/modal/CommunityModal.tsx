@@ -1,6 +1,6 @@
 import { MouseEvent } from 'react';
 import Modal from '@mui/material/Modal';
-import ModalRightItems from '../../CommunityModal/ModalRightItems';
+import ModalRightItems from 'components/CommunityModal/ModalRightItems';
 
 interface Props {
   selectedImage: string;

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import '../../../scss/main.scss';
 
 function FloatingLabelSelect() {
   const [value, setValue] = useState('');

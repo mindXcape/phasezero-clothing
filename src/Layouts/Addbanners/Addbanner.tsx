@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import '../../scss/main.scss';
 
 interface AddBannerProps {
   adTexts: string[];
