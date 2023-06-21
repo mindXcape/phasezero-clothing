@@ -1,4 +1,4 @@
-import { displaypic, athleisureback, athleisurefront } from 'assets/index';
+import { displaypic, athleisureback, athleisurefront } from 'assets/Images';
 import Title from 'components/Title/Title';
 
 function Athleisure() {

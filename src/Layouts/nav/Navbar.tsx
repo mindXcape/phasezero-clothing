@@ -3,7 +3,7 @@ import LocalMallIcon from '@mui/icons-material/LocalMall';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import SearchIcon from '@mui/icons-material/Search';
 import { NavLink, useNavigate } from 'react-router-dom';
-import { logo } from 'assets/index';
+import { logo } from 'assets/Images';
 import Rightdrawers from 'components/drawers/Rightdrawers';
 import SearchBar from 'components/searchBar/SearchBar';
 
