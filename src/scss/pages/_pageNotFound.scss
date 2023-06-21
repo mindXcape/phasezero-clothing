@@ -13,9 +13,9 @@
     justify-content: center;
     align-items: center;
     img {
-      object-fit: contain;
-      height: 80%;
-      width: 80%;
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
     }
   }
 }
