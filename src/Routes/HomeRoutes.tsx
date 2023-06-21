@@ -1,4 +1,3 @@
-/* eslint-disable import/extensions */
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from 'pages/Home';
@@ -14,6 +13,7 @@ import Checkout from 'pages/Checkout';
 import CheckoutPaymentMethod from 'components/Checkout/CheckoutPaymentMethod';
 import Community from 'pages/Community';
 import CheckoutInformation from 'components/Checkout/CheckoutInformation';
+// eslint-disable-next-line import/extensions
 import Count from '@/Count';
 
 const HomeRoutes = function HomeRoutes() {

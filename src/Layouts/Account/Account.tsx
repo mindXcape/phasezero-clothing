@@ -1,5 +1,5 @@
 import { MouseEventHandler, useState } from 'react';
-import { AppleIcon, FacebookIcon, GoogleIcon } from 'assets/ProviderLogo/index';
+import { AppleIcon, FacebookIcon, GoogleIcon } from 'assets/ProviderLogo';
 import {
   ProviderBtn,
   FloatingLabelInput,

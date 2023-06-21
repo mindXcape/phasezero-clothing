@@ -12,7 +12,7 @@ import {
   ninth,
   artist,
   lifestyle,
-} from '../../assets';
+} from 'assets/Images';
 import UnderConstructionLeft from './UnderConstructionLeft';
 import UnderConstructionRight from './UnderConstructionRight';
 
