@@ -6,22 +6,18 @@ import HomeRoutes from './Routes/HomeRoutes';
 import Footer from './Layouts/footer/Footer';
 import './scss/main.scss';
 import UnderConstructionPage from './pages/UnderConstruction/UnderConstructionPage';
+import DrawerProvider from './utils/Drawer/DrawerProvider';
 
 export default function App() {
   const [bgState, setBgState] = useState<boolean>(false);
   return (
-    <UnderConstructionPage />
-    // <>
-    //   <Navbar backgroundState={setBgState} />
-    //   {bgState ? (
-    //     <div className="background__blur">
-    //       <HomeRoutes />
-    //     </div>
-    //   ) : (
-    //     <HomeRoutes />
-    //   )}
+    // <UnderConstructionPage />
+    <>
+      <Navbar />
 
-    //   <Footer />
-    // </>
+      {/* <HomeRoutes />
+
+      <Footer /> */}
+    </>
   );
 }

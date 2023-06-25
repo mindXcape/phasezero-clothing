@@ -18,7 +18,6 @@ import RegisterForm from './form/RegisterForm';
 import ShippingForm from './form/ShippingForm';
 
 import ModalComponent from './modal/ModalComponent';
-import SearchBar from './searchBar/SearchBar';
 import Title from './Title/Title';
 
 // ui imports
@@ -44,7 +43,6 @@ export {
   LoginForm,
   RegisterForm,
   ModalComponent,
-  SearchBar,
   Title,
   InputRhude,
   FloatingLabelInput,
