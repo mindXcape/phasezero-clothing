@@ -1,7 +1,6 @@
 import React from 'react';
-import '../../scss/main.scss';
-import Title from '../../components/Title/Title';
-import Product from '../../components/Card/ProductCard';
+import Title from 'components/Title/Title';
+import Product from 'components/Card/ProductCard';
 
 const NewArrival = function NewArrival() {
   return (

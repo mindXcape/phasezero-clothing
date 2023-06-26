@@ -1,3 +1,4 @@
+import Countdown from 'components/CountDown/CountDown';
 import {
   tenth,
   fourth,
@@ -11,8 +12,7 @@ import {
   ninth,
   artist,
   lifestyle,
-} from '../../assets';
-import Countdown from '../../components/CountDown/CountDown';
+} from 'assets/Images';
 import UnderConstructionLeft from './UnderConstructionLeft';
 import UnderConstructionRight from './UnderConstructionRight';
 

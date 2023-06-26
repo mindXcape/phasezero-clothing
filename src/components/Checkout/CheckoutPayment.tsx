@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import '../../scss/main.scss';
+import CheckoutAccordion from 'components/accordion/CheckoutAccordion';
 import PaymentComponent from './PaymentComponent';
-import CheckoutAccordion from '../accordion/CheckoutAccordion';
 
 export default function CheckoutPayment() {
   // use state to toggle mobile and desktop view

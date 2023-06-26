@@ -1,6 +1,5 @@
 /* eslint-disable react/require-default-props */
 import React from 'react';
-import '../../scss/main.scss';
 
 interface ButtonProps {
   className: string;

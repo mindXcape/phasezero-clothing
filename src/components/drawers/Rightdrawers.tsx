@@ -4,7 +4,6 @@ import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import MenuIcon from '@mui/icons-material/Menu';
-import '../../scss/main.scss';
 
 type Anchor = 'left';
 type RightDrawersProps = {

@@ -1,4 +1,5 @@
 import React, { MouseEvent, useState } from 'react';
+import ModalProductCard from 'components/Card/ModalProductCard';
 import { IconButton } from '@mui/material';
 import {
   ArrowBackIosIcon,
@@ -6,8 +7,7 @@ import {
   CloseIcon,
   FacebookIcon,
   InstagramIcon,
-} from '../../assets/CommunityModalIcons/index';
-import ModalProductCard from '../Card/ModalProductCard';
+} from 'assets/CommunityModalIcons';
 
 interface Props {
   onClose: (e: MouseEvent<HTMLButtonElement>) => void;

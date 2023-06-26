@@ -1,6 +1,5 @@
-import { displaypic, athleisureback, athleisurefront } from '../../assets';
-import '../../scss/main.scss';
-import Title from '../../components/Title/Title';
+import { displaypic, athleisureback, athleisurefront } from 'assets/Images';
+import Title from 'components/Title/Title';
 
 function Athleisure() {
   return (

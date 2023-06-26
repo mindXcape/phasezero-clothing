@@ -1,6 +1,6 @@
 import React, { MouseEvent } from 'react';
-import Button from '../button/Button';
-import { athleisurefront } from '../../assets/index';
+import Button from 'components/button/Button';
+import { athleisurefront } from 'assets/Images';
 
 function ModalProductCard() {
   const handleOnClick = (e: MouseEvent<HTMLButtonElement>) => {

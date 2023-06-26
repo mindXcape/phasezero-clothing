@@ -8,7 +8,7 @@ import {
   img7,
   img8,
   img9,
-} from '../assets/dummy/index';
+} from 'assets/dummyImageforCommunityMoal/index';
 
 export interface ImageType {
   image: string;
