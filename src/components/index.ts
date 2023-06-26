@@ -18,7 +18,6 @@ import RegisterForm from './form/RegisterForm';
 import ShippingForm from './form/ShippingForm';
 
 import ModalComponent from './modal/ModalComponent';
-import SearchBar from './searchBar/SearchBar';
 import Title from './Title/Title';
 
 // ui imports
@@ -27,6 +26,7 @@ import FloatingLabelInput from './ui/input/FloatingInputLabel';
 import FloatingLabelSelect from './ui/input/FloatingLabelSelect';
 import Modal from './ui/modal/Modal';
 import ResuableSpinner from './ui/spinner/ResuableSpinner';
+import SearchBar from './searchBar/SearchBar';
 
 export {
   Product,
@@ -44,7 +44,6 @@ export {
   LoginForm,
   RegisterForm,
   ModalComponent,
-  SearchBar,
   Title,
   InputRhude,
   FloatingLabelInput,
@@ -52,4 +51,5 @@ export {
   Modal,
   ResuableSpinner,
   ShippingForm,
+  SearchBar,
 };
