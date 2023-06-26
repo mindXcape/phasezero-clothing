@@ -1,9 +1,7 @@
-import { useState } from 'react';
 import '../../scss/main.scss';
 import LocalMallIcon from '@mui/icons-material/LocalMall';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import SearchIcon from '@mui/icons-material/Search';
-import { Container } from 'react-bootstrap';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { logo } from '../../assets';
 import Rightdrawers from '../../components/drawers/Rightdrawers';
