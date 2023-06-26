@@ -14,10 +14,8 @@ export default function App() {
     // <UnderConstructionPage />
     <>
       <Navbar />
-
-      {/* <HomeRoutes />
-
-      <Footer /> */}
+      <HomeRoutes />
+      <Footer />
     </>
   );
 }

@@ -3,10 +3,12 @@ import '../../scss/main.scss';
 import LocalMallIcon from '@mui/icons-material/LocalMall';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import SearchIcon from '@mui/icons-material/Search';
+import { Container } from 'react-bootstrap';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { logo } from '../../assets';
 import Rightdrawers from '../../components/drawers/Rightdrawers';
 import DrawerProvider from '../../utils/Drawer/DrawerProvider';
+import SearchBar from '../../components/SearchBar/SearchBar';
 
 const menuItems = [{ text: 'Item 1' }, { text: 'Item 2' }, { text: 'Item 3' }];
 
@@ -39,7 +41,7 @@ function Navbar() {
           </p>
           {/* <SearchIcon onClick={() => handleSearch()} /> */}
           <DrawerProvider anchor="top" icon={<SearchIcon />}>
-            <div>hahah</div>
+            <SearchBar />
           </DrawerProvider>
           <FavoriteBorderIcon onClick={() => navigate('/wishlist')} />
           <LocalMallIcon onClick={() => navigate('/cart')} />
