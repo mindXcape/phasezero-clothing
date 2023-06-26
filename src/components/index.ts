@@ -26,6 +26,7 @@ import FloatingLabelInput from './ui/input/FloatingInputLabel';
 import FloatingLabelSelect from './ui/input/FloatingLabelSelect';
 import Modal from './ui/modal/Modal';
 import ResuableSpinner from './ui/spinner/ResuableSpinner';
+import SearchBar from './searchBar/SearchBar';
 
 export {
   Product,
@@ -50,4 +51,5 @@ export {
   Modal,
   ResuableSpinner,
   ShippingForm,
+  SearchBar,
 };

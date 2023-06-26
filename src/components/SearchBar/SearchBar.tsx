@@ -1,6 +1,5 @@
 import { Container } from 'react-bootstrap';
-import '../../scss/main.scss';
-import SearchIcon from '@mui/icons-material/Search';
+import { SearchIcon } from 'assets/icons';
 
 function SearchBar() {
   return (
