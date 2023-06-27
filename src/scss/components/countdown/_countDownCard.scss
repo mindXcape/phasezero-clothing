@@ -44,6 +44,10 @@
               width: 80px;
               height: 80px;
             }
+            @include md {
+              width: 80px;
+              height: 80px;
+            }
           }
           .count__down__card__bottom {
             background-color: #000;
@@ -54,6 +58,10 @@
               height: 40px;
             }
             @include lg {
+              width: 80px;
+              height: 80px;
+            }
+            @include md {
               width: 80px;
               height: 80px;
             }
@@ -69,6 +77,9 @@
               font-size: 80px;
             }
             @include lg {
+              font-size: 158px;
+            }
+            @include md {
               font-size: 158px;
             }
           }
@@ -88,6 +99,10 @@
               width: 80px;
               height: 80px;
             }
+            @include md {
+              width: 80px;
+              height: 80px;
+            }
           }
           .count__down__card__bottom {
             background-color: #000;
@@ -98,6 +113,10 @@
               height: 40px;
             }
             @include lg {
+              width: 80px;
+              height: 80px;
+            }
+            @include md {
               width: 80px;
               height: 80px;
             }
@@ -115,6 +134,9 @@
             @include lg {
               font-size: 158px;
             }
+            @include md {
+              font-size: 158px;
+            }
           }
         }
       }
@@ -123,6 +145,18 @@
       position: absolute;
       left: 95%;
       top: 90%;
+      @include sm{
+        left: 85%;
+        top: 92%;
+      }
+      @include md{
+        left: 93%;
+        top: 92%;
+      }
+      @include lg{
+        left: 93%;
+        top: 95%;
+      }
       svg {
         font-size: 50px;
       }
