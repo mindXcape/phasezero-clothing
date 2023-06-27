@@ -23,19 +23,13 @@ function UnderConstructionLeft({
 }: UnderConstructionLeftProps) {
   return (
     <div className="under__construction__left__wrapper">
-      {/* <div className="under__construction__left__top">
-        <img src={imageTop} alt="" />
-      </div>
-      <div className="under__construction__left__bottom">
-        <img src={imageBottom} alt="" />
-      </div> */}
       <HoverImageContainer
         nameOfWrapperClass="hover__image__container__wrapper__one"
         image={imageTop}
         nameOfHoverClass="hover__image__one"
         storyTitle={storyTitleTop}
         storyDescriptionFirst={storyDescriptionOneTop}
-        storyDescriptionSecond={storyDescriptionTwoTop}
+        storyDescriptionSecond={storyDescriptionOneBottom}
         nameOfOverlayClass="hover__image__container__overlay__one"
         nameOfContentClass="hover__image__container__content__one"
       />
@@ -44,7 +38,7 @@ function UnderConstructionLeft({
         image={imageBottom}
         nameOfHoverClass="hover__image__second"
         storyTitle={storyTitleBottom}
-        storyDescriptionFirst={storyDescriptionOneBottom}
+        storyDescriptionFirst={storyDescriptionTwoTop}
         storyDescriptionSecond={storyDescriptionTwoBottom}
         nameOfOverlayClass="hover__image__container__overlay__two"
         nameOfContentClass="hover__image__container__content__two"

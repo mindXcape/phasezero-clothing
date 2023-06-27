@@ -1,7 +1,7 @@
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import { SearchIcon, LocalMallIcon } from 'assets/icons';
 import { NavLink, useNavigate } from 'react-router-dom';
-import SearchBar from 'components/searchBar/SearchBar';
+import SearchBar from 'components/SearchBar/SearchBar';
 import { logo } from '../../assets/Images/index';
 import Rightdrawers from '../../components/drawers/Rightdrawers';
 import DrawerProvider from '../../utils/Drawer/DrawerProvider';
