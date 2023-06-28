@@ -21,6 +21,7 @@ function ModalRightItems({ goToNextImage, goToPrevImage, onClose }: Props) {
   return (
     <div className="modal__right__items__wrapper">
       <div className="navigate__modal__item">
+        <h3>PHASE ZERO</h3>
         <IconButton onClick={onClose}>
           <CloseIcon sx={{ fontSize: 30 }} />
         </IconButton>

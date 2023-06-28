@@ -7,11 +7,11 @@ import UnderConstructionPage from './pages/UnderConstruction/UnderConstructionPa
 
 export default function App() {
   return (
-    <UnderConstructionPage />
-    // <>
-    //   <Navbar />
-    //   <HomeRoutes />
-    //   <Footer />
-    // </>
+    // <UnderConstructionPage />
+    <>
+      <Navbar />
+      <HomeRoutes />
+      <Footer />
+    </>
   );
 }
