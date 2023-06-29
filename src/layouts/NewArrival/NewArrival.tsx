@@ -1,12 +1,12 @@
 import Product from 'components/Card/ProductCard';
-import { CollectionTitle } from 'components/Title';
+import { Title } from 'components/Title';
 
-function ShopAll() {
+const NewArrival = function NewArrival() {
   return (
     <>
-      <CollectionTitle season="" title_name="SHOP" />
+      <Title title="NEW ARRIVAL" />
       <div className="new__arrival__container">
-        <div className="mx-4">
+        <div className="container">
           <div className="row">
             <div className="col-6 col-lg-3 col-md-6">
               <Product
@@ -49,6 +49,5 @@ function ShopAll() {
       </div>
     </>
   );
-}
-
-export default ShopAll;
+};
+export default NewArrival;
