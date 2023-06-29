@@ -1,4 +1,3 @@
-import React from 'react';
 import { Button } from 'components/button';
 import { ShippingForm } from 'components/form';
 import { ArrowBackIosIcon } from 'assets/icons';

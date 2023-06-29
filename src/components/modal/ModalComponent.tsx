@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { CloseIcon } from 'assets/icons';
-import Box from '@mui/material/Box';
-import Modal from '@mui/material/Modal';
-import { IconButton } from '@mui/material';
-import { CountryType, countries } from 'data/country';
+import { useState, useEffect } from 'react';
 import Message from 'provider/Message';
+import { CountryType, countries } from 'data/country';
+import { Modal, Box, IconButton } from '@mui/material';
+import { CloseIcon } from 'assets/icons';
 
 // defining props
 type Props = {

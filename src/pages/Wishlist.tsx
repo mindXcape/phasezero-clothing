@@ -1,6 +1,5 @@
-import React from 'react';
-import { Title } from 'components/Title';
 import CartTable from 'components/CartTable/CartTable';
+import { Title } from 'components/Title';
 
 function Wishlist() {
   return (

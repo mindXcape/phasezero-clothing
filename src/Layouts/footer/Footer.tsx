@@ -1,7 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRightAltIcon } from 'assets/icons';
 import { Button } from '@mui/material';
+import { ArrowRightAltIcon } from 'assets/icons';
 
 function Footer() {
   return (

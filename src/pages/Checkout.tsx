@@ -1,4 +1,3 @@
-import React from 'react';
 import { CheckoutLeftItem, CheckoutPayment } from 'components/Checkout';
 
 function Checkout() {

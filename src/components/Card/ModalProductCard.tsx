@@ -1,4 +1,4 @@
-import React, { MouseEvent } from 'react';
+import { MouseEvent } from 'react';
 import Button from 'components/button/Button';
 import { athleisurefront } from 'assets/Images';
 

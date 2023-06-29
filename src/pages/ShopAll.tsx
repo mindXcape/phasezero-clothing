@@ -1,6 +1,5 @@
-import React from 'react';
 import Product from 'components/Card/ProductCard';
-import { Title, CollectionTitle } from 'components/Title';
+import { CollectionTitle } from 'components/Title';
 
 function ShopAll() {
   return (

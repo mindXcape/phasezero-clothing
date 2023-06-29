@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import Drawer from '@mui/material/Drawer';
 import ProductCardSkeleton from 'provider/Skeleton/ProductCardSkeleton';
 import CartTable from 'components/CartTable/CartTable';
 import { FavoriteBorderIcon } from 'assets/icons';
+import Drawer from '@mui/material/Drawer';
 
 type Anchor = 'top' | 'left' | 'bottom' | 'right';
 // defining prop types for product

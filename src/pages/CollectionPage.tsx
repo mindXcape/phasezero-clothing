@@ -1,4 +1,3 @@
-import React from 'react';
 import { CollectionTitle } from 'components/Title';
 import { Product } from 'components/Card';
 

@@ -1,6 +1,5 @@
-import React from 'react';
-import { Breadcrumbs } from '@mui/material';
 import { Link, Outlet } from 'react-router-dom';
+import { Breadcrumbs } from '@mui/material';
 import { NavigateNextIcon } from 'assets/icons';
 
 function CheckoutLeftItem() {

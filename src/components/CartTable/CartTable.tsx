@@ -1,5 +1,4 @@
 import { CloseIcon } from 'assets/icons';
-import React from 'react';
 
 interface CartProps {
   image: string;
