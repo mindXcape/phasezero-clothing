@@ -7,7 +7,7 @@ import {
   CloseIcon,
   FacebookIcon,
   InstagramIcon,
-} from 'assets/CommunityModalIcons';
+} from 'assets/icons';
 
 interface Props {
   onClose: (e: MouseEvent<HTMLButtonElement>) => void;

@@ -1,5 +1,5 @@
+import { CloseIcon } from 'assets/icons';
 import React from 'react';
-import CloseIcon from '@mui/icons-material/Close';
 
 interface CartProps {
   image: string;

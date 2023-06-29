@@ -2,7 +2,7 @@
 /* eslint-disable react/no-array-index-key */
 import React, { useState } from 'react';
 import { ImageType, images } from 'data/images';
-import CommunityModal from 'components/ui/modal/CommunityModal';
+import CommunityModal from 'components/ui/modal';
 
 function CommunityGrid() {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);

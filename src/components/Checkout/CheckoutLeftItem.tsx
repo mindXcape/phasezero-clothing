@@ -1,7 +1,7 @@
 import React from 'react';
 import { Breadcrumbs } from '@mui/material';
-import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import { Link, Outlet } from 'react-router-dom';
+import { NavigateNextIcon } from 'assets/icons';
 
 function CheckoutLeftItem() {
   // code for breadcrumbs

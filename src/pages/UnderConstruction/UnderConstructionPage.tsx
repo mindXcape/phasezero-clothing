@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Countdown from 'components/CountDown/CountDown';
+import { Countdown } from 'components/CountDown';
 import {
   tenth,
   fourth,

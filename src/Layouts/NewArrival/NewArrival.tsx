@@ -1,5 +1,5 @@
 import React from 'react';
-import Title from 'components/Title/Title';
+import { Title } from 'components/Title';
 import Product from 'components/Card/ProductCard';
 
 const NewArrival = function NewArrival() {

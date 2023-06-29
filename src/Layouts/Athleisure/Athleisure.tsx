@@ -1,5 +1,5 @@
 import { displaypic, athleisureback, athleisurefront } from 'assets/Images';
-import Title from 'components/Title/Title';
+import { Title } from 'components/Title';
 
 function Athleisure() {
   return (

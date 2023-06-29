@@ -51,7 +51,8 @@ a:hover {
 
 // import for vendor in layman's term (imports for css framework such as MUI, Bootstrap Chakra UI etc.)
 @import './vendor/_vendor-dir';
-@import './Utils/_utils-dir';
+
+@import './utils/_utils-dir';
 
 .background__blur {
   // filter: blur(50%);/* Apply the blur effect */

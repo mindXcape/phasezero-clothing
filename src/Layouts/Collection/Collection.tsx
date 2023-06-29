@@ -1,4 +1,4 @@
-import Title from 'components/Title/Title';
+import { Title } from 'components/Title';
 import { pz_lifestyle1, pz_lifestyle2, phone_screen } from 'assets/Images';
 
 function Collection() {

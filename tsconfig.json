@@ -24,10 +24,10 @@
       "context/*": ["src/context/*"],
       "data/*": ["src/data/*"],
       "hooks/*": ["src/hooks/*"],
-      "Layouts/*": ["src/Layouts/*"],
+      "layouts/*": ["src/layouts/*"],
       "pages/*": ["src/pages/*"],
-      "Provider/*": ["src/Provider/*"],
-      "Routes/*": ["src/Routes/*"],
+      "provider/*": ["src/provider/*"],
+      "routes/*": ["src/routes/*"],
       "scss/*": ["src/scss/*"],
       "utils/*": ["src/utils/*"],
     }

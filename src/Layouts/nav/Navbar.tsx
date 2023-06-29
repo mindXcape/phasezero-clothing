@@ -2,9 +2,9 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import { SearchIcon, LocalMallIcon } from 'assets/icons';
 import { NavLink, useNavigate } from 'react-router-dom';
 import SearchBar from 'components/SearchBar/SearchBar';
-import { logo } from '../../assets/Images/index';
-import Rightdrawers from '../../components/drawers/Rightdrawers';
-import DrawerProvider from '../../utils/Drawer/DrawerProvider';
+import { logo } from 'assets/Images/index';
+import Rightdrawers from 'components/drawers/Rightdrawers';
+import DrawerProvider from 'utils/Drawer/DrawerProvider';
 
 const menuItems = [{ text: 'Item 1' }, { text: 'Item 2' }, { text: 'Item 3' }];
 

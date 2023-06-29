@@ -1,8 +1,8 @@
 import * as React from 'react';
+import { ChevronRightIcon } from 'assets/icons';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import MenuIcon from '@mui/icons-material/Menu';
 
 type Anchor = 'left';

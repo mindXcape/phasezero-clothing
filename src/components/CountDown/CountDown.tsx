@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import ArrowDropDownCircleIcon from '@mui/icons-material/ArrowDropDownCircle';
+import { ArrowDropDownCircleIcon } from 'assets/icons';
 import CountDownCard from './CountDownCard';
 
 interface CountdownProps {
