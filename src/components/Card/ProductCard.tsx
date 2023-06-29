@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import ProductCardSkeleton from 'provider/Skeleton/ProductCardSkeleton';
 import CartTable from 'components/CartTable/CartTable';
 import { FavoriteBorderIcon } from 'assets/icons';
@@ -21,7 +21,7 @@ const Product = function Product({
   price,
   loading,
 }: ProductProps) {
-  const [state, setState] = React.useState({
+  const [state, setState] = useState({
     top: false,
     left: false,
     bottom: false,
