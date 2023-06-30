@@ -27,13 +27,10 @@ function UnderConstructionPage() {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 1033); // Adjust the breakpoint as necessary
     };
-
     // Immediately invoke the handler to set initial state
     handleResize();
-
     // Set up the event listener
     window.addEventListener('resize', handleResize);
-
     // Return the cleanup function
     return () => {
       // This is the cleanup function. It removes the event listener from the window.
@@ -261,27 +258,6 @@ function UnderConstructionPage() {
               </div>
             </div>
           )}
-
-          {/* <div className="under__construction__wardrobe">
-            <div className="container">
-              <div className="row">
-                <div className="col-12 col-md-12 col-lg-6 col-sm-12">
-                  <div className="mindxcape">
-                    <p>By MindXcape</p>
-                  </div>
-                </div>
-                <div className="col-12 col-md-12 col-lg-6 col-sm-12">
-                  <div className="under__construction__wardrobe__content">
-                    <p>
-                      We are taking online deliveries all over Nepal from our
-                      instagram page @phasezero.clo
-                    </p>
-                    <button type="button">Explore Instagram Wardrobe</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> */}
           <Container>
             <div className="under__construction__bottom__section">
               <div className="our__team">

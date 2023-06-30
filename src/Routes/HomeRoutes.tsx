@@ -13,6 +13,7 @@ import Checkout from 'pages/Checkout';
 import CheckoutPaymentMethod from 'components/Checkout/CheckoutPaymentMethod';
 import Community from 'pages/Community';
 import CheckoutInformation from 'components/Checkout/CheckoutInformation';
+import AboutUs from 'pages/AboutUs';
 // eslint-disable-next-line import/extensions
 import Count from '@/Count';
 
@@ -34,6 +35,7 @@ const HomeRoutes = function HomeRoutes() {
       <Route path="/community" element={<Community />} />
       <Route path="/under_construction" element={<UnderConstructionPage />} />
       <Route path="*" element={<NotFound />} />
+      <Route path="/about" element={<AboutUs />} />
     </Routes>
   );
 };

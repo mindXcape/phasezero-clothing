@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ArrowDropDownCircleIcon from '@mui/icons-material/ArrowDropDownCircle';
+import { fashionFil } from 'assets/Images/index';
 import CountDownCard from './CountDownCard';
 
 interface CountdownProps {
@@ -66,6 +67,9 @@ function Countdown({
 
   return (
     <div className="background__video__wrapper">
+      {/* <div className="background__video">
+        <img src={fashionFil} alt="" />
+      </div> */}
       <div className="count__down__wrapper">
         <div className="count__down__card__wrapper">
           <div className="count__down__card__content">

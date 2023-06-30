@@ -1,6 +1,17 @@
 @import '../../abstracts/mixins';
-.background__video__wrapper{
-  
+.background__video__wrapper {
+  position: relative;
+  height: 100vh;
+  .background__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    img {
+      height: 100vh;
+      width: 100vw;
+      object-fit: cover;
+    }
+  }
   .count__down__wrapper {
     padding: 0px 20px;
     display: flex;
@@ -8,7 +19,6 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    position: relative;
     @include sm {
       gap: 4px;
       align-items: center;
@@ -145,15 +155,15 @@
       position: absolute;
       left: 95%;
       top: 90%;
-      @include sm{
+      @include sm {
         left: 85%;
         top: 92%;
       }
-      @include md{
+      @include md {
         left: 93%;
         top: 92%;
       }
-      @include lg{
+      @include lg {
         left: 93%;
         top: 95%;
       }

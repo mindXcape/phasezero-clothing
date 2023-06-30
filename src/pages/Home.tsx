@@ -3,7 +3,7 @@ import AddBanner from 'Layouts/Addbanners/Addbanner';
 import Collection from 'Layouts/Collection/Collection';
 import Athleisure from 'Layouts/Athleisure/Athleisure';
 import Masterbanner from 'components/banner/Masterbanner';
-import { carouselfinal } from 'assets/Images';
+import { bannerPic } from 'assets/Images';
 
 function Home() {
   const adTexts: string[] = [
@@ -14,7 +14,7 @@ function Home() {
   return (
     <>
       <AddBanner adTexts={adTexts} />
-      <Masterbanner src={carouselfinal} />
+      <Masterbanner src={bannerPic} />
       <NewArrival />
       <Athleisure />
       <Collection />
