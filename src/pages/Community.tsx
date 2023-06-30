@@ -1,5 +1,4 @@
-import React from 'react';
-import CommunityGrid from 'Layouts/Community/CommunityGrid';
+import CommunityGrid from 'layouts/Community/CommunityGrid';
 
 function Community() {
   return (

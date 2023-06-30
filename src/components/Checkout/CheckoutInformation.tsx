@@ -1,7 +1,6 @@
-import React from 'react';
-import Button from 'components/button/Button';
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-import ShippingForm from '../form/ShippingForm';
+import { Button } from 'components/button';
+import { ShippingForm } from 'components/form';
+import { ArrowBackIosIcon } from 'assets/icons';
 
 function CheckoutInformation() {
   return (

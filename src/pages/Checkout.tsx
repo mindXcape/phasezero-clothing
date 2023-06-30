@@ -1,6 +1,4 @@
-import React from 'react';
-import CheckoutLeftItem from 'components/Checkout/CheckoutLeftItem';
-import CheckoutPayment from 'components/Checkout/CheckoutPayment';
+import { CheckoutLeftItem, CheckoutPayment } from 'components/Checkout';
 
 function Checkout() {
   return (
