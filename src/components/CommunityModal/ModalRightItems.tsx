@@ -21,6 +21,9 @@ function ModalRightItems({ goToNextImage, goToPrevImage, onClose }: Props) {
   return (
     <div className="modal__right__items__wrapper">
       <div className="navigate__modal__item">
+        <div className="modal__title__wrapper">
+          <h3>PHASE ZERO</h3>
+        </div>
         <IconButton onClick={onClose}>
           <CloseIcon sx={{ fontSize: 30 }} />
         </IconButton>
@@ -38,13 +41,13 @@ function ModalRightItems({ goToNextImage, goToPrevImage, onClose }: Props) {
         </p>
       </div>
       <div className="modal__image__source">
-        <p>PHAZEZEROCLO // INSTAGRAM // 07 JUNE 2023</p>
+        <p>PHAZEZEROCLO | INSTAGRAM | 07 JUNE 2023</p>
       </div>
       <div className="modal__footer__left__item">
         <IconButton>
           <FacebookIcon fontSize="small" />
         </IconButton>
-        <IconButton>
+        <IconButton href="https://www.instagram.com/phasezero.clo/?hl=en">
           <InstagramIcon fontSize="small" />
         </IconButton>
       </div>
