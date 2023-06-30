@@ -1,9 +1,8 @@
-import '../../scss/main.scss';
-import React, { useState } from 'react';
-import Drawer from '@mui/material/Drawer';
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import ProductCardSkeleton from 'Provider/Skeleton/ProductCardSkeleton';
+import { useState } from 'react';
+import ProductCardSkeleton from 'provider/Skeleton/ProductCardSkeleton';
 import CartTable from 'components/CartTable/CartTable';
+import { FavoriteBorderIcon } from 'assets/icons';
+import Drawer from '@mui/material/Drawer';
 
 type Anchor = 'top' | 'left' | 'bottom' | 'right';
 // defining prop types for product
@@ -22,7 +21,7 @@ const Product = function Product({
   price,
   loading,
 }: ProductProps) {
-  const [state, setState] = React.useState({
+  const [state, setState] = useState({
     top: false,
     left: false,
     bottom: false,

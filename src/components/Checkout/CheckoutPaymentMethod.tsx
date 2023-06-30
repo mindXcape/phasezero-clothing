@@ -1,6 +1,5 @@
-import React from 'react';
-import { dummyQR } from 'assets/Images';
 import Button from 'components/button/Button';
+import { dummyQR } from 'assets/Images';
 
 function CheckoutPaymentMethod() {
   return (

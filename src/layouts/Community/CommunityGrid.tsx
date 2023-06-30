@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable react/no-array-index-key */
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { CommunityModal } from 'components/ui/modal';
 import { ImageType, images } from 'data/images';
-import CommunityModal from 'components/ui/modal/CommunityModal';
 
 function CommunityGrid() {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);

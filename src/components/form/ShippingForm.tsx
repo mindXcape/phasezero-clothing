@@ -1,5 +1,5 @@
 import React from 'react';
-import InputRhude from 'components/ui/input/InputRhude';
+import { InputRhude } from 'components/ui/input';
 
 function ShippingForm() {
   return (

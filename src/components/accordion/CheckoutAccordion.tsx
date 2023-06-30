@@ -1,6 +1,6 @@
 import Accordion from 'react-bootstrap/Accordion';
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import PaymentComponent from 'components/Checkout/PaymentComponent';
+import { ShoppingCartOutlinedIcon } from 'assets/icons';
 
 export default function CheckoutAccordion() {
   return (

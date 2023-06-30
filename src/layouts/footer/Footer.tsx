@@ -1,7 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import { Button } from '@mui/material';
+import { ArrowRightAltIcon } from 'assets/icons';
 
 function Footer() {
   return (
@@ -33,7 +32,7 @@ function Footer() {
         </Button>
       </div>
       <div className="footer__copyright">
-        <p>© 2023, PhazeZero</p>
+        <p>© 2023, Phase zero</p>
       </div>
     </footer>
   );

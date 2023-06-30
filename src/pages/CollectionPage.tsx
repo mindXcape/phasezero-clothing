@@ -1,6 +1,5 @@
-import React from 'react';
-import CollectionTitle from 'components/Title/Collection_TItle';
-import Product from 'components/Card/ProductCard';
+import { CollectionTitle } from 'components/Title';
+import { Product } from 'components/Card';
 
 function CollectionPage() {
   return (

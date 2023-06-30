@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import CheckoutAccordion from 'components/accordion/CheckoutAccordion';
 import PaymentComponent from './PaymentComponent';
 

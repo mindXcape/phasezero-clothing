@@ -1,6 +1,6 @@
 import { MouseEvent } from 'react';
-import Modal from '@mui/material/Modal';
 import ModalRightItems from 'components/CommunityModal/ModalRightItems';
+import Modal from '@mui/material/Modal';
 
 interface Props {
   selectedImage: string;
@@ -10,7 +10,7 @@ interface Props {
   goToPrevImage: (e: MouseEvent<HTMLButtonElement>) => void;
 }
 
-export default function CommunityModal({
+function CommunityModal({
   selectedImage,
   isOpen,
   onClose,
@@ -44,3 +44,5 @@ export default function CommunityModal({
     </div>
   );
 }
+
+export default CommunityModal;
