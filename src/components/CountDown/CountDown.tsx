@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react';
-import { ArrowDropDownCircleIcon } from 'assets/icons';
+import React, { useEffect, useState } from 'react';
+import ArrowDropDownCircleIcon from '@mui/icons-material/ArrowDropDownCircle';
+import CountDownCard from './CountDownCard';
 
 interface CountdownProps {
   targetDate: Date;
@@ -65,6 +66,14 @@ function Countdown({
 
   return (
     <div className="background__video__wrapper">
+      <div className="background__video">
+        <video autoPlay loop muted>
+          <source
+            src="https://drive.google.com/uc?export=view&id=101h7mn6N6FPkRrAdHoFggb4auhXorjAv"
+            type="video/mp4"
+          />
+        </video>
+      </div>
       <div className="count__down__wrapper">
         <div className="count__down__card__wrapper">
           <div className="count__down__card__content">
@@ -79,7 +88,9 @@ function Countdown({
               <h3>{countdown.days.toString().charAt(1)}</h3>
             </div>
           </div>
-          <h2>Days</h2>
+          <div className="count__down__title">
+            <h2>days</h2>
+          </div>
         </div>
         <div className="count__down__card__wrapper">
           <div className="count__down__card__content">
@@ -94,7 +105,9 @@ function Countdown({
               <h3>{countdown.hours.toString().charAt(1)}</h3>
             </div>
           </div>
-          <h2>Hours</h2>
+          <div className="count__down__title">
+            <h2>hours</h2>
+          </div>
         </div>
         <div className="count__down__card__wrapper">
           <div className="count__down__card__content">
@@ -109,7 +122,9 @@ function Countdown({
               <h3>{countdown.minutes.toString().charAt(1)}</h3>
             </div>
           </div>
-          <h2>Minutes</h2>
+          <div className="count__down__title">
+            <h2>minutes</h2>
+          </div>
         </div>
         <div className="count__down__card__wrapper">
           <div className="count__down__card__content">
@@ -124,12 +139,17 @@ function Countdown({
               <h3>{countdown.seconds.toString().charAt(1)}</h3>
             </div>
           </div>
-          <h2>Seconds</h2>
+          <div className="count__down__title">
+            <h2>seconds</h2>
+          </div>
         </div>
         <div className="count__down__cursor">
           <a href="#phases_of_phase_zero">
             {' '}
-            <ArrowDropDownCircleIcon className="animated__icon" />
+            <ArrowDropDownCircleIcon
+              className="animated__icon"
+              sx={{ color: 'white' }}
+            />
           </a>
         </div>
       </div>

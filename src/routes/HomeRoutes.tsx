@@ -9,11 +9,9 @@ import ShopAll from 'pages/ShopAll';
 import Wishlist from 'pages/Wishlist';
 import UnderConstructionPage from 'pages/UnderConstruction/UnderConstructionPage';
 import Checkout from 'pages/Checkout';
+import CheckoutPaymentMethod from 'components/Checkout/CheckoutPaymentMethod';
 import Community from 'pages/Community';
-import {
-  CheckoutPaymentMethod,
-  CheckoutInformation,
-} from 'components/Checkout';
+import CheckoutInformation from 'components/Checkout/CheckoutInformation';
 // eslint-disable-next-line import/extensions
 import Count from '@/Count';
 

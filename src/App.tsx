@@ -7,11 +7,11 @@ import 'scss/main.scss';
 
 export default function App() {
   return (
-    // <UnderConstructionPage />
-    <>
-      <Navbar />
-      <HomeRoutes />
-      <Footer />
-    </>
+    <UnderConstructionPage />
+    // <>
+    //   <Navbar />
+    //   <HomeRoutes />
+    //   <Footer />
+    // </>
   );
 }

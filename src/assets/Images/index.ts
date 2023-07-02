@@ -23,8 +23,18 @@ import artist from './aforartist.jpg';
 import lifestyle from './lifestyle.jpg';
 import dummyQR from './qrcode.png';
 import pagenotfound from './pagenotfound.png';
+import bannerPic from './aaa.png';
+import aab from './aab.png';
+import aac from './aac.png';
+import NAone from './NA-one.jpg';
+import NAtwo from './NA-2.jpg';
 
 export {
+  NAone,
+  NAtwo,
+  aab,
+  aac,
+  bannerPic,
   artist,
   lifestyle,
   second,

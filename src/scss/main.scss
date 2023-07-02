@@ -12,8 +12,9 @@ body {
   scrollbar-width: thin;
   scrollbar-color: #888 #f1f1f1;
 }
-.row {
-  margin: 0px;
+.row>*{
+  margin: 0px !important;
+  padding:0px !important;
 }
 .col-6 {
   margin: 0px;
