@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import ArrowDropDownCircleIcon from '@mui/icons-material/ArrowDropDownCircle';
-import CountDownCard from './CountDownCard';
+import { ArrowDropDownCircleIcon } from 'assets/icons';
 
 interface CountdownProps {
   targetDate: Date;
