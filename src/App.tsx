@@ -1,3 +1,4 @@
+import { useLocation } from 'react-router-dom';
 import Navbar from 'layouts/nav/Navbar';
 import HomeRoutes from 'routes/HomeRoutes';
 import Footer from 'layouts/footer/Footer';
@@ -6,12 +7,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'scss/main.scss';
 
 export default function App() {
+  const location = useLocation();
+
   return (
-    // <UnderConstructionPage />
     <>
-      <Navbar />
+      {location.pathname !== '/404' && <Navbar />}
       <HomeRoutes />
-      <Footer />
+      {location.pathname !== '/404' && <Footer />}
     </>
   );
 }

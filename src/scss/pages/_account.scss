@@ -1,0 +1,55 @@
+@import '../abstracts/mixins';
+
+.account__wrapper {
+  min-height: 70vh;
+  max-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0px;
+  .account__box__container {
+    width: 468px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .account__logo__title__wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 7px;
+      img {
+        height: 30px;
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 0px 5px;
+      }
+      h5 {
+        font-weight: bold;
+      }
+    }
+    .account__buttons__wrapper {
+      width: 100%;
+
+      button {
+        width: 50%;
+        padding: 8px 0px;
+        border: none;
+        color: #00000068;
+        background-color: #fff;
+        border-bottom: 1px solid rgba(30, 28, 28, 0.274);
+        outline: none;
+      }
+    }
+  }
+}
+
+.account__login__btn.active,
+.account__register__btn.active {
+  font-weight: 600 !important;
+  color: #000 !important;
+  border-bottom: 1px solid black !important;
+}

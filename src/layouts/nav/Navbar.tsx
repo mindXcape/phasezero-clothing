@@ -32,7 +32,7 @@ function Navbar() {
       <div className="right__section">
         <div className="big__screen__item">
           <p>
-            <NavLink to="/register">Account</NavLink>{' '}
+            <NavLink to="/account">Account</NavLink>{' '}
           </p>
           {/* <SearchIcon onClick={() => handleSearch()} /> */}
           <DrawerProvider anchor="top" icon={<SearchIcon />}>
