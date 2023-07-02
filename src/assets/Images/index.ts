@@ -28,8 +28,10 @@ import aab from './aab.png';
 import aac from './aac.png';
 import NAone from './NA-one.jpg';
 import NAtwo from './NA-2.jpg';
+import PZ from './PZ.gif';
 
 export {
+  PZ,
   NAone,
   NAtwo,
   aab,
