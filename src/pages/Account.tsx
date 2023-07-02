@@ -1,6 +1,5 @@
 import { MouseEvent } from 'react';
 import { Outlet, useNavigate, useLocation } from 'react-router-dom';
-import { pz } from 'assets/Images';
 import { AccountProviderButtons, Button } from 'components/button';
 
 function Account() {

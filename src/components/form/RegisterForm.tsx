@@ -73,7 +73,7 @@ function RegisterForm() {
               className="register__input__checkbox"
             />
             <h3 className="register__checkbox__label">
-              Subscribe to receive email updates about Represent product
+              Subscribe to receive email updates about Phase Zero product
               launches, promotions and exclusive discounts.
             </h3>
           </label>

@@ -1,15 +1,16 @@
 .loginForm__wrapper {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 
   .loginForm__box__margin {
+    height: auto;
     width: 100%;
     margin: 0px 16px;
     display: flex;
     flex-direction: column;
-    gap: 38px;
+    gap: 25px;
   }
 }
 

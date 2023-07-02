@@ -1,20 +1,20 @@
 .registerForm__wrapper {
   width: 100%;
+  height: 500px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   .registerForm__box__margin {
+    height: auto;
     width: 100%;
     margin: 0px 16px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-
     .register__label__wrapper {
       display: flex;
       flex-direction: column;
       gap: 15px;
-
       a {
         text-decoration: none;
         line-height: 18px;
@@ -22,13 +22,11 @@
         color: black;
         font-weight: 500;
       }
-
       .register__label__first__row {
         width: 100%;
         display: flex;
         gap: 10px;
       }
-
       label {
         width: 100%;
         display: flex;
@@ -51,17 +49,15 @@
           outline: 1px solid;
         }
       }
-
       .register__label__checkbox {
         display: flex;
         align-items: flex-start;
         flex-direction: row;
-
+        cursor: pointer;
         input {
           height: 15px;
           width: 15px;
         }
-
         .register__checkbox__label {
           font-size: 11px;
           font-weight: 400;
@@ -72,7 +68,6 @@
     }
     p {
       font-size: 12px;
-
       a {
         color: rgba(44, 44, 224, 0.819);
       }
