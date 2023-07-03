@@ -16,6 +16,8 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import ArrowDropDownCircleIcon from '@mui/icons-material/ArrowDropDownCircle';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import Drawer from '@mui/material/Drawer';
+import MenuIcon from '@mui/icons-material/Menu';
 
 export {
   SearchIcon,
@@ -36,4 +38,6 @@ export {
   ArrowDropDownCircleIcon,
   ChevronRightIcon,
   ArrowRightAltIcon,
+  Drawer,
+  MenuIcon,
 };
