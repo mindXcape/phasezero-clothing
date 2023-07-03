@@ -1,7 +1,5 @@
-import React from 'react';
-import Product from '../components/Card/ProductCard';
-import Title from '../components/Title/Title';
-import CollectionTitle from '../components/Title/Collection_TItle';
+import Product from 'components/Card/ProductCard';
+import { CollectionTitle } from 'components/Title';
 
 function ShopAll() {
   return (

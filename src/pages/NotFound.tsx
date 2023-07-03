@@ -1,11 +1,10 @@
-import { Link } from 'react-router-dom';
+import { pagenotfound } from 'assets/Images';
 
 function NotFound() {
   return (
-    <>
-      <h1>Not Found</h1>
-      <Link to="/">GO HOME</Link>
-    </>
+    <div className="page__not__found__wrapper">
+      <img src={pagenotfound} alt="" />
+    </div>
   );
 }
 

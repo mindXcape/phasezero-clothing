@@ -1,26 +1,23 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
-import React, { useState } from 'react';
+import { Suspense, lazy } from 'react';
+import Navbar from 'layouts/nav/Navbar';
+import HomeRoutes from 'routes/HomeRoutes';
+import Footer from 'layouts/footer/Footer';
+// import UnderConstructionPage from 'pages/UnderConstruction/UnderConstructionPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './Layouts/nav/Navbar';
-import HomeRoutes from './Routes/HomeRoutes';
-import Footer from './Layouts/footer/Footer';
-import './scss/main.scss';
+import 'scss/main.scss';
+import LoadingState from './components/Loading/LoadingState';
+
+const UnderConstructionPage = lazy(
+  () => import('pages/UnderConstruction/UnderConstructionPage')
+);
 
 export default function App() {
-  const [bgState, setBgState] = useState<boolean>(false);
-  console.log(bgState);
   return (
-    <>
-      <Navbar backgroundState={setBgState} />
-      {bgState ? (
-        <div className="background__blur">
-          <HomeRoutes />
-        </div>
-      ) : (
-        <HomeRoutes />
-      )}
-
-      <Footer />
-    </>
+    <UnderConstructionPage />
+    // <>
+    //   <Navbar />
+    //   <HomeRoutes />
+    //   <Footer />
+    // </>
   );
 }

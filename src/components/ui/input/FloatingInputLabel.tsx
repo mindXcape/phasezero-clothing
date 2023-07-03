@@ -1,6 +1,5 @@
 /* eslint-disable react/require-default-props */
-import React, { useState, ChangeEvent, InputHTMLAttributes } from 'react';
-import '../../../scss/main.scss';
+import { useState, ChangeEvent, InputHTMLAttributes } from 'react';
 
 interface FloatingLabelInputProps
   extends InputHTMLAttributes<HTMLInputElement> {

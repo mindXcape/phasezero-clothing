@@ -1,0 +1,90 @@
+.modal__right__items__wrapper {
+  width: 100%;
+  min-height: auto;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .navigate__modal__item {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0px;
+    padding-left: 20px;
+    width: 100%;
+
+    @include md {
+      gap: 10px;
+    }
+    .modal__title__wrapper {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include xlg {
+        width: 50%;
+        padding-top: 17px;
+      }
+      h3 {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 25px;
+        text-align: center;
+      }
+    }
+  }
+
+  .modal__product__card__component {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    @include md {
+      justify-content: center;
+    }
+
+    @include lg {
+      justify-content: center;
+    }
+  }
+
+  .modal__image__description {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      line-height: 1.5em;
+      text-align: center;
+    }
+  }
+
+  .modal__image__source {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      line-height: 1.5em;
+      text-align: center;
+      word-spacing: 5px;
+    }
+  }
+
+  .modal__footer__left__item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .navigate__left__right {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

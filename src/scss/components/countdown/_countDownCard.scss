@@ -1,0 +1,212 @@
+@import '../../abstracts/mixins';
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.background__video__wrapper {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  .background__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    video {
+      height: 100vh;
+      width: 100vw;
+      object-fit: cover;
+    }
+    img {
+      height: 100vh;
+      width: 100vw;
+      object-fit: cover;
+    }
+  }
+  .count__down__wrapper {
+    padding: 0px 20px;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    @include sm {
+      gap: 4px;
+      align-items: center;
+      justify-content: center;
+    }
+    @include md {
+      gap: 8px;
+    }
+    .count__down__card__wrapper {
+      text-align: center;
+      width: 201px;
+      @include sm {
+        width: 81px;
+      }
+      @include lg {
+        width: 161px;
+      }
+      .count__down__card__content {
+        display: flex;
+        gap: 1px;
+        .count__down__card__left {
+          position: relative;
+          .count__down__card__top {
+            background-color: #000;
+            height: 100px;
+            width: 100px;
+            margin-bottom: 1px;
+            @include sm {
+              width: 40px;
+              height: 40px;
+            }
+            @include lg {
+              width: 80px;
+              height: 80px;
+            }
+            @include md {
+              width: 80px;
+              height: 80px;
+            }
+          }
+          .count__down__card__bottom {
+            background-color: #000;
+            height: 100px;
+            width: 100px;
+            @include sm {
+              width: 40px;
+              height: 40px;
+            }
+            @include lg {
+              width: 80px;
+              height: 80px;
+            }
+            @include md {
+              width: 80px;
+              height: 80px;
+            }
+          }
+          h3 {
+            font-size: 200px;
+            position: absolute;
+            top: -4%;
+            left: 8%;
+            z-index: 10;
+            color: white;
+            font-family: 'Bebas Neue', sans-serif;
+            @include sm {
+              font-size: 80px;
+            }
+            @include lg {
+              font-size: 158px;
+            }
+            @include md {
+              font-size: 158px;
+            }
+          }
+        }
+        .count__down__card__right {
+          position: relative;
+          .count__down__card__top {
+            background-color: #000;
+            height: 100px;
+            width: 100px;
+            margin-bottom: 1px;
+            @include sm {
+              width: 40px;
+              height: 40px;
+            }
+            @include lg {
+              width: 80px;
+              height: 80px;
+            }
+            @include md {
+              width: 80px;
+              height: 80px;
+            }
+          }
+          .count__down__card__bottom {
+            background-color: #000;
+            height: 100px;
+            width: 100px;
+            @include sm {
+              width: 40px;
+              height: 40px;
+            }
+            @include lg {
+              width: 80px;
+              height: 80px;
+            }
+            @include md {
+              width: 80px;
+              height: 80px;
+            }
+          }
+          h3 {
+            font-size: 200px;
+            position: absolute;
+            top: -4%;
+            left: 8%;
+            z-index: 10;
+            color: white;
+            font-family: 'Bebas Neue', sans-serif;
+            @include sm {
+              font-size: 80px;
+            }
+            @include lg {
+              font-size: 158px;
+            }
+            @include md {
+              font-size: 158px;
+            }
+          }
+        }
+      }
+      .count__down__title {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        padding-top: 8px;
+        h2 {
+          z-index: 9999;
+          color: white;
+          font-family: 'Bebas Neue', sans-serif;
+          @include sm {
+            font-size: 18px !important;
+          }
+        }
+      }
+    }
+    .count__down__cursor {
+      position: absolute;
+      left: 95%;
+      top: 90%;
+      @include sm {
+        left: 85%;
+        top: 92%;
+      }
+      @include md {
+        left: 93%;
+        top: 92%;
+      }
+      @include lg {
+        left: 93%;
+        top: 95%;
+      }
+      svg {
+        font-size: 50px;
+      }
+    }
+  }
+}
+@keyframes iconAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.animated__icon {
+  animation: iconAnimation 1s infinite;
+}

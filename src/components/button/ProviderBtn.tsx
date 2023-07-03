@@ -1,5 +1,4 @@
-import React, { ReactNode } from 'react';
-import '../../scss/main.scss';
+import { ReactNode } from 'react';
 
 interface ProviderBtnProps {
   className: string;
@@ -23,8 +22,10 @@ const ProviderBtn = function ProviderBtn({
       onClick={eventHandler}
       disabled={disabled}
     >
-      {providerIcon}
-      <div className="btn__provider__title">{title}</div>
+      <div className="provider__wrapper">
+        {providerIcon}
+        <div className="btn__provider__title">{title}</div>
+      </div>
     </button>
   );
 };

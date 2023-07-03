@@ -1,9 +1,9 @@
-import NewArrival from '../Layouts/NewArrival/NewArrival';
-import AddBanner from '../Layouts/Addbanners/Addbanner';
-import Collection from '../Layouts/Collection/Collection';
-import Athleisure from '../Layouts/Athleisure/Athleisure';
-import Masterbanner from '../components/banner/Masterbanner';
-import { carouselfinal } from '../assets';
+import NewArrival from 'layouts/NewArrival/NewArrival';
+import AddBanner from 'layouts/Addbanners/Addbanner';
+import Collection from 'layouts/Collection/Collection';
+import Athleisure from 'layouts/Athleisure/Athleisure';
+import Masterbanner from 'components/banner/Masterbanner';
+import { bannerPic } from 'assets/Images';
 
 function Home() {
   const adTexts: string[] = [
@@ -14,7 +14,7 @@ function Home() {
   return (
     <>
       <AddBanner adTexts={adTexts} />
-      <Masterbanner src={carouselfinal} />
+      <Masterbanner src={bannerPic} />
       <NewArrival />
       <Athleisure />
       <Collection />

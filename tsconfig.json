@@ -14,7 +14,23 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "apis/*": ["src/apis/*"],
+      "assets/*": ["src/assets/*"],
+      "components/*": ["src/components/*"],
+      "context/*": ["src/context/*"],
+      "data/*": ["src/data/*"],
+      "hooks/*": ["src/hooks/*"],
+      "layouts/*": ["src/layouts/*"],
+      "pages/*": ["src/pages/*"],
+      "provider/*": ["src/provider/*"],
+      "routes/*": ["src/routes/*"],
+      "scss/*": ["src/scss/*"],
+      "utils/*": ["src/utils/*"],
+    }
   },
   "include": [
     "vite.config.ts",

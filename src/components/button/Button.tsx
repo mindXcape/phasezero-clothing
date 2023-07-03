@@ -1,10 +1,8 @@
-import React from 'react';
-import '../../scss/main.scss';
-
+/* eslint-disable react/require-default-props */
 interface ButtonProps {
   className: string;
   title: string;
-  disabled: boolean;
+  disabled?: boolean;
   eventHandler: React.MouseEventHandler<HTMLButtonElement>;
 }
 
