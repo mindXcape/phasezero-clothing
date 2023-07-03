@@ -1,9 +1,7 @@
 import * as React from 'react';
-import { ChevronRightIcon } from 'assets/icons';
-import Box from '@mui/material/Box';
-import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
-import MenuIcon from '@mui/icons-material/Menu';
+import Box from '@mui/material/Box';
+import { ChevronRightIcon, Drawer, MenuIcon } from 'assets/icons';
 
 type Anchor = 'left';
 type RightDrawersProps = {
