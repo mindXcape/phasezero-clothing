@@ -72,6 +72,10 @@ function Countdown({
             type="video/mp4"
           />
         </video>
+        {/* <img
+          src="https://drive.google.com/uc?id=1ErBL44SFWqkh7z2NE32UpXv0A5L7P_xW"
+          alt="Background gif"
+        /> */}
       </div>
       <div className="count__down__wrapper">
         <div className="count__down__card__wrapper">
