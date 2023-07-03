@@ -13,9 +13,7 @@ const UnderConstructionPage = lazy(
 
 export default function App() {
   return (
-    <Suspense fallback={<LoadingState />}>
-      <UnderConstructionPage />
-    </Suspense>
+    <UnderConstructionPage />
     // <>
     //   <Navbar />
     //   <HomeRoutes />

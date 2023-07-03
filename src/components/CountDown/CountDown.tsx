@@ -1,5 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { ArrowDropDownCircleIcon } from 'assets/icons';
+import TransitionsModal from 'pages/UnderConstruction/UnderConstructionModal';
+import { UnderBackSS } from 'assets/Images';
+import LoadingState from '../Loading/LoadingState';
 
 interface CountdownProps {
   targetDate: Date;
@@ -16,6 +19,9 @@ function Countdown({
   initialMinutes,
   initialSeconds,
 }: CountdownProps) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isVideoLoading, setIsVideoLoading] = useState<boolean>(true);
+  const [isOpen, setIsOpen] = useState<boolean>(true);
   const [countdown, setCountdown] = useState<{
     days: number | string;
     hours: number | string;
@@ -62,101 +68,123 @@ function Countdown({
       clearInterval(interval);
     };
   }, [targetDate]);
-
+  const loadingHandler = () => {
+    setTimeout(() => {
+      setIsVideoLoading(false);
+    }, 1000);
+  };
   return (
-    <div className="background__video__wrapper">
-      <div className="background__video">
-        <video autoPlay loop muted>
-          <source
-            src="https://drive.google.com/uc?export=view&id=101h7mn6N6FPkRrAdHoFggb4auhXorjAv"
-            type="video/mp4"
-          />
-        </video>
-        {/* <img
+    <>
+      <div style={{ display: isVideoLoading ? 'block' : 'none' }}>
+        <LoadingState />
+      </div>
+      <div
+        className="background__video__wrapper"
+        style={{ display: isVideoLoading ? 'none' : 'block' }}
+      >
+        {!isVideoLoading && (
+          <TransitionsModal isOpen={isOpen} setIsOpen={setIsOpen} />
+        )}
+        <div className="background__video">
+          <video
+            ref={videoRef}
+            autoPlay
+            loop
+            muted
+            onLoadedData={loadingHandler}
+          >
+            <source
+              src="https://drive.google.com/uc?export=view&id=101h7mn6N6FPkRrAdHoFggb4auhXorjAv"
+              type="video/mp4"
+            />
+          </video>
+
+          {/* <img
           src="https://drive.google.com/uc?id=1ErBL44SFWqkh7z2NE32UpXv0A5L7P_xW"
           alt="Background gif"
         /> */}
+        </div>
+        <div className="count__down__wrapper">
+          <div className="count__down__card__wrapper">
+            <div className="count__down__card__content">
+              <div className="count__down__card__left">
+                <div className="count__down__card__top" />
+                <div className="count__down__card__bottom" />
+                <h3>{countdown.days.toString().charAt(0)}</h3>
+              </div>
+              <div className="count__down__card__right">
+                <div className="count__down__card__top" />
+                <div className="count__down__card__bottom" />
+                <h3>{countdown.days.toString().charAt(1)}</h3>
+              </div>
+            </div>
+            <div className="count__down__title">
+              <h2>days</h2>
+            </div>
+          </div>
+          <div className="count__down__card__wrapper">
+            <div className="count__down__card__content">
+              <div className="count__down__card__left">
+                <div className="count__down__card__top" />
+                <div className="count__down__card__bottom" />
+                <h3>{countdown.hours.toString().charAt(0)}</h3>
+              </div>
+              <div className="count__down__card__right">
+                <div className="count__down__card__top" />
+                <div className="count__down__card__bottom" />
+                <h3>{countdown.hours.toString().charAt(1)}</h3>
+              </div>
+            </div>
+            <div className="count__down__title">
+              <h2>hours</h2>
+            </div>
+          </div>
+          <div className="count__down__card__wrapper">
+            <div className="count__down__card__content">
+              <div className="count__down__card__left">
+                <div className="count__down__card__top" />
+                <div className="count__down__card__bottom" />
+                <h3>{countdown.minutes.toString().charAt(0)}</h3>
+              </div>
+              <div className="count__down__card__right">
+                <div className="count__down__card__top" />
+                <div className="count__down__card__bottom" />
+                <h3>{countdown.minutes.toString().charAt(1)}</h3>
+              </div>
+            </div>
+            <div className="count__down__title">
+              <h2>minutes</h2>
+            </div>
+          </div>
+          <div className="count__down__card__wrapper">
+            <div className="count__down__card__content">
+              <div className="count__down__card__left">
+                <div className="count__down__card__top" />
+                <div className="count__down__card__bottom" />
+                <h3>{countdown.seconds.toString().charAt(0)}</h3>
+              </div>
+              <div className="count__down__card__right">
+                <div className="count__down__card__top" />
+                <div className="count__down__card__bottom" />
+                <h3>{countdown.seconds.toString().charAt(1)}</h3>
+              </div>
+            </div>
+            <div className="count__down__title">
+              <h2>seconds</h2>
+            </div>
+          </div>
+          <div className="count__down__cursor">
+            <a href="#phases_of_phase_zero">
+              {' '}
+              <ArrowDropDownCircleIcon
+                className="animated__icon"
+                sx={{ color: 'white' }}
+              />
+            </a>
+          </div>
+        </div>
       </div>
-      <div className="count__down__wrapper">
-        <div className="count__down__card__wrapper">
-          <div className="count__down__card__content">
-            <div className="count__down__card__left">
-              <div className="count__down__card__top" />
-              <div className="count__down__card__bottom" />
-              <h3>{countdown.days.toString().charAt(0)}</h3>
-            </div>
-            <div className="count__down__card__right">
-              <div className="count__down__card__top" />
-              <div className="count__down__card__bottom" />
-              <h3>{countdown.days.toString().charAt(1)}</h3>
-            </div>
-          </div>
-          <div className="count__down__title">
-            <h2>days</h2>
-          </div>
-        </div>
-        <div className="count__down__card__wrapper">
-          <div className="count__down__card__content">
-            <div className="count__down__card__left">
-              <div className="count__down__card__top" />
-              <div className="count__down__card__bottom" />
-              <h3>{countdown.hours.toString().charAt(0)}</h3>
-            </div>
-            <div className="count__down__card__right">
-              <div className="count__down__card__top" />
-              <div className="count__down__card__bottom" />
-              <h3>{countdown.hours.toString().charAt(1)}</h3>
-            </div>
-          </div>
-          <div className="count__down__title">
-            <h2>hours</h2>
-          </div>
-        </div>
-        <div className="count__down__card__wrapper">
-          <div className="count__down__card__content">
-            <div className="count__down__card__left">
-              <div className="count__down__card__top" />
-              <div className="count__down__card__bottom" />
-              <h3>{countdown.minutes.toString().charAt(0)}</h3>
-            </div>
-            <div className="count__down__card__right">
-              <div className="count__down__card__top" />
-              <div className="count__down__card__bottom" />
-              <h3>{countdown.minutes.toString().charAt(1)}</h3>
-            </div>
-          </div>
-          <div className="count__down__title">
-            <h2>minutes</h2>
-          </div>
-        </div>
-        <div className="count__down__card__wrapper">
-          <div className="count__down__card__content">
-            <div className="count__down__card__left">
-              <div className="count__down__card__top" />
-              <div className="count__down__card__bottom" />
-              <h3>{countdown.seconds.toString().charAt(0)}</h3>
-            </div>
-            <div className="count__down__card__right">
-              <div className="count__down__card__top" />
-              <div className="count__down__card__bottom" />
-              <h3>{countdown.seconds.toString().charAt(1)}</h3>
-            </div>
-          </div>
-          <div className="count__down__title">
-            <h2>seconds</h2>
-          </div>
-        </div>
-        <div className="count__down__cursor">
-          <a href="#phases_of_phase_zero">
-            {' '}
-            <ArrowDropDownCircleIcon
-              className="animated__icon"
-              sx={{ color: 'white' }}
-            />
-          </a>
-        </div>
-      </div>
-    </div>
+    </>
   );
 }
 

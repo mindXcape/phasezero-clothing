@@ -13,6 +13,11 @@
       width: 100vw;
       object-fit: cover;
     }
+    img {
+      height: 100vh;
+      width: 100vw;
+      object-fit: cover;
+    }
   }
   .count__down__wrapper {
     padding: 0px 20px;
@@ -83,7 +88,7 @@
             position: absolute;
             top: -4%;
             left: 8%;
-            z-index: 9999;
+            z-index: 10;
             color: white;
             font-family: 'Bebas Neue', sans-serif;
             @include sm {
@@ -139,7 +144,7 @@
             position: absolute;
             top: -4%;
             left: 8%;
-            z-index: 9999;
+            z-index: 10;
             color: white;
             font-family: 'Bebas Neue', sans-serif;
             @include sm {
@@ -165,7 +170,6 @@
           font-family: 'Bebas Neue', sans-serif;
           @include sm {
             font-size: 18px !important;
-
           }
         }
       }

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Countdown from 'components/CountDown/CountDown';
+
 import {
   tenth,
   fourth,
@@ -19,9 +20,11 @@ import HoverImageContainer from 'components/HoverImageContainer/HoverImageContai
 import UnderConstructionLeft from './UnderConstructionLeft';
 import UnderConstructionRight from './UnderConstructionRight';
 import 'scss/main.scss';
+import TransitionsModal from './UnderConstructionModal';
 
 function UnderConstructionPage() {
   const [isMobile, setIsMobile] = useState<boolean>(false);
+
   useEffect(() => {
     // Create the event handler function
     const handleResize = () => {
@@ -37,10 +40,6 @@ function UnderConstructionPage() {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
-
-  const instaHandler = (e: React.MouseEvent<HTMLButtonElement>) => {
-    e.preventDefault();
-  };
 
   return (
     <>

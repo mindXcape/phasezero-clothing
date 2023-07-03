@@ -29,8 +29,10 @@ import aac from './aac.png';
 import NAone from './NA-one.jpg';
 import NAtwo from './NA-2.jpg';
 import PZ from './PZ.gif';
+import UnderBackSS from './underbackSS.png';
 
 export {
+  UnderBackSS,
   PZ,
   NAone,
   NAtwo,
