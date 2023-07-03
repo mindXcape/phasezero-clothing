@@ -16,7 +16,7 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 400,
+  width: 300,
   bgcolor: 'background.paper',
   boxShadow: 24,
   zIndex: 9999,
@@ -53,7 +53,25 @@ export default function TransitionsModal({ isOpen, setIsOpen }: ModalI) {
         }}
       >
         <Fade in={isOpen}>
-          <Box sx={style}>
+          <Box
+            className="modal__box"
+            sx={{
+              position: 'absolute',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              width: {
+                xs: 300,
+                sm: 300,
+                md: 400,
+                lg: 400,
+              },
+              bgcolor: 'background.paper',
+              boxShadow: 24,
+              zIndex: 9999,
+              p: 4,
+            }}
+          >
             <Typography
               sx={style1}
               className="modal__heading"
