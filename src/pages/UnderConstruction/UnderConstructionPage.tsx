@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Countdown } from 'components/CountDown';
+import Countdown from 'components/CountDown/CountDown';
+
 import {
   tenth,
   fourth,
@@ -19,21 +20,20 @@ import HoverImageContainer from 'components/HoverImageContainer/HoverImageContai
 import UnderConstructionLeft from './UnderConstructionLeft';
 import UnderConstructionRight from './UnderConstructionRight';
 import 'scss/main.scss';
+import TransitionsModal from './UnderConstructionModal';
 
 function UnderConstructionPage() {
   const [isMobile, setIsMobile] = useState<boolean>(false);
+
   useEffect(() => {
     // Create the event handler function
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 1033); // Adjust the breakpoint as necessary
     };
-
     // Immediately invoke the handler to set initial state
     handleResize();
-
     // Set up the event listener
     window.addEventListener('resize', handleResize);
-
     // Return the cleanup function
     return () => {
       // This is the cleanup function. It removes the event listener from the window.
@@ -44,7 +44,7 @@ function UnderConstructionPage() {
   return (
     <>
       <Countdown
-        targetDate={new Date('2023-06-30T00:00:00')}
+        targetDate={new Date('2023-08-27T00:00:00')}
         initialDays={3}
         initialHours={6}
         initialMinutes={30}
@@ -58,7 +58,7 @@ function UnderConstructionPage() {
           {isMobile ? (
             <Container>
               <HoverImageContainer
-                image={third}
+                image="https://drive.google.com/uc?export=view&id=16sgrOjOLhDhIUSixJlZFsQKvwZGhxbri"
                 nameOfWrapperClass="hover__image__container__wrapper__two"
                 nameOfHoverClass="hover__image__second"
                 storyTitle="#1 - SEEDS"
@@ -68,7 +68,7 @@ function UnderConstructionPage() {
                 nameOfOverlayClass="hover__image__container__overlay__two"
               />
               <HoverImageContainer
-                image={tenth}
+                image="https://drive.google.com/uc?export=view&id=12yzzm_rq4szx55SWF0Sbey12npBsdF5O"
                 nameOfWrapperClass="hover__image__container__wrapper__two"
                 nameOfHoverClass="hover__image__second"
                 storyTitle="#2 - TODDLERS"
@@ -78,7 +78,7 @@ function UnderConstructionPage() {
                 nameOfOverlayClass="hover__image__container__overlay__two"
               />
               <HoverImageContainer
-                image={second}
+                image="https://drive.google.com/uc?export=view&id=1Q0i8MOeK99XyVHx6lkWMKt-4bDKxZv1A"
                 nameOfWrapperClass="hover__image__container__wrapper__two"
                 nameOfHoverClass="hover__image__second"
                 storyTitle="#3 - MADE IN MIND"
@@ -88,7 +88,7 @@ function UnderConstructionPage() {
                 nameOfOverlayClass="hover__image__container__overlay__two"
               />
               <HoverImageContainer
-                image={fourth}
+                image="https://drive.google.com/uc?export=view&id=1vNmmRpIfSYzTrsOXY7CSCr87qvlVuH7R"
                 nameOfWrapperClass="hover__image__container__wrapper__two"
                 nameOfHoverClass="hover__image__second"
                 storyTitle="#4 - ART"
@@ -98,7 +98,7 @@ function UnderConstructionPage() {
                 nameOfOverlayClass="hover__image__container__overlay__two"
               />
               <HoverImageContainer
-                image={seven}
+                image="https://drive.google.com/uc?export=view&id=14PncOa9Qxf2LbQyXYXxRoEHBLRbi_Chl"
                 nameOfWrapperClass="hover__image__container__wrapper__two"
                 nameOfHoverClass="hover__image__second"
                 storyTitle="#5 - ARTISTS"
@@ -109,7 +109,7 @@ function UnderConstructionPage() {
                 nameOfOverlayClass="hover__image__container__overlay__two"
               />
               <HoverImageContainer
-                image={fivth}
+                image="https://drive.google.com/uc?export=view&id=1kBuamxJ9LSjJoXDo89CBEMwEeqxwLauC"
                 nameOfWrapperClass="hover__image__container__wrapper__two"
                 nameOfHoverClass="hover__image__second"
                 storyTitle="#6 - COUNTDOWN "
@@ -120,7 +120,7 @@ function UnderConstructionPage() {
                 nameOfOverlayClass="hover__image__container__overlay__two"
               />
               <HoverImageContainer
-                image={sixth}
+                image="https://drive.google.com/uc?export=view&id=1S3DrILwV96Ixko3QlauEl1PKOk4RDpdw"
                 nameOfWrapperClass="hover__image__container__wrapper__two"
                 nameOfHoverClass="hover__image__second"
                 storyTitle="#7 - KICKOFF "
@@ -130,7 +130,7 @@ function UnderConstructionPage() {
                 nameOfOverlayClass="hover__image__container__overlay__two"
               />
               <HoverImageContainer
-                image={seventh}
+                image="https://drive.google.com/uc?export=view&id=1yXzEh8h9p3H_-I1IkJQmV0tI21QCCTNc"
                 nameOfWrapperClass="hover__image__container__wrapper__two"
                 nameOfHoverClass="hover__image__second"
                 storyTitle="#8 - ORIGIN "
@@ -140,7 +140,7 @@ function UnderConstructionPage() {
                 nameOfOverlayClass="hover__image__container__overlay__two"
               />
               <HoverImageContainer
-                image={ninth}
+                image="https://drive.google.com/uc?export=view&id=13NK5H2HyKRnNBwfaljdqSTjyBZ7JQNl8"
                 nameOfWrapperClass="hover__image__container__wrapper__two"
                 nameOfHoverClass="hover__image__second"
                 storyTitle="#9 - CULT "
@@ -150,7 +150,7 @@ function UnderConstructionPage() {
                 nameOfOverlayClass="hover__image__container__overlay__two"
               />
               <HoverImageContainer
-                image={eighth}
+                image="https://drive.google.com/uc?export=view&id=1izQQNiZ_rUy2bqvbgBGu79-r1a2dY6AZ"
                 nameOfWrapperClass="hover__image__container__wrapper__two"
                 nameOfHoverClass="hover__image__second"
                 storyTitle="#10 - EVOLVE "
@@ -160,7 +160,7 @@ function UnderConstructionPage() {
                 nameOfOverlayClass="hover__image__container__overlay__two"
               />
               <HoverImageContainer
-                image={artist}
+                image="https://drive.google.com/uc?export=view&id=1fQlhW29AYnAGBK7AAxL9_i1YwLuJ_HiE"
                 nameOfWrapperClass="hover__image__container__wrapper__two"
                 nameOfHoverClass="hover__image__second"
                 storyTitle="#11 -A FOR ARTIST "
@@ -170,7 +170,7 @@ function UnderConstructionPage() {
                 nameOfOverlayClass="hover__image__container__overlay__two"
               />
               <HoverImageContainer
-                image={lifestyle}
+                image="https://drive.google.com/uc?export=view&id=1oWz-dUOtp7evoky_83BUdohpUUyCBtR3"
                 nameOfWrapperClass="hover__image__container__wrapper__two"
                 nameOfHoverClass="hover__image__second"
                 storyTitle="#12 - PZ-LIFESTYLE "
@@ -186,8 +186,8 @@ function UnderConstructionPage() {
                 <div className="row">
                   <div className="col-12 col-md-12 col-lg-6 col-sm-12">
                     <UnderConstructionLeft
-                      imageTop={tenth}
-                      imageBottom={second}
+                      imageTop="https://drive.google.com/uc?export=view&id=12yzzm_rq4szx55SWF0Sbey12npBsdF5O"
+                      imageBottom="https://drive.google.com/uc?export=view&id=1Q0i8MOeK99XyVHx6lkWMKt-4bDKxZv1A"
                       storyTitleBottom="#3 - MADE IN MIND "
                       storyDescriptionOneBottom="The mountains of clothing appeared to be impenetrable. We took our first fearful steps with determination, facing the unknown and descending into the depths of the garment mountain, unaware of the incredible experience that lied ahead of us."
                       storyDescriptionTwoBottom="A strong foundation required strong guidance , and strong guidance demanded tremendous knowledge, which is obtained through vision.  Visions begin to form in the mind, which is where it all originated. The true birthplace of the brand lies within the minds of its creators."
@@ -198,8 +198,8 @@ function UnderConstructionPage() {
                   </div>
                   <div className="col-12 col-md-12 col-lg-6 col-sm-12">
                     <UnderConstructionRight
-                      imageTop={third}
-                      imageBottom={fourth}
+                      imageTop="https://drive.google.com/uc?export=view&id=16sgrOjOLhDhIUSixJlZFsQKvwZGhxbri"
+                      imageBottom="https://drive.google.com/uc?export=view&id=1vNmmRpIfSYzTrsOXY7CSCr87qvlVuH7R"
                       storyTitleTop="#1 - SEEDS"
                       storyDescriptionOneTop="This is the story of how a mere comment about lacking vision set in motion a remarkable evolution, leading to the birth of Phase Zero."
                       storyDescriptionTwoTop="Phase Zero, born out of an idea that should never have existed, Just an egoistic move. Exactly like a toddler pushing for something they have no knowledge about. what they would be entering. We started PZ with a leap of faith and some ignorance."
@@ -210,8 +210,8 @@ function UnderConstructionPage() {
                   </div>
                   <div className="col-12 col-md-12 col-lg-6 col-sm-12">
                     <UnderConstructionLeft
-                      imageTop={fivth}
-                      imageBottom={sixth}
+                      imageTop="https://drive.google.com/uc?export=view&id=1kBuamxJ9LSjJoXDo89CBEMwEeqxwLauC"
+                      imageBottom="https://drive.google.com/uc?export=view&id=1S3DrILwV96Ixko3QlauEl1PKOk4RDpdw"
                       storyTitleBottom="#7 - KICK-OFF"
                       storyDescriptionOneBottom="Days when results are announced can be stressful, especially if they are unknown. On the day when our clothing line was launching we felt a mix of excitement and fear, just like children nervously awaiting their test results. The want to miss the day remained. What will be the outcome? The  question kept on arising. "
                       storyDescriptionTwoBottom="June 17th 12:48am  Our fears were slowing conquer by a sense of achievement as the moment arrived and we saw the launch of our brand. We were relieved that our childishness we’ll call had paid off. Phase Zero's debut was an extraordinary success, justifying our efforts and increasing our brand's confidence. It was both an artwork and a time of great satisfaction. A minute’s success pays the failure of years. "
@@ -222,8 +222,8 @@ function UnderConstructionPage() {
                   </div>
                   <div className="col-12 col-md-12 col-lg-6 col-sm-12">
                     <UnderConstructionRight
-                      imageTop={seven}
-                      imageBottom={seventh}
+                      imageTop="https://drive.google.com/uc?export=view&id=14PncOa9Qxf2LbQyXYXxRoEHBLRbi_Chl"
+                      imageBottom="https://drive.google.com/uc?export=view&id=1yXzEh8h9p3H_-I1IkJQmV0tI21QCCTNc"
                       storyTitleTop="#5 - ARTISTS "
                       storyDescriptionOneTop="The following chapter is about artists. The real-life hero. It required a team of artisans to combine the pieces of art and make a masterpiece. "
                       storyDescriptionTwoTop="With steady hands, a calm mind, and love, we were witnessing the creation of a masterpiece. What was once just an idea is now a reality in front of us. Who would have guessed that three dumb curious seekers would establish an army dedicated to making a vision a reality.  A curious childish mind has now transformed an imagination into art. "
@@ -234,8 +234,8 @@ function UnderConstructionPage() {
                   </div>
                   <div className="col-12 col-md-12 col-lg-6 col-sm-12">
                     <UnderConstructionLeft
-                      imageTop={eighth}
-                      imageBottom={artist}
+                      imageTop="https://drive.google.com/uc?export=view&id=1izQQNiZ_rUy2bqvbgBGu79-r1a2dY6AZ"
+                      imageBottom="https://drive.google.com/uc?export=view&id=1fQlhW29AYnAGBK7AAxL9_i1YwLuJ_HiE"
                       storyTitleBottom="#11 - A for Artist"
                       storyDescriptionOneBottom="Our series on 'A for Artists' reflects a belief that art is present all around us, even in places that often go unnoticed. It's a beautiful concept to explore and bring attention to the hidden artistic elements in our everyday lives. Moreover, our series emphasizes the subjective nature of art."
                       storyDescriptionTwoBottom="This series serves as a platform to recognize and appreciate the artistry of our friend Prasanna Neupane who is a singer and a song writer. By providing a space for them to share their creative process, inspirations, and stories, we’re helping to give their art the recognition it deserves. This recognition not only validates their work but also helps to bring it to a wider audience, fostering a greater appreciation for their talents."
@@ -246,8 +246,8 @@ function UnderConstructionPage() {
                   </div>
                   <div className="col-12 col-md-12 col-lg-6 col-sm-12">
                     <UnderConstructionRight
-                      imageTop={ninth}
-                      imageBottom={lifestyle}
+                      imageTop="https://drive.google.com/uc?export=view&id=13NK5H2HyKRnNBwfaljdqSTjyBZ7JQNl8"
+                      imageBottom="https://drive.google.com/uc?export=view&id=1oWz-dUOtp7evoky_83BUdohpUUyCBtR3"
                       storyTitleTop="#9 - CULT "
                       storyDescriptionOneTop="Creating something new is easy but creating something that can last is the real challenge."
                       storyDescriptionTwoTop="Our studio is where everything takes place. Everything means everything when we say it. More than anything else, it's a place where magic happens. Sometimes it's our playground, other times it's our private theater, times it's where we party and gaming is everyday sports here. But more than that we talk concepts, visions, and art; helping each other getting a point of view. Here, criticism that explains why is always welcomed.  We don’t believe in thinking outside the box, here we believe there’s no box at all. This is the behind-the-scenes activity that is silently nurturing what you see to be Phase Zero. The weird people there might brainwash you into thinking anything is possible. "
@@ -261,38 +261,19 @@ function UnderConstructionPage() {
               </div>
             </div>
           )}
-
-          {/* <div className="under__construction__wardrobe">
-            <div className="container">
-              <div className="row">
-                <div className="col-12 col-md-12 col-lg-6 col-sm-12">
-                  <div className="mindxcape">
-                    <p>By MindXcape</p>
-                  </div>
-                </div>
-                <div className="col-12 col-md-12 col-lg-6 col-sm-12">
-                  <div className="under__construction__wardrobe__content">
-                    <p>
-                      We are taking online deliveries all over Nepal from our
-                      instagram page @phasezero.clo
-                    </p>
-                    <button type="button">Explore Instagram Wardrobe</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> */}
           <Container>
             <div className="under__construction__bottom__section">
               <div className="our__team">
-                <p>BY MINDXCAPE</p>
+                <p>PHASEZERO | MINDXCAPE</p>
               </div>
               <div className="under__construction__wardrobe__content">
                 <p>
                   We are taking online deliveries all over Nepal from our
                   instagram page @phasezero.clo
                 </p>
-                <button type="button">Explore Instagram Wardrobe</button>
+                <a href="https://www.instagram.com/phasezero.clo/">
+                  <button type="button">Explore Instagram Wardrobe</button>
+                </a>
               </div>
             </div>
           </Container>

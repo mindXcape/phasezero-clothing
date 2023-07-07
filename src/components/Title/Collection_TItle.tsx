@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface CollectionProps {
   season: string;
   title_name: string;
