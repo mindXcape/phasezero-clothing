@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import Home from 'pages/Home';
 import Contact from 'pages/Contact';
 import NotFound from 'pages/NotFound';
@@ -8,9 +8,13 @@ import ShopAll from 'pages/ShopAll';
 import Wishlist from 'pages/Wishlist';
 import UnderConstructionPage from 'pages/UnderConstruction/UnderConstructionPage';
 import Checkout from 'pages/Checkout';
-import CheckoutPaymentMethod from 'components/Checkout/CheckoutPaymentMethod';
 import Community from 'pages/Community';
-import CheckoutInformation from 'components/Checkout/CheckoutInformation';
+import Account from 'pages/Account';
+import { LoginForm, RegisterForm } from 'components/form';
+import {
+  CheckoutPaymentMethod,
+  CheckoutInformation,
+} from 'components/Checkout';
 // eslint-disable-next-line import/extensions
 import Count from '@/Count';
 
@@ -28,9 +32,14 @@ const HomeRoutes = function HomeRoutes() {
         <Route path="" element={<CheckoutInformation />} />
         <Route path="payment-method" element={<CheckoutPaymentMethod />} />
       </Route>
+      <Route path="/account" element={<Account />}>
+        <Route index element={<LoginForm />} />
+        <Route path="register" element={<RegisterForm />} />
+      </Route>
       <Route path="/community" element={<Community />} />
       <Route path="/under_construction" element={<UnderConstructionPage />} />
-      <Route path="*" element={<NotFound />} />
+      <Route path="/404" element={<NotFound />} />
+      <Route path="*" element={<Navigate to="/404" />} />
     </Routes>
   );
 };

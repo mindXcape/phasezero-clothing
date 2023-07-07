@@ -1,3 +1,4 @@
+import { useLocation } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
 import Navbar from 'layouts/nav/Navbar';
 import HomeRoutes from 'routes/HomeRoutes';
@@ -12,8 +13,15 @@ const UnderConstructionPage = lazy(
 );
 
 export default function App() {
+  const location = useLocation();
+
   return (
-    <UnderConstructionPage />
+    <>
+      {location.pathname !== '/404' && <Navbar />}
+      <HomeRoutes />
+      {location.pathname !== '/404' && <Footer />}
+      {/* <UnderConstructionPage /> */}
+    </>
     // <>
     //   <Navbar />
     //   <HomeRoutes />
