@@ -1,7 +1,9 @@
 @import '../../abstracts/_abstracts-dir';
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 .under__construction__images__main {
   background-color: black;
+ font-family: 'Bebas Neue', sans-serif !important; 
   .under__construction__title {
     text-align: center;
     padding: 36px 0px;
@@ -15,28 +17,29 @@
     .under__construction__bottom__section {
       display: flex;
       justify-content: space-evenly;
-      @include sm{
-        flex-direction:column !important ;
+      @include sm {
+        flex-direction: column !important ;
       }
-      @include md{
-        flex-direction:column !important ;
+      @include md {
+        flex-direction: column !important ;
       }
-      @include lg{
+      @include lg {
         flex-direction: column !important;
       }
       .our__team {
         margin: 64px 0px;
         flex: 1;
         color: white;
-        @include sm{
+        align-items: center;
+        @include sm {
           margin: 0;
           text-align: center;
         }
-        @include lg{
+        @include lg {
           margin: 0;
           text-align: center;
         }
-        @include md{
+        @include md {
           margin: 0;
           text-align: center;
         }
@@ -44,15 +47,15 @@
       .under__construction__wardrobe__content {
         flex: 1;
         margin: 36px;
-        @include sm{
+        @include sm {
           text-align: center;
           order: -1;
         }
-        @include md{
+        @include md {
           text-align: center;
           order: -1;
         }
-        @include lg{
+        @include lg {
           text-align: center;
           order: -1;
         }
@@ -63,13 +66,13 @@
         button {
           width: 100%;
           padding: 12px;
-          background-color: #333;
+          background-color: white;
           border: none;
           font-size: 22px;
-          color: white;
+          color: black;
           &:hover {
-            background-color: white;
-            color: black;
+            background-color: #333;
+            color: white;
           }
         }
       }
